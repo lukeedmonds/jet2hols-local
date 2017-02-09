@@ -1,0 +1,4 @@
+﻿.page-wrapper {
+    @include container;
+    padding: 0 gutter();
+}

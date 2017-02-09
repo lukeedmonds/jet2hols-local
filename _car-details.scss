@@ -1,0 +1,37 @@
+.recommended-car {
+	&__title {
+		@include font-size(24px);
+		color: $holidays-primary;
+		font-weight: normal;
+	}
+	
+	&__details {
+		list-style: none;
+	}
+
+	&__item {
+		line-height: 1.4;
+	}
+}
+
+@include screen-bigger-than($bp-small) {
+	.recommended-car {
+
+		&__item {
+			float: left;
+			
+			&:not(:last-child) {
+				position: relative;
+				padding-right: $base-spacing-unit;
+				margin-right: $base-spacing-unit;
+
+				&:after {
+					content:"|";
+					position: absolute;
+					top: 0;
+					right: 0;
+				}
+			}
+		}
+	}
+}

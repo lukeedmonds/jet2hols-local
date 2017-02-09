@@ -1,0 +1,32 @@
+$insurance-mobile-padding: $theme-half-spacing-unit $theme-base-spacing-unit;
+	$insurance-desktop-padding: $theme-half-spacing-unit $theme-double-spacing-unit;
+
+.insurance-block {
+	border: 1px solid $theme-color-primary;
+
+	&__header{
+		background-color: $theme-color-primary;
+		padding: $insurance-mobile-padding;
+	}
+
+	&__title {
+		@include font-size(17px);
+		color: $white;
+		font-family: $theme-heading-font;
+		margin: 0;
+	}
+
+	&__body {
+		background-color: $theme-light-background;
+		padding: $insurance-mobile-padding;
+	}
+}
+
+@include screen-bigger-than($bp-small) {
+	.insurance-block {
+		&__header,
+		&__body {
+			padding: $insurance-desktop-padding;
+		}
+	}
+}

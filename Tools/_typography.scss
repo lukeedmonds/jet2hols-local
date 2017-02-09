@@ -1,0 +1,73 @@
+@mixin font-size($font-size) {
+	// scss-lint:disable DuplicateProperty
+	font-size: $font-size;
+	font-size: $font-size / $base-font-size * 1rem;
+}
+
+@mixin h1-font-size {
+	@include font-size($h1-font-size);
+}
+
+@mixin h2-font-size {
+	@include font-size($h2-font-size);
+}
+
+@mixin h3-font-size {
+	@include font-size($h3-font-size);
+}
+
+@mixin h4-font-size {
+	@include font-size($h4-font-size);
+}
+
+@mixin h5-font-size {
+	@include font-size($h5-font-size);
+}
+
+@mixin h6-font-size {
+	@include font-size($h6-font-size);
+}
+
+@mixin paragraph-font-size {
+	@include font-size($paragraph-font-size);
+
+	line-height: $paragraph-line-height;
+}
+
+@mixin heading-font {
+	font-family: $heading-font;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	.city-breaks & {
+		font-family: $montserrat;
+	}
+}
+
+/* = Weights */
+
+@mixin regular-weight {
+	font-weight: 300;
+}
+
+@mixin semibold-weight {
+	font-weight: 600;
+}
+
+@mixin bold-weight {
+	font-weight: 900;
+}
+
+%slide-down-styles {
+	position: relative;
+	margin-right: 20px;
+	cursor: pointer;
+	color: $holidays-primary;
+	text-align: right;
+	text-decoration: underline;
+
+	[class^="icon-"] {
+		position: absolute;
+		right: -20px;
+	}
+}

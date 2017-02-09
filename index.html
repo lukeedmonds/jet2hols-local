@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modals</title>
+    <link rel="stylesheet" href="dist/css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+<button class="btn btn--secondary" data-modal-id="modal-id">modal trigger</button>
+
+
+
+<button class="btn btn--primary">
+	my button 
+</button>
+
+<a class="btn btn--secondary">
+	my btn anchor
+</a>
+
+<div class="btn btn--tertiary">
+	my btn div
+</div>
+
+<div class="modal" id="modal-id" data-modal>
+    <div class="modal__content">
+        <div class="modal__header">
+            <p class="modal__title no-bm no-tm">modal title</p>
+            <span data-modal-close class="modal__close">
+                <span class="icon-close"></span>
+            </span>
+        </div>
+
+        <div class="modal__body">
+            <div class="car-hire-extras clearfix">
+
+        <h4 class="car-hire-extras__title " data-bind="text: name">Booster seat</h4>
+        <div class="car-hire-extras__details">
+            <p class="car-hire-extras__info no-tm no-bm " data-bind="text: description">Suitable for children 4 years plus or weighing 40-100 pounds/ 18-45 kilos </p>
+        </div>
+        <div class="car-hire-extras__price-per">
+            <p class="no-bm no-tm">
+                <span class="car-hire-extras__price-per-price">£51.63 (€57.31)</span> per hire
+            </p>
+        </div>
+        <div class="car-hire-extras__counter">
+            <div class="car-hire-extras__counter-btn car-hire-extras__counter-btn--minus " data-bind="click: removeExtra">
+                <i class="fa fa-minus"></i>
+            </div>
+            <span class="car-hire-extras__counter-number " data-bind="text: requested">1</span>
+            <div class="car-hire-extras__counter-btn car-hire-extras__counter-btn--plus " data-bind="click: addExtra">
+                <i class="fa fa-plus"></i>
+            </div>
+        </div>
+    </div>
+    <div class="car-hire-extras clearfix">
+
+        <h4 class="car-hire-extras__title " data-bind="text: name">Booster seat</h4>
+        <div class="car-hire-extras__details">
+            <p class="car-hire-extras__info no-tm no-bm " data-bind="text: description">Suitable for children 4 years plus or weighing 40-100 pounds/ 18-45 kilos </p>
+        </div>
+        <div class="car-hire-extras__price-per">
+            <p class="no-bm no-tm">
+                <span class="car-hire-extras__price-per-price">£51.63 (€57.31)</span> per hire
+            </p>
+        </div>
+        <div class="car-hire-extras__counter">
+            <div class="car-hire-extras__counter-btn car-hire-extras__counter-btn--minus " data-bind="click: removeExtra">
+                <i class="fa fa-minus"></i>
+            </div>
+            <span class="car-hire-extras__counter-number " data-bind="text: requested">1</span>
+            <div class="car-hire-extras__counter-btn car-hire-extras__counter-btn--plus " data-bind="click: addExtra">
+                <i class="fa fa-plus"></i>
+            </div>
+        </div>
+    </div>
+    <div class="car-hire-extras clearfix">
+
+        <h4 class="car-hire-extras__title " data-bind="text: name">Booster seat</h4>
+        <div class="car-hire-extras__details">
+            <p class="car-hire-extras__info no-tm no-bm " data-bind="text: description">Suitable for children 4 years plus or weighing 40-100 pounds/ 18-45 kilos </p>
+        </div>
+        <div class="car-hire-extras__price-per">
+            <p class="no-bm no-tm">
+                <span class="car-hire-extras__price-per-price">£51.63 (€57.31)</span> per hire
+            </p>
+        </div>
+        <div class="car-hire-extras__counter">
+            <div class="car-hire-extras__counter-btn car-hire-extras__counter-btn--minus " data-bind="click: removeExtra">
+                <i class="fa fa-minus"></i>
+            </div>
+            <span class="car-hire-extras__counter-number " data-bind="text: requested">1</span>
+            <div class="car-hire-extras__counter-btn car-hire-extras__counter-btn--plus " data-bind="click: addExtra">
+                <i class="fa fa-plus"></i>
+            </div>
+        </div>
+    </div>
+    <div class="car-hire-extras clearfix">
+
+        <h4 class="car-hire-extras__title " data-bind="text: name">Booster seat</h4>
+        <div class="car-hire-extras__details">
+            <p class="car-hire-extras__info no-tm no-bm " data-bind="text: description">Suitable for children 4 years plus or weighing 40-100 pounds/ 18-45 kilos </p>
+        </div>
+        <div class="car-hire-extras__price-per">
+            <p class="no-bm no-tm">
+                <span class="car-hire-extras__price-per-price">£51.63 (€57.31)</span> per hire
+            </p>
+        </div>
+        <div class="car-hire-extras__counter">
+            <div class="car-hire-extras__counter-btn car-hire-extras__counter-btn--minus " data-bind="click: removeExtra">
+                <i class="fa fa-minus"></i>
+            </div>
+            <span class="car-hire-extras__counter-number " data-bind="text: requested">1</span>
+            <div class="car-hire-extras__counter-btn car-hire-extras__counter-btn--plus " data-bind="click: addExtra">
+                <i class="fa fa-plus"></i>
+            </div>
+        </div>
+    </div>
+        </div>
+
+        <div class="modal__footer">
+            <p>footer content</p>
+        </div>
+    </div>
+</div>
+
+<div class="accordion" data-accordion="#my-accordion">
+	My accordion btn
+	<i class="fa fa-chevron-down" aria-hidden="true"></i>
+</div>
+<div id="my-accordion" class="accordion__content">
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At tenetur, officia nobis modi aut, quisquam inventore ipsam labore rem fuga? Eos, laborum numquam modi assumenda ducimus, reiciendis cum sapiente id.</div>
+	<div>Rem at illo libero consectetur qui esse saepe earum tempora voluptas doloremque! Libero, dolores numquam reprehenderit qui incidunt facere eveniet laudantium fugiat corporis voluptatem omnis voluptatibus, quam laboriosam earum illo!</div>
+</div>
+
+<div class="holidays-modal__body">
+
+
+
+           <!--  <p class="car-hire-big-enough__title">@Model.ConfirmationTitle</p>
+
+            <div class="car-hire-big-enough__inner clearfix">
+                <div class="car-hire-big-enough">
+                    <p class="car-hire-big-enough__text car-hire-big-enough__text--bold">@Model.ConfirmationPartySizeLabel</p>
+                    <ul class="car-hire-big-enough__items" data-bind="foreach: partySize">
+                        <li class="car-hire-big-enough__item" data-bind="text: description"></li>
+                    </ul>
+                </div>
+                <div class="car-hire-big-enough">
+                    <p class="car-hire-big-enough__text car-hire-big-enough__text--bold">@Model.ConfirmationCarFitsLabel</p>
+                    <ul class="car-hire-big-enough__items" data-bind="foreach: carCapacity">
+                        <li class="car-hire-big-enough__item" data-bind="text: description"></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="car-hire-big-enough__text">@Model.ConfirmationSportsEquipmentText</p>
+            
+            <div data-bind="css:{ hidden: !showBigEnough() }" class="clearfix car-hire-big-enough__checkbox">
+                <input type="checkbox" data-bind="checked: bigEnough"  /><span>@Model.ConfirmationBigEnoughCheckboxLabel</span>                
+            </div>
+            <div class="car-hire-big-enough__error">
+                <p class="j2h-validation-message" data-bind="css: {'j2h-validation-message--active': showError}">Required</p>
+            </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="holidays-modal__body scrollable-area">
+
+        <p class="car-hire-big-enough__title">Your hire car doesn't look to have enough space:</p>
+
+        <div class="car-hire__big-enough__inner clearfix">
+        <table class="car-hire-big-enough__table">
+        		<tr class="car-hire-big-enough__row">
+        			<th class="car-hire-big-enough__head"></th>
+        			<th class="car-hire-big-enough__head">Your Party Size</th>
+        			<th class="car-hire-big-enough__head">Your car fits</th>
+        		</tr>
+        		<tr>
+        			<td class="car-hire-big-enough__cell">Passengers:</td>
+        			<td class="car-hire-big-enough__cell">2</td>
+        			<td class="car-hire-big-enough__cell">4</td>
+        		</tr>
+        		<tr>
+        			<td class="car-hire-big-enough__cell">Passengers:</td>
+        			<td class="car-hire-big-enough__cell">2</td>
+        			<td class="car-hire-big-enough__cell">4</td>
+        		</tr>
+        </table>
+            <!-- <div class="car-hire-big-enough">
+                <p class="car-hire-big-enough__text car-hire-big-enough__text--bold">Your party size:</p>
+                <ul class="car-hire-big-enough__items" data-bind="foreach: partySize">
+                    <li class="car-hire-big-enough__item" data-bind="text: description">Passengers: 4</li>
+
+                    <li class="car-hire-big-enough__item" data-bind="text: description">Bags: 8</li>
+
+                    <li class="car-hire-big-enough__item" data-bind="text: description">Golf bags: 4</li>
+
+                    <li class="car-hire-big-enough__item" data-bind="text: description">Bikes: 4</li>
+                </ul>
+            </div>
+            <div class="car-hire-big-enough">
+                <p class="car-hire-big-enough__text car-hire-big-enough__text--bold">Your car fits:</p>
+                <ul class="car-hire-big-enough__items" data-bind="foreach: carCapacity">
+                    <li class="car-hire-big-enough__item" data-bind="text: description">Pasengers: 4</li>
+
+                    <li class="car-hire-big-enough__item" data-bind="text: description">Bags: 2</li>
+                </ul>
+            </div> --> 
+        </div>
+        <p class="car-hire__big-enough-text">You may need more space if you're taking sports equipment. Just so you know, a golf bag takes the place of one seat and a bike box takes the place of two.</p>
+
+        <div data-bind="css:{ hidden: !showBigEnough() }" class="clearfix car-hire__big-enough-checkbox hidden">
+            <input type="checkbox" data-bind="checked: bigEnough"><span>Yes, my car is big enough thanks</span>
+        </div>
+        <div class="car-hire__big-enough-error">
+            <p class="j2h-validation-message" data-bind="css: {'j2h-validation-message--active': showError}">Required</p>
+        </div>
+
+    </div>
+    
+    <table class="car-hire-included__table">
+        <tbody>
+            <tr class="car-hire-included__table-row">
+                <th>Pick-up location:</th>
+                <td class="car-hire-included__table-cell">
+                    <!--ko text: pickUpLocation-->Terminal Counter And Car
+                    <!--/ko-->
+                </td>
+            </tr>
+            <tr class="car-hire-included__table-row">
+                <th>Fuel Policy:</th>
+                <td class="car-hire-included__table-cell">
+                    <!--ko text: fuelPolicy-->Full to Full
+                    <!--/ko-->
+                </td>
+            </tr>
+            <tr class="car-hire-included__table-row">
+                <th>Deposit Excess:</th>
+                <td class="car-hire-included__table-cell">
+                    <!--ko text: depositExcess-->670 EUR
+                    <!--/ko-->
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <ul class="car-hire-included__list">
+        <li class="car-hire-included__list-item"><strong>Included for FREE</strong></li>
+        <!-- ko foreach: includedItems -->
+        <li class="car-hire-included__list-item">
+            <!--ko text: $data-->Cancellation
+            <!--/ko-->
+        </li>
+
+        <li class="car-hire-included__list-item">
+            <!--ko text: $data-->Theft Protection
+            <!--/ko-->
+        </li>
+
+        <li class="car-hire-included__list-item">
+            <!--ko text: $data-->Collision Damage Waiver
+            <!--/ko-->
+        </li>
+
+        <li class="car-hire-included__list-item">
+            <!--ko text: $data-->Third Party Liability Protection
+            <!--/ko-->
+        </li>
+
+        <li class="car-hire-included__list-item">
+            <!--ko text: $data-->Unlimited Mileage
+            <!--/ko-->
+        </li>
+        <!--/ko-->
+    </ul>
+
+
+    <ul class="recommended-car__details no-tm list-no-style clearfix">
+        <li class="recommended-car__item">
+            <span class="">Location: </span>
+            <span class="">Majorca (Palma) PMI</span>
+        </li>
+        <li class="recommended-car__item">
+            <span class="">Pickup: </span>
+            <span class="">Fri 16 Jun 2017 (09:35PM)</span>
+        </li>
+        <li class="recommended-car__item">
+            <span class="">Drop off: </span>
+            <span class="">Fri 23 Jun 2017 (07:40PM)</span>
+        </li>
+    </ul>
+    <div class="insurance-block all-border-box" id="carhire-insurance-section">
+        <div class="insurance-block__header clearfix">
+            <h4 class="insurance-block__title ">Damage Refund Insurance</h4>
+        </div>
+        <div class="insurance-block__content clearfix">
+            <div class="insurance-block__body">
+                <div class="insurance-block__body-text ">
+                    <p>When you pick up your hire car, the supplier will hold a deposit on your credit card. If the car is damaged, stolen or you lose the keys, you could pay an excess of up to £2,500. Damage Refund Insurance protects you from these costs,
+                        by giving you a full refund for any excess you have paid. </p>
+                    <p>If you want this cover, call Jet2carhire on 0800 086 8883 with your car hire reference after booking.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="advanced-tabs__content advanced-tabs__content--active" data-id-carhiretransfer="" data-defaulttransfer="False" data-selected="False" data-unitprice="0" data-transfertypeid="99" data-transferserialized="" data-footertext="Car Hire" style="display: block;">
+        <div class="transfer-selection">
+            <div class="transfer-selection__content clearfix">
+                <div class="transfer-selection__sidebar">
+                    <div class="transfer-selection__list-block">
+                        <img src="https://www.jet2holidays.com/-/media/assets/images/transfer-options/car-hire.jpg?h=195&amp;w=313&amp;la=en&amp;hash=703F946C08AB0D34F3CF0E1C5F294D75068CA47A" class="" alt="Car Hire Image">
+                    </div>
+                </div>
+                <div class="transfer-selection__body clearfix">
+                    <div class="">
+                        <p class="transfer-selection__text">Choose car hire and explore more on your holiday. We search all the leading brands so you can drive away with the best price</p>
+                        <p class="transfer-selection__list-intro">All our car hire providers offer:</p>
+                        <ul class="transfer-selection__list">
+                            <li class="transfer-selection__list-item">
+                                <em class="fa fa-check transfer-selection__list-icon">
+    </em> Collect your car from the airport terminal </li>
+                            <li class="transfer-selection__list-item">
+                                <em class="fa fa-check transfer-selection__list-icon">
+    </em> High customer ratings</li>
+                            <li class="transfer-selection__list-item">
+                                <em class="fa fa-check transfer-selection__list-icon">
+    </em> Full-to-full fuel policy </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="recommended-car clearfix">
+            <h3 class="recommended-car__title no-tm ">Your car hire search</h3>
+            <a class="btn--white-blue recommended-car__link " href="#" data-modal-id="faq">Car Hire FAQs</a>
+            <ul class="recommended-car__details no-tm list-no-style clearfix">
+                <li class="recommended-car__item">
+                    <span class="">Location: </span>
+                    <span class=""><strong>Majorca (Palma) PMI</strong></span>
+                </li>
+                <li class="recommended-car__item">
+                    <span class="">Pickup: </span>
+                    <span class=""><strong>Fri 16 Jun 2017 (09:35PM)</strong></span>
+                </li>
+                <li class="recommended-car__item">
+                    <span class="">Drop off: </span>
+                    <span class=""><strong>Fri 23 Jun 2017 (07:40PM)</strong></span>
+                </li>
+            </ul>
+        </div>
+
+
+
+
+
+        <div id="carhire-searching-section" data-selected-cars-json="">
+            <div data-bind="visible: !enableSearch()">
+                <div class="car-hire-box" data-empty-car-hire="">
+                    <p class="car-hire-message__no-passenger-details ">
+                        To add car hire, please complete all passengers' details in the <a class="car-hire-search-whos-going" href="#">Who's going</a> section above.
+                    </p>
+                </div>
+            </div>
+
+            <div class="car-hire-box__wrapper" data-bind="visible: enableSearch, template: {foreach: steps, beforeRemove: hideElement, afterAdd: showElement }" data-dropoff="PMI" data-pickup="PMI" data-pickuptime="2017-06-16T21:35:00" data-dropofftime="2017-06-23T19:40:00"
+                data-nodriver-message="Please select driver" data-driverselected-message="Driver already selected, please select another driver" data-driveragegroups="[{&quot;DriverAgeGroupId&quot;:1,&quot;Description&quot;:&quot;Young Driver&quot;,&quot;MinAge&quot;:18,&quot;MaxAge&quot;:24},{&quot;DriverAgeGroupId&quot;:2,&quot;Description&quot;:&quot;Standard Driver&quot;,&quot;MinAge&quot;:25,&quot;MaxAge&quot;:69},{&quot;DriverAgeGroupId&quot;:3,&quot;Description&quot;:&quot;Senior Driver&quot;,&quot;MinAge&quot;:70,&quot;MaxAge&quot;:100}]"
+                data-carhirepagevalidation-heading="Car Hire" data-carhirepagevalidation-subheading="Car {0}" data-carhirepagevalidation-invalid-age="Invalid Driver Age" data-carhirepagevalidation-duplicate-driver="Duplicate Driver" data-carhire-extras-text="E.g. Booster seats, sat navs"
+                style="display: none;">
+                <div class="car-hire-box" data-empty-car-hire="" data-bind="visible: hideCarDetails, attr: {stepid: stepId} " stepid="1">
+                    <div class="car-hire-box__inner clearfix">
+
+                        <div class="car-hire-box__left-col">
+                            <p class="no-tm car-hire-box__car-number" data-bind="html: getDriverCaption('<span>Car {number}</span>Driver')"><span>Car 1</span>Driver</p>
+                            <div class="select-option clearfix">
+                                <i class="fa fa-chevron-down"></i>
+                                <select data-bind="attr: {id: driverDropdownId}, options: driverlist, optionsText: 'name', optionsValue:'id', optionsCaption: 'Please select driver', value: selectedDriverId" id="driverStep_1"><option value="">Please select driver</option></select>
+                            </div>
+                            <div class="transfer-selection-driver-list__error hidden" data-bind="css: {hidden: !showDriverError()}">
+                                <span><!--ko text: driverError --><!--/ko--></span>
+                            </div>
+                            <a data-bind="click: $parent.termsConditionsPopup" data-modal-id="car-hire-terms-conditions" class="car-hire-box__terms-conditions "> Terms &amp; Conditions</a>
+                        </div>
+                        <div class="car-hire-box__content" data-bind="css: {hidden : showSearchAgain}">
+                            <div class="car-hire-box__content-inner car-hire-box__content-inner--car-selection">
+                                <div class="car-hire-box__btn-container">
+                                    <a href="#" data-bind="click: $parent.viewCarHireOptions" class="btn--medium btn--blue " data-modal-id="car-selection">View car hire options</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ko if: selectedCar() != null -->
+                <!-- /ko -->
+            </div>
+
+            <a id="btnAddCar" data-bind="click: addCar, visible: allowAddCar" href="" class="btn--white-blue car-hire-box__add-btn " style="display: none;">
+        Add another car
+    </a>
+
+            <div id="modal-remove-car" class="holidays-modal all-border-box" aria-hidden="true" role="dialog" data-small-modal="">
+                <div class="holidays-modal__content scrollable-area">
+                    <div class="holidays-modal__header">
+                        <h4 class="holidays-modal__title ">Remove car hire</h4>
+                    </div>
+                    <div class="holidays-modal__body">
+                        <p class="no-bm no-tm">Are you sure you want to remove car hire from your holiday?</p>
+                    </div>
+
+                    <div class="holidays-modal__footer clearfix">
+                        <div class="holidays-modal__btns">
+                            <div class="holidays-modal__btn-container">
+                                <a data-modal-close="" href="#" class="btn--medium btn--white-red ">
+                            No
+                        </a>
+                            </div>
+                            <div class="holidays-modal__btn-container">
+                                <a data-remove-car-hire="" href="#" class="btn--medium btn--blue ">
+                            Yes
+                        </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            var providerImages = [{
+                src: 'https://www.jet2holidays.com/-/media/providers/carhire/budget_small.jpg',
+                alt: 'budget'
+            }, {
+                src: 'https://www.jet2holidays.com/-/media/providers/carhire/europcar_small.jpg',
+                alt: 'europcar'
+            }, {
+                src: 'https://www.jet2holidays.com/-/media/providers/carhire/hertz_small.jpg',
+                alt: 'hertz'
+            }, {
+                src: 'https://www.jet2holidays.com/-/media/providers/carhire/avis_small.jpg',
+                alt: 'avis'
+            }, {
+                src: 'https://www.jet2holidays.com/-/media/providers/carhire/thrifty_small.jpg',
+                alt: 'thrifty'
+            }, {
+                src: 'https://www.jet2holidays.com/-/media/providers/carhire/alamo_small.jpg',
+                alt: 'alamo'
+            }];
+        </script>
+
+        <div id="modal-car-selection" class="holidays-modal all-border-box" aria-hidden="true" role="dialog" data-table-modal="" data-filterlabel-cartype="<strong>Car category</strong> ({0} options)" data-filterlabel-provider="<strong>Providers</strong> ({0} options)"
+            data-filterlabel-transmission="<strong>Transmission</strong> ({0} options)" data-resulttitle="Choose from {car count} cars for {driver name}">
+            <div class="holidays-modal__content scrollable-area">
+
+                <div class="car-hire-loader  all-border-box">
+                    <h3 class="car-hire-loader__title">We are searching for your perfect car…</h3>
+                    <div class="car-hire-loader__loaders-container clearfix">
+
+                        <!-- ko foreach: carHireProviders -->
+                        <div class="car-hire-loader__block" data-bind="attr: { 'data-animation-delay': delay }" data-animation-delay="100">
+                            <div class="car-hire-loader__img-container">
+                                <img data-bind="attr: { 'src': src, 'alt': alt }" class="car-hire-loader__img" src="https://www.jet2holidays.com/-/media/providers/carhire/budget_small.jpg" alt="budget">
+                            </div>
+                            <div class="car-hire-loader__round">
+                                <svg class="svg-icon svg-icon--spinner car-hire-loader__spinner" width="63px" height="63px" viewBox="0 0 63 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+                            <title>icon-spinner</title>
+                            <defs>
+                                <linearGradient x1="50%" y1="11.0712466%" x2="50%" y2="90.8288043%" id="linearGradient-1">
+                                    <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="0%"></stop>
+                                    <stop stop-color="#4A90E2" offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="icon-spinner2" fill="url(#linearGradient-1)">
+                                    <path d="M55,32 C55,19.2974508 44.7025492,9 32,9 C19.2974508,9 9,19.2974508 9,32 C9,44.7025492 19.2974508,55 32,55 C44.7025492,55 55,44.7025492 55,32 Z M13,32 C13,21.5065898 21.5065898,13 32,13 C42.4934102,13 51,21.5065898 51,32 C51,42.4934102 42.4934102,51 32,51 C21.5065898,51 13,42.4934102 13,32 Z" id="Oval-4"></path>
+                                </g>
+                            </g>
+                        </svg>
+                                <i class="car-hire-loader__tick fa fa-check"></i>
+                            </div>
+                        </div>
+
+                        <div class="car-hire-loader__block" data-bind="attr: { 'data-animation-delay': delay }" data-animation-delay="200">
+                            <div class="car-hire-loader__img-container">
+                                <img data-bind="attr: { 'src': src, 'alt': alt }" class="car-hire-loader__img" src="https://www.jet2holidays.com/-/media/providers/carhire/europcar_small.jpg" alt="europcar">
+                            </div>
+                            <div class="car-hire-loader__round">
+                                <svg class="svg-icon svg-icon--spinner car-hire-loader__spinner" width="63px" height="63px" viewBox="0 0 63 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+                            <title>icon-spinner</title>
+                            <defs>
+                                <linearGradient x1="50%" y1="11.0712466%" x2="50%" y2="90.8288043%" id="linearGradient-1">
+                                    <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="0%"></stop>
+                                    <stop stop-color="#4A90E2" offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="icon-spinner2" fill="url(#linearGradient-1)">
+                                    <path d="M55,32 C55,19.2974508 44.7025492,9 32,9 C19.2974508,9 9,19.2974508 9,32 C9,44.7025492 19.2974508,55 32,55 C44.7025492,55 55,44.7025492 55,32 Z M13,32 C13,21.5065898 21.5065898,13 32,13 C42.4934102,13 51,21.5065898 51,32 C51,42.4934102 42.4934102,51 32,51 C21.5065898,51 13,42.4934102 13,32 Z" id="Oval-4"></path>
+                                </g>
+                            </g>
+                        </svg>
+                                <i class="car-hire-loader__tick fa fa-check"></i>
+                            </div>
+                        </div>
+
+                        <div class="car-hire-loader__block" data-bind="attr: { 'data-animation-delay': delay }" data-animation-delay="300">
+                            <div class="car-hire-loader__img-container">
+                                <img data-bind="attr: { 'src': src, 'alt': alt }" class="car-hire-loader__img" src="https://www.jet2holidays.com/-/media/providers/carhire/hertz_small.jpg" alt="hertz">
+                            </div>
+                            <div class="car-hire-loader__round">
+                                <svg class="svg-icon svg-icon--spinner car-hire-loader__spinner" width="63px" height="63px" viewBox="0 0 63 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+                            <title>icon-spinner</title>
+                            <defs>
+                                <linearGradient x1="50%" y1="11.0712466%" x2="50%" y2="90.8288043%" id="linearGradient-1">
+                                    <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="0%"></stop>
+                                    <stop stop-color="#4A90E2" offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="icon-spinner2" fill="url(#linearGradient-1)">
+                                    <path d="M55,32 C55,19.2974508 44.7025492,9 32,9 C19.2974508,9 9,19.2974508 9,32 C9,44.7025492 19.2974508,55 32,55 C44.7025492,55 55,44.7025492 55,32 Z M13,32 C13,21.5065898 21.5065898,13 32,13 C42.4934102,13 51,21.5065898 51,32 C51,42.4934102 42.4934102,51 32,51 C21.5065898,51 13,42.4934102 13,32 Z" id="Oval-4"></path>
+                                </g>
+                            </g>
+                        </svg>
+                                <i class="car-hire-loader__tick fa fa-check"></i>
+                            </div>
+                        </div>
+
+                        <div class="car-hire-loader__block" data-bind="attr: { 'data-animation-delay': delay }" data-animation-delay="400">
+                            <div class="car-hire-loader__img-container">
+                                <img data-bind="attr: { 'src': src, 'alt': alt }" class="car-hire-loader__img" src="https://www.jet2holidays.com/-/media/providers/carhire/avis_small.jpg" alt="avis">
+                            </div>
+                            <div class="car-hire-loader__round">
+                                <svg class="svg-icon svg-icon--spinner car-hire-loader__spinner" width="63px" height="63px" viewBox="0 0 63 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+                            <title>icon-spinner</title>
+                            <defs>
+                                <linearGradient x1="50%" y1="11.0712466%" x2="50%" y2="90.8288043%" id="linearGradient-1">
+                                    <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="0%"></stop>
+                                    <stop stop-color="#4A90E2" offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="icon-spinner2" fill="url(#linearGradient-1)">
+                                    <path d="M55,32 C55,19.2974508 44.7025492,9 32,9 C19.2974508,9 9,19.2974508 9,32 C9,44.7025492 19.2974508,55 32,55 C44.7025492,55 55,44.7025492 55,32 Z M13,32 C13,21.5065898 21.5065898,13 32,13 C42.4934102,13 51,21.5065898 51,32 C51,42.4934102 42.4934102,51 32,51 C21.5065898,51 13,42.4934102 13,32 Z" id="Oval-4"></path>
+                                </g>
+                            </g>
+                        </svg>
+                                <i class="car-hire-loader__tick fa fa-check"></i>
+                            </div>
+                        </div>
+
+                        <div class="car-hire-loader__block" data-bind="attr: { 'data-animation-delay': delay }" data-animation-delay="500">
+                            <div class="car-hire-loader__img-container">
+                                <img data-bind="attr: { 'src': src, 'alt': alt }" class="car-hire-loader__img" src="https://www.jet2holidays.com/-/media/providers/carhire/thrifty_small.jpg" alt="thrifty">
+                            </div>
+                            <div class="car-hire-loader__round">
+                                <svg class="svg-icon svg-icon--spinner car-hire-loader__spinner" width="63px" height="63px" viewBox="0 0 63 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+                            <title>icon-spinner</title>
+                            <defs>
+                                <linearGradient x1="50%" y1="11.0712466%" x2="50%" y2="90.8288043%" id="linearGradient-1">
+                                    <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="0%"></stop>
+                                    <stop stop-color="#4A90E2" offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="icon-spinner2" fill="url(#linearGradient-1)">
+                                    <path d="M55,32 C55,19.2974508 44.7025492,9 32,9 C19.2974508,9 9,19.2974508 9,32 C9,44.7025492 19.2974508,55 32,55 C44.7025492,55 55,44.7025492 55,32 Z M13,32 C13,21.5065898 21.5065898,13 32,13 C42.4934102,13 51,21.5065898 51,32 C51,42.4934102 42.4934102,51 32,51 C21.5065898,51 13,42.4934102 13,32 Z" id="Oval-4"></path>
+                                </g>
+                            </g>
+                        </svg>
+                                <i class="car-hire-loader__tick fa fa-check"></i>
+                            </div>
+                        </div>
+
+                        <div class="car-hire-loader__block" data-bind="attr: { 'data-animation-delay': delay }" data-animation-delay="600">
+                            <div class="car-hire-loader__img-container">
+                                <img data-bind="attr: { 'src': src, 'alt': alt }" class="car-hire-loader__img" src="https://www.jet2holidays.com/-/media/providers/carhire/alamo_small.jpg" alt="alamo">
+                            </div>
+                            <div class="car-hire-loader__round">
+                                <svg class="svg-icon svg-icon--spinner car-hire-loader__spinner" width="63px" height="63px" viewBox="0 0 63 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+                            <title>icon-spinner</title>
+                            <defs>
+                                <linearGradient x1="50%" y1="11.0712466%" x2="50%" y2="90.8288043%" id="linearGradient-1">
+                                    <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="0%"></stop>
+                                    <stop stop-color="#4A90E2" offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="icon-spinner2" fill="url(#linearGradient-1)">
+                                    <path d="M55,32 C55,19.2974508 44.7025492,9 32,9 C19.2974508,9 9,19.2974508 9,32 C9,44.7025492 19.2974508,55 32,55 C44.7025492,55 55,44.7025492 55,32 Z M13,32 C13,21.5065898 21.5065898,13 32,13 C42.4934102,13 51,21.5065898 51,32 C51,42.4934102 42.4934102,51 32,51 C21.5065898,51 13,42.4934102 13,32 Z" id="Oval-4"></path>
+                                </g>
+                            </g>
+                        </svg>
+                                <i class="car-hire-loader__tick fa fa-check"></i>
+                            </div>
+                        </div>
+                        <!-- /ko -->
+
+                    </div>
+                </div>
+
+                <div class="holidays-modal__hidden" id="car-hire-results-panel">
+
+                    <div class="holidays-modal__header">
+                        <i class="fa fa-close holidays-modal__close" data-modal-close=""></i>
+                        <h4 class="holidays-modal__title" data-bind="text: resultTitle()">Choose from 0 cars for </h4>
+                        <div class="clearfix">
+
+                            <div class="table-filter">
+                                <p class="table-filter__label" data-bind="html: filterCarTypesLabel"><strong>Car category</strong> (0 options)</p>
+                                <div class="select-option clearfix">
+                                    <i class="fa fa-chevron-down"></i>
+                                    <div class="select-container">
+                                        <select id="Car type" name="Car type" data-bind="value: selectedCarType, foreach: filterCarTypes"></select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="table-filter">
+                                <p class="table-filter__label" data-bind="html: filterProvidersLabel"><strong>Providers</strong> (0 options)</p>
+                                <div class="select-option clearfix">
+                                    <i class="fa fa-chevron-down"></i>
+                                    <div class="select-container">
+                                        <select id="Car hire providers" name="Car hire providers" data-bind="value: selectedProvider, foreach: filterProviders"></select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="table-filter">
+                                <p class="table-filter__label" data-bind="html: filterTransmissionLabel"><strong>Transmission</strong> (0 options)</p>
+                                <div class="select-option clearfix">
+                                    <i class="fa fa-chevron-down"></i>
+                                    <div class="select-container">
+                                        <select id="transmission" name="transmission" data-bind="value: selectedTransmission, foreach: filterTransmission"></select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="table-filter">
+                                <p class="table-filter__label"><strong>Sort by</strong></p>
+                                <div class="select-option clearfix">
+                                    <i class="fa fa-chevron-down"></i>
+                                    <div class="select-container">
+                                        <select id="ddlSortBy" name="Sort by" data-bind="value: selectedSortBy">
+                                <option selected="selected" value="asc">Price (low - high)</option>
+                                <option value="desc">Price (high - low)</option>
+                            </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="holidays-modal__body">
+
+                        <table class="sortable-table sortable-table__selection" data-cols="4">
+                            <thead class="sortable-table__head">
+                                <tr class="sortable-table__row sortable-table__row--header">
+                                    <th class="sortable-table__th sortable-table__th--car-type sorttable_nosort">
+                                        Car category
+                                    </th>
+                                    <th class="sortable-table__th sortable-table__th--car-details sorttable_nosort">
+                                        Car details
+                                    </th>
+                                    <th class="sortable-table__th sortable-table__th--price">
+
+                                        <span data-sort-by="asc" data-bind="click: function(){ selectedSortBy('desc') }, style: { display: selectedSortBy() == 'asc' ? 'block' : 'none' }" style="display: block;">
+                                <i class="fa-span fa fa-chevron-up fa-chevron--sorting"></i>
+                                Price &amp; Provider
+                            </span>
+                                        <span data-sort-by="desc" data-bind="click: function(){ selectedSortBy('asc') }, style: { display: selectedSortBy() == 'asc' ? 'none' : 'block' }" style="display: none;">
+                                <i class="fa-span fa fa-chevron-down fa-chevron--sorting"></i>
+                                Price &amp; Provider
+                            </span>
+
+                                    </th>
+                                    <th class="sortable-table__th sortable-table__th--tick sorttable_nosort">
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="sortable-table__body">
+
+                                <!-- ko foreach: vehiclesFiltered -->
+                                <!-- /ko -->
+                            </tbody>
+                            <tfoot></tfoot>
+                        </table>
+                        <div class="search-results--api-error">
+                            <span class="">Oops, something went wrong. Hit cancel to try again or add car hire after booking.</span>
+                        </div>
+                        <div class="search-results--no-results">
+                            <span class="">Sorry, there are no suitable cars for this driver. </span>
+                        </div>
+
+                    </div>
+                    <div class="holidays-modal__footer clearfix">
+                        <div class="holidays-modal__btns">
+                            <div class="holidays-modal__btn-container">
+                                <a data-modal-close="" href="#" class="btn--medium btn--white-red">Cancel</a>
+                            </div>
+                            <div class="holidays-modal__btn-container">
+                                <a id="btnCarhireResultSelected" data-car-hire-step-trigger="" href="#" class="btn--medium btn--blue">Done</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal-faq" class="holidays-modal all-border-box" aria-hidden="true" role="dialog">
+            <div class="holidays-modal__content scrollable-area">
+                <div class="holidays-modal__header">
+                    <i class="fa fa-close holidays-modal__close" data-modal-close=""></i>
+                    <h4 class="holidays-modal__title">Car Hire FAQs</h4>
+                </div>
+                <div class="holidays-modal__body">
+                    <div class="car-hire-faq">
+                        <h4 class="car-hire-faq__question">Can I hire a car if I’m under 25 or over 75?</h4>
+                        <p class="car-hire-faq__answer">Yes, most car hire providers have a minimum age limit of 21. However, this may vary depending on the provider and destination. There may be additional charges if the main driver is under 25 or over 75 years old to cover the extra
+                            insurance cost. Any additional charge will be stated at the time of booking.</p>
+                    </div>
+
+                    <div class="car-hire-faq">
+                        <h4 class="car-hire-faq__question">When will I be charged for optional extras?</h4>
+                        <p class="car-hire-faq__answer">You will be charged by the car hire provider when you pick up your car. You’ll need to pay in the local currency.</p>
+                    </div>
+
+                    <div class="car-hire-faq">
+                        <h4 class="car-hire-faq__question">Which documents do I need to bring to the car hire desk?</h4>
+                        <p class="car-hire-faq__answer">The voucher we send you will contain the documents you need to bring. In most cases, you’ll need your:</p>
+                        <ul>
+                            <li>Credit card in the main drivers name.</li>
+                            <li>Driving licence – full licence held for at least one year.</li>
+                            <li>Booking voucher</li>
+                        </ul>
+                    </div>
+
+                    <div class="car-hire-faq">
+                        <h4 class="car-hire-faq__question">Do I need a credit card to book a hire car?</h4>
+                        <p class="car-hire-faq__answer">Yes you will require a credit card in the main drivers name. Most hire car providers will not accept cash, cheque, debit cards or a pre-paid travel card.</p>
+                    </div>
+
+                    <div class="car-hire-faq">
+                        <h4 class="car-hire-faq__question">How much money do I need on my credit card?</h4>
+                        <p class="car-hire-faq__answer">You will need to have sufficient funds available on your credit card to the sum of the deposit excess amount for your hire car when you pick it up. This is standard practice for all car hire providers and will usually result in
+                            an amount being blocked on the main driver's credit card. The deposit amount will be detailed in the booking process and on your booking voucher.</p>
+                    </div>
+
+                    <div class="car-hire-faq">
+                        <h4 class="car-hire-faq__question">Do I need to leave a deposit?</h4>
+                        <p class="car-hire-faq__answer">You will be required to a leave a deposit on your credit card when collecting your hire car. Customers wishing to not leave a deposit will be required to purchase additional insurance from the supplier at the rental desk.</p>
+                    </div>
+
+                    <div class="car-hire-faq">
+                        <h4 class="car-hire-faq__question">Do I need additional insurance for my car hire?</h4>
+                        <p class="car-hire-faq__answer">When you book via Jet2holidays, we will usually include a Collision Damage Waiver (CDW) for you. This will cover certain types of damage to the vehicle. Even if you have a Collision Damage Waiver, car hire suppliers will ask you
+                            to buy their additional insurance at the rental desk to cover the deposit excess and other items not included in CDW. It is completely optional to take out their insurance, but the car hire supplier will need a credit card
+                            deposit if you don’t want to buy their cover.</p>
+                        <p class="car-hire-faq__answer">Optional Damage Refund Insurance is available via the Jet2holidays booking confirmation page and within the Manage My Booking on Jet2holidays. If there is damage to the car or it is stolen, the car hire supplier will keep some
+                            or all of the excess to cover the costs, which you can claim back in full using the Damage Refund Insurance. Details on making a claim will be sent in your confirmation email.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div data-id-carhire-extras="" class="holidays-modal all-border-box" aria-hidden="true" role="dialog">
+            <div class="holidays-modal__content scrollable-area">
+                <div class="holidays-modal__header">
+                    <i class="fa fa-close holidays-modal__close" data-modal-close="" data-bind="click: close"></i>
+                    <h4 class="holidays-modal__title ">Add extras</h4>
+                </div>
+
+                <div class="holidays-modal__body" data-bind="foreach: extras"></div>
+
+                <div class="holidays-modal__footer clearfix">
+                    <div class="clearfix">
+                        <div class="car-hire-extras__terms ">
+                            <p class="no-tm no-bm">You must add these extras at the same time as booking your car hire. Availability of these extras isn't always guaranteed. You'll need to pay in local currency for these extras when you pick up your hire car. The prices shown
+                                for each item are based on today's exchange rate.</p>
+
+                        </div>
+                        <div class="car-hire-extras__cost">
+                            <p class="car-hire-extras__total no-bm no-tm ">Total: <span class="car-hire-extras__price " data-bind="text: total">£0.00</span></p>
+                            <p class="no-bm no-tm car-hire-extras__price-conversion " data-bind="text: localTotal">(0.00)</p>
+                        </div>
+                    </div>
+                    <div class="holidays-modal__btns">
+                        <div class="holidays-modal__btn-container">
+                            <a data-modal-close="" href="#" class="btn--medium btn--white-red " data-bind="click: cancel">Cancel</a>
+                        </div>
+                        <div class="holidays-modal__btn-container">
+                            <a data-modal-close="" href="#" class="btn--medium btn--blue " data-bind="click: done">Done</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var includedForFreeItems = [{
+                always: true,
+                desc: 'Cancellation',
+                'override': ''
+            }, {
+                always: false,
+                desc: 'Amendments',
+                'override': ''
+            }, {
+                always: false,
+                desc: 'Theft waiver (TW)',
+                'override': 'Theft Protection'
+            }, {
+                always: false,
+                desc: 'Collision damage waiver (CDW)',
+                'override': 'Collision Damage Waiver'
+            }, {
+                always: false,
+                desc: 'Breakdown assistance',
+                'override': ''
+            }, {
+                always: false,
+                desc: 'Third party liability protection (TP)',
+                'override': 'Third Party Liability Protection'
+            }, {
+                always: false,
+                desc: 'Unlimited mileage',
+                'override': 'Unlimited Mileage'
+            }, {
+                always: false,
+                desc: 'Airport fee',
+                'override': ''
+            }, {
+                always: false,
+                desc: 'Tax',
+                'override': ''
+            }, {
+                always: false,
+                desc: 'Other fees',
+                'override': ''
+            }, {
+                always: false,
+                desc: 'Young driver',
+                'override': ''
+            }, {
+                always: false,
+                desc: 'Total Fees and Charges',
+                'override': ''
+            }];
+        </script>
+
+        <div id="modal-whats-included" class="holidays-modal all-border-box" aria-hidden="true" role="dialog" data-small-modal="">
+            <div class="holidays-modal__content scrollable-area">
+                <div class="holidays-modal__header">
+                    <i class="fa fa-close holidays-modal__close" data-modal-close=""></i>
+                    <h4 class="holidays-modal__title">What's included</h4>
+                </div>
+                <div class="holidays-modal__body">
+                    <table class="car-hire-included__table">
+                        <tbody>
+                            <tr class="car-hire-included__table-row">
+                                <th>Pick-up location:</th>
+                                <td class="car-hire-included__table-cell">
+                                    <!--ko text: pickUpLocation-->
+                                    <!--/ko-->
+                                </td>
+                            </tr>
+                            <tr class="car-hire-included__table-row">
+                                <th>Fuel Policy:</th>
+                                <td class="car-hire-included__table-cell">
+                                    <!--ko text: fuelPolicy-->
+                                    <!--/ko-->
+                                </td>
+                            </tr>
+                            <tr class="car-hire-included__table-row">
+                                <th>Deposit Excess:</th>
+                                <td class="car-hire-included__table-cell">
+                                    <!--ko text: depositExcess-->
+                                    <!--/ko-->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <ul class="car-hire-included__list">
+                        <li class="car-hire-included__list-item"><strong>Included for FREE</strong></li>
+                        <!-- ko foreach: includedItems -->
+                        <!--/ko-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="modal-provider-rating" class="holidays-modal all-border-box" aria-hidden="true" role="dialog" data-small-modal="">
+            <div class="holidays-modal__content scrollable-area">
+                <div class="holidays-modal__header">
+                    <i class="fa fa-close holidays-modal__close" data-modal-close=""></i>
+                    <h4 class="holidays-modal__title"><!--ko text: ratingVendorName--><!--/ko--> rating at Majorca (Palma) PMI</h4>
+                </div>
+                <div class="holidays-modal__body">
+                    <div class="provider-rating clearfix">
+                        <div class="provider-rating__info">
+                            <img data-bind="attr: { src: ratingVendorImage, alt: ratingVendorName }">
+                            <div class="provider-rating__info-text">
+                                <p class="provider-rating__score no-bm">
+                                    <!--ko text: ratingRatingOutOfTen-->
+                                    <!--/ko-->
+                                    <!--ko text: ratingRatingGroup-->
+                                    <!--/ko-->
+                                </p>
+                                <p class="no-bm no-tm">Based on
+                                    <!--ko text: ratingTotalCustomerReviews-->
+                                    <!--/ko-->customer reviews</p>
+                            </div>
+                        </div>
+                        <ul class="provider-rating__list">
+                            <li class="provider-rating__list-item"><span class="provider-rating__list-score"><!--ko text: ratingValueForMoney--><!--/ko--></span> Overall value for money</li>
+                            <li class="provider-rating__list-item"><span class="provider-rating__list-score"><!--ko text: ratingCarCleanliness--><!--/ko--></span> Cleanliness of the car</li>
+                            <li class="provider-rating__list-item"><span class="provider-rating__list-score"><!--ko text: ratingRentalDeskServiceLevel--><!--/ko--></span> Service at the rental desk</li>
+                            <li class="provider-rating__list-item"><span class="provider-rating__list-score"><!--ko text: ratingPickupReview--><!--/ko--></span> Car hire pick-up process</li>
+                            <li class="provider-rating__list-item"><span class="provider-rating__list-score"><!--ko text: ratingDropOffReview--><!--/ko--></span> Car hire drop-off process</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="holidays-modal__footer clearfix">
+
+                </div>
+            </div>
+        </div>
+        <div data-id-carhire-termsconditions="" id="modal-car-hire-terms-conditions" class="holidays-modal all-border-box" aria-hidden="true">
+
+            <div id="car-hire-terms-conditions" class="car-hire-box__terms-conditions__content holidays-modal__content scrollable-area">
+
+                <div class="holidays-modal__header">
+                    <i class="fa fa-close holidays-modal__close" data-modal-close=""></i>
+                    <h2 class="holidays-modal__title">Terms &amp; Conditions</h2>
+                </div>
+
+                <div class="terms-conditions__items holidays-modal__body" data-bind="foreach: termsConditions"></div>
+
+            </div>
+
+        </div>
+        <div data-id-carhire-driveragecharge="" id="modal-driver-age-charge" class="holidays-modal all-border-box" aria-hidden="true" role="dialog" data-small-modal="">
+            <div class="holidays-modal__content scrollable-area">
+                <div class="holidays-modal__header">
+                    <i class="fa fa-close holidays-modal__close" data-modal-close=""></i>
+                    <h4 class="holidays-modal__title">Supplements</h4>
+                </div>
+                <div class="holidays-modal__body">
+                    <h4></h4>
+                    <div class="">
+                        <p class="no-tm no-bm">The rental desk will explain what supplements have been added. You'll need to pay any additional charges at the rental desk in the local currency. Supplements can include:</p>
+                        <ul>
+                            <li>Out-of-hours pick-up/drop-off</li>
+                            <li>Border crossing</li>
+                            <li>Winter tyres</li>
+                            <li>Airport fees</li>
+                            <li>Young or senior drivers</li>
+                        </ul>
+                    </div>
+                    <br>
+                    <h2>Further details on driver age</h2>
+                    <div class="" data-bind="foreach: driverAgeChargeContent"></div>
+                </div>
+            </div>
+        </div>
+        <div class="insurance-block all-border-box hidden" id="carhire-insurance-section">
+            <div class="insurance-block__header clearfix">
+                <h4 class="insurance-block__title ">Damage Refund Insurance</h4>
+            </div>
+            <div class="insurance-block__content clearfix">
+                <div class="insurance-block__body">
+                    <div class="insurance-block__body-text ">
+                        <p>When you pick up your hire car, the supplier will hold a deposit on your credit card. If the car is damaged, stolen or you lose the keys, you could pay an excess of up to £2,500. Damage Refund Insurance protects you from these
+                            costs, by giving you a full refund for any excess you have paid. </p>
+                        <p>If you want this cover, call Jet2carhire on 0800 086 8883 with your car hire reference after booking.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div data-id-carhire-pricingsummary="" class="car-price-breakdown hidden" data-bind="css: {hidden : hideSummary}">
+            F
+            <table class="car-price-breakdown__table">
+                <thead class="car-price-breakdown__header">
+                    <tr class="car-price-breakdown__row">
+                        <th class="car-price-breakdown__header-cell car-price-breakdown__cell--wide">
+                            <span class="">Car hire summary</span>
+                        </th>
+                        <th class="car-price-breakdown__header-cell">
+                            <span class="">Pay on pickup</span>
+                        </th>
+                        <th class="car-price-breakdown__header-cell">
+                            <span class="">Added to holiday</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="car-price-breakdown__body">
+                    <!-- ko foreach: carhirePricingItems -->
+                    <!-- /ko -->
+                </tbody>
+                <tfoot data-carhire-totalrow="" class="car-price-breakdown__footer">
+                    <tr class="car-price-breakdown__row">
+                        <td class="car-price-breakdown__cell car-price-breakdown__cell--wide"><span class=""><strong>Total</strong></span></td>
+                        <td class="car-price-breakdown__cell"><span class=""><strong><!-- ko text: payOnPickupTotal -->£0.00<!-- /ko --></strong></span></td>
+                        <td class="car-price-breakdown__cell"><span class=""><strong><!-- ko text: addedToHolidayTotal -->£0.00<!-- /ko --></strong></span></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+    <div class="holidays-modal__content">
+
+        <div class="car-hire-loader  all-border-box">
+            <h3 class="car-hire-loader__title">We are searching for your perfect car…</h3>
+            <div class="car-hire-loader__loaders-container clearfix">
+
+                <!-- ko foreach: carHireProviders -->
+                <div class="car-hire-loader__block" data-bind="attr: { 'data-animation-delay': delay }" data-animation-delay="100">
+                    <div class="car-hire-loader__img-container">
+                        <img data-bind="attr: { 'src': src, 'alt': alt }" class="car-hire-loader__img" src="https://www.jet2holidays.com/-/media/providers/carhire/budget_small.jpg" alt="budget">
+                    </div>
+                    <div class="car-hire-loader__round">
+                        <svg class="svg-icon svg-icon--spinner car-hire-loader__spinner" width="63px" height="63px" viewBox="0 0 63 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+                            <title>icon-spinner</title>
+                            <defs>
+                                <linearGradient x1="50%" y1="11.0712466%" x2="50%" y2="90.8288043%" id="linearGradient-1">
+                                    <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="0%"></stop>
+                                    <stop stop-color="#4A90E2" offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="icon-spinner2" fill="url(#linearGradient-1)">
+                                    <path d="M55,32 C55,19.2974508 44.7025492,9 32,9 C19.2974508,9 9,19.2974508 9,32 C9,44.7025492 19.2974508,55 32,55 C44.7025492,55 55,44.7025492 55,32 Z M13,32 C13,21.5065898 21.5065898,13 32,13 C42.4934102,13 51,21.5065898 51,32 C51,42.4934102 42.4934102,51 32,51 C21.5065898,51 13,42.4934102 13,32 Z" id="Oval-4"></path>
+                                </g>
+                            </g>
+                        </svg>
+                        <i class="car-hire-loader__tick fa fa-check"></i>
+                    </div>
+                </div>
+
+                <div class="car-hire-loader__block" data-bind="attr: { 'data-animation-delay': delay }" data-animation-delay="200">
+                    <div class="car-hire-loader__img-container">
+                        <img data-bind="attr: { 'src': src, 'alt': alt }" class="car-hire-loader__img" src="https://www.jet2holidays.com/-/media/providers/carhire/europcar_small.jpg" alt="europcar">
+                    </div>
+                    <div class="car-hire-loader__round">
+                        <svg class="svg-icon svg-icon--spinner car-hire-loader__spinner" width="63px" height="63px" viewBox="0 0 63 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+                            <title>icon-spinner</title>
+                            <defs>
+                                <linearGradient x1="50%" y1="11.0712466%" x2="50%" y2="90.8288043%" id="linearGradient-1">
+                                    <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="0%"></stop>
+                                    <stop stop-color="#4A90E2" offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="icon-spinner2" fill="url(#linearGradient-1)">
+                                    <path d="M55,32 C55,19.2974508 44.7025492,9 32,9 C19.2974508,9 9,19.2974508 9,32 C9,44.7025492 19.2974508,55 32,55 C44.7025492,55 55,44.7025492 55,32 Z M13,32 C13,21.5065898 21.5065898,13 32,13 C42.4934102,13 51,21.5065898 51,32 C51,42.4934102 42.4934102,51 32,51 C21.5065898,51 13,42.4934102 13,32 Z" id="Oval-4"></path>
+                                </g>
+                            </g>
+                        </svg>
+                        <i class="car-hire-loader__tick fa fa-check"></i>
+                    </div>
+                </div>
+
+                <div class="car-hire-loader__block" data-bind="attr: { 'data-animation-delay': delay }" data-animation-delay="300">
+                    <div class="car-hire-loader__img-container">
+                        <img data-bind="attr: { 'src': src, 'alt': alt }" class="car-hire-loader__img" src="https://www.jet2holidays.com/-/media/providers/carhire/hertz_small.jpg" alt="hertz">
+                    </div>
+                    <div class="car-hire-loader__round">
+                        <svg class="svg-icon svg-icon--spinner car-hire-loader__spinner" width="63px" height="63px" viewBox="0 0 63 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+                            <title>icon-spinner</title>
+                            <defs>
+                                <linearGradient x1="50%" y1="11.0712466%" x2="50%" y2="90.8288043%" id="linearGradient-1">
+                                    <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="0%"></stop>
+                                    <stop stop-color="#4A90E2" offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="icon-spinner2" fill="url(#linearGradient-1)">
+                                    <path d="M55,32 C55,19.2974508 44.7025492,9 32,9 C19.2974508,9 9,19.2974508 9,32 C9,44.7025492 19.2974508,55 32,55 C44.7025492,55 55,44.7025492 55,32 Z M13,32 C13,21.5065898 21.5065898,13 32,13 C42.4934102,13 51,21.5065898 51,32 C51,42.4934102 42.4934102,51 32,51 C21.5065898,51 13,42.4934102 13,32 Z" id="Oval-4"></path>
+                                </g>
+                            </g>
+                        </svg>
+                        <i class="car-hire-loader__tick fa fa-check"></i>
+                    </div>
+                </div>
+
+                <div class="car-hire-loader__block" data-bind="attr: { 'data-animation-delay': delay }" data-animation-delay="400">
+                    <div class="car-hire-loader__img-container">
+                        <img data-bind="attr: { 'src': src, 'alt': alt }" class="car-hire-loader__img" src="https://www.jet2holidays.com/-/media/providers/carhire/avis_small.jpg" alt="avis">
+                    </div>
+                    <div class="car-hire-loader__round">
+                        <svg class="svg-icon svg-icon--spinner car-hire-loader__spinner" width="63px" height="63px" viewBox="0 0 63 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+                            <title>icon-spinner</title>
+                            <defs>
+                                <linearGradient x1="50%" y1="11.0712466%" x2="50%" y2="90.8288043%" id="linearGradient-1">
+                                    <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="0%"></stop>
+                                    <stop stop-color="#4A90E2" offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="icon-spinner2" fill="url(#linearGradient-1)">
+                                    <path d="M55,32 C55,19.2974508 44.7025492,9 32,9 C19.2974508,9 9,19.2974508 9,32 C9,44.7025492 19.2974508,55 32,55 C44.7025492,55 55,44.7025492 55,32 Z M13,32 C13,21.5065898 21.5065898,13 32,13 C42.4934102,13 51,21.5065898 51,32 C51,42.4934102 42.4934102,51 32,51 C21.5065898,51 13,42.4934102 13,32 Z" id="Oval-4"></path>
+                                </g>
+                            </g>
+                        </svg>
+                        <i class="car-hire-loader__tick fa fa-check"></i>
+                    </div>
+                </div>
+
+                <div class="car-hire-loader__block" data-bind="attr: { 'data-animation-delay': delay }" data-animation-delay="500">
+                    <div class="car-hire-loader__img-container">
+                        <img data-bind="attr: { 'src': src, 'alt': alt }" class="car-hire-loader__img" src="https://www.jet2holidays.com/-/media/providers/carhire/thrifty_small.jpg" alt="thrifty">
+                    </div>
+                    <div class="car-hire-loader__round">
+                        <svg class="svg-icon svg-icon--spinner car-hire-loader__spinner" width="63px" height="63px" viewBox="0 0 63 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+                            <title>icon-spinner</title>
+                            <defs>
+                                <linearGradient x1="50%" y1="11.0712466%" x2="50%" y2="90.8288043%" id="linearGradient-1">
+                                    <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="0%"></stop>
+                                    <stop stop-color="#4A90E2" offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="icon-spinner2" fill="url(#linearGradient-1)">
+                                    <path d="M55,32 C55,19.2974508 44.7025492,9 32,9 C19.2974508,9 9,19.2974508 9,32 C9,44.7025492 19.2974508,55 32,55 C44.7025492,55 55,44.7025492 55,32 Z M13,32 C13,21.5065898 21.5065898,13 32,13 C42.4934102,13 51,21.5065898 51,32 C51,42.4934102 42.4934102,51 32,51 C21.5065898,51 13,42.4934102 13,32 Z" id="Oval-4"></path>
+                                </g>
+                            </g>
+                        </svg>
+                        <i class="car-hire-loader__tick fa fa-check"></i>
+                    </div>
+                </div>
+
+                <div class="car-hire-loader__block" data-bind="attr: { 'data-animation-delay': delay }" data-animation-delay="600">
+                    <div class="car-hire-loader__img-container">
+                        <img data-bind="attr: { 'src': src, 'alt': alt }" class="car-hire-loader__img" src="https://www.jet2holidays.com/-/media/providers/carhire/alamo_small.jpg" alt="alamo">
+                    </div>
+                    <div class="car-hire-loader__round">
+                        <svg class="svg-icon svg-icon--spinner car-hire-loader__spinner" width="63px" height="63px" viewBox="0 0 63 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+                            <title>icon-spinner</title>
+                            <defs>
+                                <linearGradient x1="50%" y1="11.0712466%" x2="50%" y2="90.8288043%" id="linearGradient-1">
+                                    <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="0%"></stop>
+                                    <stop stop-color="#4A90E2" offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="icon-spinner2" fill="url(#linearGradient-1)">
+                                    <path d="M55,32 C55,19.2974508 44.7025492,9 32,9 C19.2974508,9 9,19.2974508 9,32 C9,44.7025492 19.2974508,55 32,55 C44.7025492,55 55,44.7025492 55,32 Z M13,32 C13,21.5065898 21.5065898,13 32,13 C42.4934102,13 51,21.5065898 51,32 C51,42.4934102 42.4934102,51 32,51 C21.5065898,51 13,42.4934102 13,32 Z" id="Oval-4"></path>
+                                </g>
+                            </g>
+                        </svg>
+                        <i class="car-hire-loader__tick fa fa-check"></i>
+                    </div>
+                </div>
+                <!-- /ko -->
+
+            </div>
+        </div>
+
+        <div class="holidays-modal__hidden" id="car-hire-results-panel">
+
+            <div class="holidays-modal__header">
+                <i class="fa fa-close holidays-modal__close" data-modal-close=""></i>
+                <h4 class="holidays-modal__title" data-bind="text: resultTitle()">Choose from 0 cars for </h4>
+                <div class="clearfix">
+
+                    <div class="table-filter">
+                        <p class="table-filter__label" data-bind="html: filterCarTypesLabel"><strong>Car category</strong> (0 options)</p>
+                        <div class="select-option clearfix">
+                            <i class="fa fa-chevron-down"></i>
+                            <div class="select-container">
+                                <select id="Car type" name="Car type" data-bind="value: selectedCarType, foreach: filterCarTypes"></select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="table-filter">
+                        <p class="table-filter__label" data-bind="html: filterProvidersLabel"><strong>Providers</strong> (0 options)</p>
+                        <div class="select-option clearfix">
+                            <i class="fa fa-chevron-down"></i>
+                            <div class="select-container">
+                                <select id="Car hire providers" name="Car hire providers" data-bind="value: selectedProvider, foreach: filterProviders"></select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="table-filter">
+                        <p class="table-filter__label" data-bind="html: filterTransmissionLabel"><strong>Transmission</strong> (0 options)</p>
+                        <div class="select-option clearfix">
+                            <i class="fa fa-chevron-down"></i>
+                            <div class="select-container">
+                                <select id="transmission" name="transmission" data-bind="value: selectedTransmission, foreach: filterTransmission"></select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="table-filter">
+                        <p class="table-filter__label"><strong>Sort by</strong></p>
+                        <div class="select-option clearfix">
+                            <i class="fa fa-chevron-down"></i>
+                            <div class="select-container">
+                                <select id="ddlSortBy" name="Sort by" data-bind="value: selectedSortBy">
+                                <option selected="selected" value="asc">Price (low - high)</option>
+                                <option value="desc">Price (high - low)</option>
+                            </select>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="holidays-modal__body scrollable-area">
+
+                <table class="sortable-table sortable-table__selection" data-cols="4">
+                    <thead class="sortable-table__head">
+                        <tr class="sortable-table__row sortable-table__row--header">
+                            <th class="sortable-table__th sortable-table__th--car-type sorttable_nosort">
+                                Car category
+                            </th>
+                            <th class="sortable-table__th sortable-table__th--car-details sorttable_nosort">
+                                Car details
+                            </th>
+                            <th class="sortable-table__th sortable-table__th--price">
+
+                                <span data-sort-by="asc" data-bind="click: function(){ selectedSortBy('desc') }, style: { display: selectedSortBy() == 'asc' ? 'block' : 'none' }" style="display: block;">
+                                <i class="fa-span fa fa-chevron-up fa-chevron--sorting"></i>
+                                Price &amp; Provider
+                            </span>
+                                <span data-sort-by="desc" data-bind="click: function(){ selectedSortBy('asc') }, style: { display: selectedSortBy() == 'asc' ? 'none' : 'block' }" style="display: none;">
+                                <i class="fa-span fa fa-chevron-down fa-chevron--sorting"></i>
+                                Price &amp; Provider
+                            </span>
+
+                            </th>
+                            <th class="sortable-table__th sortable-table__th--tick sorttable_nosort">
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="sortable-table__body">
+
+                        <!-- ko foreach: vehiclesFiltered -->
+                        <!-- /ko -->
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+                <div class="search-results--api-error">
+                    <span class="">Oops, something went wrong. Hit cancel to try again or add car hire after booking.</span>
+                </div>
+                <div class="search-results--no-results">
+                    <span class="">Sorry, there are no suitable cars for this driver. </span>
+                </div>
+
+            </div>
+            <div class="holidays-modal__footer clearfix">
+                <div class="holidays-modal__btns">
+                    <div class="holidays-modal__btn-container">
+                        <a data-modal-close="" href="#" class="btn--medium btn--white-red">Cancel</a>
+                    </div>
+                    <div class="holidays-modal__btn-container">
+                        <a id="btnCarhireResultSelected" data-car-hire-step-trigger="" href="#" class="btn--medium btn--blue">Done</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="provider-rating clearfix">
+        <div class="provider-rating__info">
+            <img data-bind="attr: { src: ratingVendorImage, alt: ratingVendorName }" alt="Thrifty" src="https://cdn.cartrawler.com/otaimages/vendor/thrifty.jpg">
+            <div class="provider-rating__info-text">
+                <p class="provider-rating__score no-bm">
+                    <!--ko text: ratingRatingOutOfTen-->7.5
+                    <!--/ko-->
+                    <!--ko text: ratingRatingGroup-->- Good
+                    <!--/ko-->
+                </p>
+                <p class="no-bm no-tm">Based on
+                    <!--ko text: ratingTotalCustomerReviews-->3088
+                    <!--/ko-->customer reviews</p>
+            </div>
+        </div>
+        <ul class="provider-rating__list">
+            <li class="provider-rating__list-item"><span class="provider-rating__list-score"><!--ko text: ratingValueForMoney-->7<!--/ko--></span> Overall value for money</li>
+            <li class="provider-rating__list-item"><span class="provider-rating__list-score"><!--ko text: ratingCarCleanliness-->8.1<!--/ko--></span> Cleanliness of the car</li>
+            <li class="provider-rating__list-item"><span class="provider-rating__list-score"><!--ko text: ratingRentalDeskServiceLevel-->7.1<!--/ko--></span> Service at the rental desk</li>
+            <li class="provider-rating__list-item"><span class="provider-rating__list-score"><!--ko text: ratingPickupReview-->6.7<!--/ko--></span> Car hire pick-up process</li>
+            <li class="provider-rating__list-item"><span class="provider-rating__list-score"><!--ko text: ratingDropOffReview-->8.6<!--/ko--></span> Car hire drop-off process</li>
+        </ul>
+    </div>
+
+
+    <div class="car-hire-box car-hire-box--added" data-added-car="" data-bind="css: {hidden : hideCarDetails}, attr: {stepid: stepId}" stepid="1">
+        <div class="car-hire-box__inner clearfix">
+            <!-- <i class="fa fa-close car-hire-box__close" data-bind="click: $parent.hideCar"></i> -->
+
+            <div class="car-hire-box__left-col">
+                <p class="no-tm no-bm car-hire-box__car-number car-hire-box__car-number">
+                    <strong data-bind="html: getDriverCaption('<span>Car {number}</span>Driver')"><span>Car 1</span>Driver</strong>
+                </p>
+                <div class="select-option clearfix">
+                    <i class="fa fa-chevron-down"></i>
+                    <select data-id-details-driver-dropdown="" class="" data-bind="attr: {id: driverDropdownId}, options: driverlist, optionsText: 'name', optionsValue:'id',
+                                        value: selectedDriverId" id="driverStep_1"><option value="1">oo ppp</option></select>
+                </div>
+                <div class="transfer-selection-driver-list__error hidden" data-bind="css: {hidden: !showDriverError()}">
+                    <span><!--ko text: driverError -->Please select driver<!--/ko--></span>
+                </div>
+                <div class="car-hire-box__type-select ">
+                    <p class="no-bm ">
+                        <strong>Car category</strong>
+                    </p>
+                    <div class="car-hire-box__select-car">
+                        <span class="car-hire-box__select-car-text "><!--ko text: selectedCar().VehicleDetails.VehicleClass -->Mini<!--/ko--></span>
+                        <a href="#" data-bind="click: $parent.viewCarHireOptions" class="car-hire-box__select-car-link " data-modal-id="car-selection">Change</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car-hire-box__content" data-bind="css: {hidden : showSearchAgain}">
+                <div class="car-hire-box__content-inner car-hire-box__content-inner--car-selection">
+                    <div class="car-selection clearfix">
+                        <div class="car-selection__col">
+                            <p class="car-selection__car-type no-tm no-bm ">
+                                <strong><!--ko text: selectedCar().VehicleDetails.VehicleClass -->Mini<!--/ko--></strong>
+                            </p>
+                            <p class="car-selection__car-model no-tm ">(
+                                <!--ko text: selectedCar().VehicleDetails.MakeModel -->Fiat 500 Lounge or similar
+                                <!--/ko-->)</p>
+
+                            <div class="car-selection__img-container car-selection__img-container--recommended">
+                                <img style="width:180px; height:120px;" alt="attr: {src: selectedCar().VehicleDetails.MakeModel}" class="car-selection__img " data-bind="attr: {src: selectedCar().VehicleDetails.ImageUrl}" src="https://cdn.cartrawler.com/otaimages/fiat/500_nologo.jpg">
+                            </div>
+
+                            <table class="car-selection__details">
+                                <tbody>
+                                    <tr class="car-selection__details-row">
+                                        <td>
+                                            <i class="fa-span fa fa-users"></i>
+                                            <span class=""><!--ko text: selectedCar().VehicleDetails.PassengerQuantity -->4<!--/ko--> Passengers</span>
+                                        </td>
+                                        <td>
+                                            <i class="fa-span fa fa-suitcase"></i>
+                                            <span class=""><!--ko text: selectedCar().VehicleDetails.BaggageQuantity -->1<!--/ko--> bags</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="car-selection__details-row">
+                                        <td>
+                                            <i class="fa-span fa icon-gear-alt"></i>
+                                            <span class=""><!--ko text: selectedCar().VehicleDetails.Transmission -->Manual<!--/ko--></span>
+                                        </td>
+                                        <td>
+                                            <i class="fa-span fa icon-car-door"></i>
+                                            <span class=""><!--ko text: selectedCar().VehicleDetails.Doors -->3<!--/ko--> door</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="car-selection__details-row">
+                                        <td>
+                                            <i class="fa-span fa icon-petrol"></i>
+                                            <span class=""><!--ko text: selectedCar().VehicleDetails.FuelType -->Petrol<!--/ko--></span>
+                                        </td>
+                                        <td>
+                                            <i class="fa-span fa icon-ac"></i>
+                                            <span class="">
+                                                <!-- ko if: selectedCar().VehicleDetails.AirConditioning -->
+                                                Yes
+                                                <!--/ko-->
+                                                <!-- ko if: !selectedCar().VehicleDetails.AirConditioning --><!--/ko-->
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="car-selection__provider clearfix">
+                                <img width="90" alt="attr: {src: selectedCar().VendorDetails.VendorName}" class="car-selection__provider-img " data-bind="attr: {src: selectedCar().VendorDetails.VendorImageUrl}" src="https://cdn.cartrawler.com/otaimages/vendor/EUROPCAR.jpg"><br>
+                                <p data-bind="visible: showVendorRating(), click: $parent.providerRatingPopup" data-modal-id="provider-rating" class="car-selection__provider-rating no-bm ">
+                                    <span>Rating: </span>
+                                    <strong class="car-selection__provider-number ">
+                                                <!--ko text: selectedCar().VendorDetails.RatingOutOfTen-->7.6<!--/ko-->/10<!--ko text: (selectedCar().VendorDetails.RatingGroup ? ' - ' + selectedCar().VendorDetails.RatingGroup : '')--> - Good<!--/ko-->
+                                            </strong><br>
+                                    <a class="car-selection__provider-rating-based-on " data-bind="html: getRatingsBasedOnText('Based on {0} customer reviews')">Based on 6298 customer reviews</a>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="car-selection__col">
+                            <div class="car-selection__price-section-wrapper">
+                                <div class="car-selection__price-section">
+                                    <div class="car-selection__price-info">
+                                        <p class="no-bm no-tm ">
+                                            <strong><!--ko text: selectedCar().VehicleDetails.VehicleClass -->Mini<!--/ko--></strong>
+                                        </p>
+                                        <a href="#" data-bind="click: $parent.whatsIncludedPopup" class="car-selection__link " data-modal-id="whats-included">
+                                                    More information
+                                                </a>
+                                    </div>
+                                    <div class="car-selection__price-cost">
+                                        <p class="no-tm no-bm ">
+                                            <strong>£<!--ko text: selectedCar().PayNow.toFixed(2) -->281.35<!--/ko--></strong>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="car-selection__price-section">
+                                    <div class="car-selection__price-info">
+                                        <p class="no-bm no-tm ">
+                                            <strong>Extras (pay on pickup)</strong>
+                                        </p>
+                                        <p class="car-selection__price-details no-bm no-tm " data-bind="text: extrasText">E.g. Booster seats, sat navs</p>
+                                        <a data-bind="click: $parent.extrasPopup" class="car-selection__link " href="#" data-modal-id="extras">Add / Edit (<!--ko text: extrasCount -->0<!--/ko-->)</a>
+                                    </div>
+                                    <div class="car-selection__price-cost">
+                                        <p class="no-tm no-bm ">
+                                            <strong>£<!--ko text: extrasCost -->0.00<!--/ko--></strong>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="car-selection__price-section" data-bind="css: {hidden: selectedCar().PayOnArrival == 0}">
+                                    <div class="car-selection__price-info">
+                                        <p class="no-bm no-tm ">
+                                            <strong>Supplements (pay on pickup)</strong>
+                                        </p>
+                                        <a data-bind="click: $parent.driverAgeChargePopup" class="car-selection__link " href="#" data-modal-id="driver-age-charge">
+                                                What's this?
+                                            </a>
+                                    </div>
+                                    <div class="car-selection__price-cost">
+                                        <p class="no-tm no-bm ">
+                                            <strong>£<!--ko text: selectedCar().PayOnArrival.toFixed(2)-->184.24<!--/ko--></strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="car-selection__price-footer">
+                                <p class="car-selection__total">
+                                    <strong>
+                                                <span class="">Added to holiday:</span>
+                                                <span class="car-selection__total-price ">£<!--ko text: selectedCar().PayNow.toFixed(2) -->281.35<!--/ko--></span>
+                                            </strong>
+                                </p>
+                                <p class="car-selection__price-per-day ">£
+                                    <!--ko text: selectedCar().PerDayPrice.toFixed(2) -->20.10
+                                    <!--/ko-->per day</p>
+                                <button class="transfer-btn btn--medium btn--blue btn--added" data-transfer-type="car" data-summary-to-show="[&quot;car-individual-summary&quot;, &quot;car-hire-summary&quot;]">
+                                            <span class="transfer-btn__text ">Add to holiday</span>
+                                            <span class="transfer-btn__added ">Added</span>
+                                        </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car-hire-box__content-inner car-hire-box__content-inner--driver-age-confirm hidden" data-searchagain="" data-bind="css: {hidden : !showSearchAgain()}">
+                <div class="driver-age-confirm">
+                    <div class="driver-age-confirm__inner">
+                        <p class="driver-age-confirm__title" data-bind="css: {hidden : invalidDriverAgeGroup() || driverUnder18()}">
+                            Due to the driver’s age, this option isn’t available
+                        </p>
+                        <p class="driver-age-confirm__text" data-bind="css: {hidden : invalidDriverAgeGroup() || driverUnder18()}">
+                            To keep this driver, you’ll need to search again
+                        </p>
+                        <p class="driver-age-confirm__title hidden" data-bind="css: {hidden : !invalidDriverAgeGroup() || driverUnder18()}">
+                            Due to the driver’s age, this option isn’t available
+                        </p>
+                        <p class="driver-age-confirm__text hidden" data-bind="css: {hidden : !invalidDriverAgeGroup() || driverUnder18()}">
+                            You’ll need to search again or change driver
+                        </p>
+                        <p class="driver-age-confirm__title hidden" data-bind="css: {hidden : !driverUnder18() || invalidDriverAgeGroup()}">
+                            This driver is no longer old enough to hire a car
+                        </p>
+                        <p class="driver-age-confirm__text hidden" data-bind="css: {hidden : !driverUnder18() || invalidDriverAgeGroup()}">
+                            To keep car hire, you'll need to change driver
+                        </p>
+                        <footer class="driver-age-confirm__footer clearfix">
+                            <ul class="driver-age-confirm__list">
+                                <li class="driver-age-confirm__item">
+                                    <a class="driver-age-confirm__btn btn--medium btn--white-red driver-age-confirm__btn--cancel" data-bind="click: cancelSearchAgain, css: {hidden : invalidDriverAgeGroup() || driverUnder18()}">
+                                                Cancel
+                                            </a>
+                                    <a class="driver-age-confirm__btn btn--medium btn--white-red driver-age-confirm__btn--cancel hidden" data-bind="click:  $parent.resetCar, css: {hidden : !invalidDriverAgeGroup() || driverUnder18()}">
+                                                Change driver
+                                            </a>
+                                    <a class="driver-age-confirm__btn btn--medium btn--white-red driver-age-confirm__btn--cancel hidden" data-bind="click:  $parent.removeCar, css: {hidden : invalidDriverAgeGroup() || !driverUnder18()}">
+                                                Remove car
+                                            </a>
+                                </li>
+                                <li class="driver-age-confirm__item">
+                                    <a data-bind="click: $parent.viewCarHireOptions, css: {hidden : driverUnder18()}" class="btn--medium btn--blue driver-age-confirm__btn driver-age-confirm__btn--confirm" data-modal-id="car-selection">
+                                                Search again
+                                            </a>
+                                    <a data-bind="click: $parent.resetCar, css: {hidden : !driverUnder18()}" class="btn--medium btn--blue driver-age-confirm__btn driver-age-confirm__btn--confirm hidden" data-modal-id="car-selection">
+                                                Change driver
+                                            </a>
+                                </li>
+                            </ul>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+
+            <a data-bind="click: $parent.termsConditionsPopup" data-modal-id="car-hire-terms-conditions" class="car-hire-box__terms-conditions ">
+                    Terms &amp; Conditions
+                </a>
+
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+<script>
+    // Returns a function, that, as long as it continues to be invoked, will not
+    // be triggered. The function will be called after it stops being called for
+    // N milliseconds. If `immediate` is passed, trigger the function on the
+    // leading edge, instead of the trailing.
+
+    function debounce(func, wait, immediate) {
+        var timeout;
+        return function() {
+            var context = this,
+                args = arguments;
+            var later = function() {
+                timeout = null;
+                if (!immediate) func.apply(context, args);
+            };
+            var callNow = immediate && !timeout;
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+            if (callNow) func.apply(context, args);
+        };
+    }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.4.2/velocity.min.js"></script>
+<script src="dist/js/modals.js"></script>
+<script src="dist/js/accordion.js"></script>
+
+</html>

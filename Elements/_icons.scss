@@ -1,0 +1,1004 @@
+@font-face {
+	font-family: "icons";
+	src: url('../assets/fonts/icons/icons.eot');
+	src: url('../assets/fonts/icons/icons.eot?#iefix') format('eot'),
+		url('../assets/fonts/icons/icons.woff') format('woff'),
+		url('../assets/fonts/icons/icons.ttf') format('truetype')
+}
+
+@mixin icon-styles {
+	font-family: "icons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	text-decoration: none;
+	text-transform: none;
+}
+
+%icon-styles {
+
+}
+
+%icon {
+	@include icon-styles;
+}
+
+[class^="icon-"],
+[class*=' icon-'] {
+	@include icon-styles;
+}
+
+.icon--tiny {
+	@include font-size(6px);
+}
+
+.icon--small {
+	@include font-size(8px);
+}
+
+.icon--medium {
+	@include font-size(12px);
+}
+
+.icon--large {
+	@include font-size(16px);
+}
+
+.icon--x-large {
+	@include font-size(20px);
+}
+
+.icon--huge {
+	@include font-size(35px);
+}
+
+.icon--red {
+	color: $jet2-red;
+}
+
+.icon--blue {
+	color: $holidays-dark-blue;
+}
+
+.icon--white {
+	color: #FFFFFF;
+}
+
+@function icon-char($filename) {
+	$char: "";
+
+	@if $filename == 'airport-lounge' {
+		$char: 'E001';
+	}
+	@if $filename == 'airport-tower' {
+		$char: 'E002';
+	}
+	@if $filename == 'alert' {
+		$char: 'E003';
+	}
+	@if $filename == 'arrow-back' {
+		$char: 'E004';
+	}
+	@if $filename == 'arrow-circle-left' {
+		$char: 'E005';
+	}
+	@if $filename == 'arrow-circle-right' {
+		$char: 'E006';
+	}
+	@if $filename == 'arrow-down' {
+		$char: 'E007';
+	}
+	@if $filename == 'arrow-left' {
+		$char: 'E008';
+	}
+	@if $filename == 'arrow-right' {
+		$char: 'E009';
+	}
+	@if $filename == 'arrow-small-bottom' {
+		$char: 'E00A';
+	}
+	@if $filename == 'arrow-small-left' {
+		$char: 'E00B';
+	}
+	@if $filename == 'arrow-small-right' {
+		$char: 'E00C';
+	}
+	@if $filename == 'arrow-small-up' {
+		$char: 'E00D';
+	}
+	@if $filename == 'arrow-up' {
+		$char: 'E00E';
+	}
+	@if $filename == 'automobile' {
+		$char: 'E00F';
+	}
+	@if $filename == 'awards' {
+		$char: 'E010';
+	}
+	@if $filename == 'bags' {
+		$char: 'E011';
+	}
+	@if $filename == 'beach' {
+		$char: 'E012';
+	}
+	@if $filename == 'beer' {
+		$char: 'E013';
+	}
+	@if $filename == 'bike' {
+		$char: 'E014';
+	}
+	@if $filename == 'briefcase' {
+		$char: 'E015';
+	}
+	@if $filename == 'bundles' {
+		$char: 'E016';
+	}
+	@if $filename == 'bus' {
+		$char: 'E017';
+	}
+	@if $filename == 'calendar' {
+		$char: 'E018';
+	}
+	@if $filename == 'car-ac' {
+		$char: 'E019';
+	}
+	@if $filename == 'car-doors' {
+		$char: 'E01A';
+	}
+	@if $filename == 'car-gears' {
+		$char: 'E01B';
+	}
+	@if $filename == 'car-parking' {
+		$char: 'E01C';
+	}
+	@if $filename == 'car-petrol' {
+		$char: 'E01D';
+	}
+	@if $filename == 'car' {
+		$char: 'E01E';
+	}
+	@if $filename == 'card-amex' {
+		$char: 'E01F';
+	}
+	@if $filename == 'card-visa' {
+		$char: 'E020';
+	}
+	@if $filename == 'check-in' {
+		$char: 'E021';
+	}
+	@if $filename == 'check' {
+		$char: 'E022';
+	}
+	@if $filename == 'chevron-down' {
+		$char: 'E023';
+	}
+	@if $filename == 'chevron-left' {
+		$char: 'E024';
+	}
+	@if $filename == 'chevron-right' {
+		$char: 'E025';
+	}
+	@if $filename == 'chevron-up-thin' {
+		$char: 'E026';
+	}
+	@if $filename == 'chevron-up' {
+		$char: 'E027';
+	}
+	@if $filename == 'childrens-meal' {
+		$char: 'E028';
+	}
+	@if $filename == 'city' {
+		$char: 'E029';
+	}
+	@if $filename == 'clock-o' {
+		$char: 'E02A';
+	}
+	@if $filename == 'clock' {
+		$char: 'E02B';
+	}
+	@if $filename == 'close-all' {
+		$char: 'E02C';
+	}
+	@if $filename == 'close-circle-outline' {
+		$char: 'E02D';
+	}
+	@if $filename == 'close-circle' {
+		$char: 'E02E';
+	}
+	@if $filename == 'close' {
+		$char: 'E02F';
+	}
+	@if $filename == 'coffee' {
+		$char: 'E030';
+	}
+	@if $filename == 'cog' {
+		$char: 'E031';
+	}
+	@if $filename == 'credit-card' {
+		$char: 'E032';
+	}
+	@if $filename == 'currency' {
+		$char: 'E033';
+	}
+	@if $filename == 'cutlery' {
+		$char: 'E034';
+	}
+	@if $filename == 'date' {
+		$char: 'E035';
+	}
+	@if $filename == 'discount' {
+		$char: 'E036';
+	}
+	@if $filename == 'email' {
+		$char: 'E037';
+	}
+	@if $filename == 'envelope' {
+		$char: 'E038';
+	}
+	@if $filename == 'error' {
+		$char: 'E039';
+	}
+	@if $filename == 'expand-all' {
+		$char: 'E03A';
+	}
+	@if $filename == 'extra-leg-room' {
+		$char: 'E03B';
+	}
+	@if $filename == 'facebook' {
+		$char: 'E03C';
+	}
+	@if $filename == 'favorite-on' {
+		$char: 'E03D';
+	}
+	@if $filename == 'favorite' {
+		$char: 'E03E';
+	}
+	@if $filename == 'floors' {
+		$char: 'E03F';
+	}
+	@if $filename == 'fullscreen' {
+		$char: 'E040';
+	}
+	@if $filename == 'golf' {
+		$char: 'E041';
+	}
+	@if $filename == 'google-plus' {
+		$char: 'E042';
+	}
+	@if $filename == 'hamburger' {
+		$char: 'E043';
+	}
+	@if $filename == 'holidays' {
+		$char: 'E044';
+	}
+	@if $filename == 'home' {
+		$char: 'E045';
+	}
+	@if $filename == 'hospital-o' {
+		$char: 'E046';
+	}
+	@if $filename == 'hotel' {
+		$char: 'E047';
+	}
+	@if $filename == 'infant' {
+		$char: 'E048';
+	}
+	@if $filename == 'info-circle' {
+		$char: 'E049';
+	}
+	@if $filename == 'info' {
+		$char: 'E04A';
+	}
+	@if $filename == 'instagram' {
+		$char: 'E04B';
+	}
+	@if $filename == 'insurance' {
+		$char: 'E04C';
+	}
+	@if $filename == 'key' {
+		$char: 'E04D';
+	}
+	@if $filename == 'lift' {
+		$char: 'E04E';
+	}
+	@if $filename == 'link' {
+		$char: 'E04F';
+	}
+	@if $filename == 'list' {
+		$char: 'E050';
+	}
+	@if $filename == 'live-chat' {
+		$char: 'E051';
+	}
+	@if $filename == 'live-times' {
+		$char: 'E052';
+	}
+	@if $filename == 'loader' {
+		$char: 'E053';
+	}
+	@if $filename == 'location' {
+		$char: 'E054';
+	}
+	@if $filename == 'lock' {
+		$char: 'E055';
+	}
+	@if $filename == 'luggage' {
+		$char: 'E056';
+	}
+	@if $filename == 'map' {
+		$char: 'E057';
+	}
+	@if $filename == 'mass-transit' {
+		$char: 'E058';
+	}
+	@if $filename == 'meals' {
+		$char: 'E059';
+	}
+	@if $filename == 'minus-outline' {
+		$char: 'E05A';
+	}
+	@if $filename == 'minus' {
+		$char: 'E05B';
+	}
+	@if $filename == 'money' {
+		$char: 'E05C';
+	}
+	@if $filename == 'moon-o' {
+		$char: 'E05D';
+	}
+	@if $filename == 'my-bookings' {
+		$char: 'E05E';
+	}
+	@if $filename == 'new' {
+		$char: 'E05F';
+	}
+	@if $filename == 'nights' {
+		$char: 'E060';
+	}
+	@if $filename == 'passenger' {
+		$char: 'E061';
+	}
+	@if $filename == 'passengers' {
+		$char: 'E062';
+	}
+	@if $filename == 'pencil' {
+		$char: 'E063';
+	}
+	@if $filename == 'phone' {
+		$char: 'E064';
+	}
+	@if $filename == 'pin' {
+		$char: 'E065';
+	}
+	@if $filename == 'plane-down' {
+		$char: 'E066';
+	}
+	@if $filename == 'plane-great-flights' {
+		$char: 'E067';
+	}
+	@if $filename == 'plane-left' {
+		$char: 'E068';
+	}
+	@if $filename == 'plane-right' {
+		$char: 'E069';
+	}
+	@if $filename == 'plane-up' {
+		$char: 'E06A';
+	}
+	@if $filename == 'plane' {
+		$char: 'E06B';
+	}
+	@if $filename == 'play-outline' {
+		$char: 'E06C';
+	}
+	@if $filename == 'play' {
+		$char: 'E06D';
+	}
+	@if $filename == 'plus-outline' {
+		$char: 'E06E';
+	}
+	@if $filename == 'plus' {
+		$char: 'E06F';
+	}
+	@if $filename == 'poi-activity' {
+		$char: 'E070';
+	}
+	@if $filename == 'poi-excurssion' {
+		$char: 'E071';
+	}
+	@if $filename == 'poi-food' {
+		$char: 'E072';
+	}
+	@if $filename == 'poi-nightlife' {
+		$char: 'E073';
+	}
+	@if $filename == 'poi-shopping' {
+		$char: 'E074';
+	}
+	@if $filename == 'poi-sightseeing' {
+		$char: 'E075';
+	}
+	@if $filename == 'pool' {
+		$char: 'E076';
+	}
+	@if $filename == 'print' {
+		$char: 'E077';
+	}
+	@if $filename == 'prohibited' {
+		$char: 'E078';
+	}
+	@if $filename == 'question' {
+		$char: 'E079';
+	}
+	@if $filename == 'quote-review' {
+		$char: 'E07A';
+	}
+	@if $filename == 'quote' {
+		$char: 'E07B';
+	}
+	@if $filename == 'refresh' {
+		$char: 'E07C';
+	}
+	@if $filename == 'resort-flight-checkin' {
+		$char: 'E07D';
+	}
+	@if $filename == 'review' {
+		$char: 'E07E';
+	}
+	@if $filename == 'room' {
+		$char: 'E07F';
+	}
+	@if $filename == 'search' {
+		$char: 'E080';
+	}
+	@if $filename == 'seats' {
+		$char: 'E081';
+	}
+	@if $filename == 'share' {
+		$char: 'E082';
+	}
+	@if $filename == 'signpost' {
+		$char: 'E083';
+	}
+	@if $filename == 'ski-mountain' {
+		$char: 'E084';
+	}
+	@if $filename == 'ski' {
+		$char: 'E085';
+	}
+	@if $filename == 'smile-boxed' {
+		$char: 'E086';
+	}
+	@if $filename == 'smile-o' {
+		$char: 'E087';
+	}
+	@if $filename == 'smile' {
+		$char: 'E088';
+	}
+	@if $filename == 'success' {
+		$char: 'E089';
+	}
+	@if $filename == 'suitcase' {
+		$char: 'E08A';
+	}
+	@if $filename == 'sun' {
+		$char: 'E08B';
+	}
+	@if $filename == 'tick-box' {
+		$char: 'E08C';
+	}
+	@if $filename == 'tick' {
+		$char: 'E08D';
+	}
+	@if $filename == 'ticket' {
+		$char: 'E08E';
+	}
+	@if $filename == 'tripadvisor' {
+		$char: 'E08F';
+	}
+	@if $filename == 'twitter' {
+		$char: 'E090';
+	}
+	@if $filename == 'user' {
+		$char: 'E091';
+	}
+	@if $filename == 'vegetarian' {
+		$char: 'E092';
+	}
+	@if $filename == 'warning' {
+		$char: 'E093';
+	}
+	@if $filename == 'wc' {
+		$char: 'E094';
+	}
+	@if $filename == 'whatsapp' {
+		$char: 'E095';
+	}
+	@if $filename == 'wheelchair' {
+		$char: 'E096';
+	}
+	@if $filename == 'youtube' {
+		$char: 'E097';
+	}
+	@return $char;
+}
+
+@mixin variable-icon-font($icon-code) {
+  content: #{"\"\\"}#{$icon-code + "\""};
+}
+
+@mixin icon($filename, $extend: false, $insert: before ) {
+	&:#{$insert} {
+		@if $extend {
+			@extend %icon;
+		}
+
+		$char: icon-char($filename);
+		@include variable-icon-font($char);
+	}
+}
+
+@mixin icon-code($filename, $extend: true) {
+	// @if $extend
+		//@extend %icon;
+		 @include icon-styles;
+
+	$char: icon-char($filename);
+	@include variable-icon-font($char);
+}
+
+.icon-airport-lounge {
+	@include icon('airport-lounge');
+}
+.icon-airport-tower {
+	@include icon('airport-tower');
+}
+.icon-alert {
+	@include icon('alert');
+}
+.icon-arrow-back {
+	@include icon('arrow-back');
+}
+.icon-arrow-circle-left {
+	@include icon('arrow-circle-left');
+}
+.icon-arrow-circle-right {
+	@include icon('arrow-circle-right');
+}
+.icon-arrow-down {
+	@include icon('arrow-down');
+}
+.icon-arrow-left {
+	@include icon('arrow-left');
+}
+.icon-arrow-right {
+	@include icon('arrow-right');
+}
+.icon-arrow-small-bottom {
+	@include icon('arrow-small-bottom');
+}
+.icon-arrow-small-left {
+	@include icon('arrow-small-left');
+}
+.icon-arrow-small-right {
+	@include icon('arrow-small-right');
+}
+.icon-arrow-small-up {
+	@include icon('arrow-small-up');
+}
+.icon-arrow-up {
+	@include icon('arrow-up');
+}
+.icon-automobile {
+	@include icon('automobile');
+}
+.icon-awards {
+	@include icon('awards');
+}
+.icon-bags {
+	@include icon('bags');
+}
+.icon-beach {
+	@include icon('beach');
+}
+.icon-beer {
+	@include icon('beer');
+}
+.icon-bike {
+	@include icon('bike');
+}
+.icon-briefcase {
+	@include icon('briefcase');
+}
+.icon-bundles {
+	@include icon('bundles');
+}
+.icon-bus {
+	@include icon('bus');
+}
+.icon-calendar {
+	@include icon('calendar');
+}
+.icon-car-ac {
+	@include icon('car-ac');
+}
+.icon-car-doors {
+	@include icon('car-doors');
+}
+.icon-car-gears {
+	@include icon('car-gears');
+}
+.icon-car-parking {
+	@include icon('car-parking');
+}
+.icon-car-petrol {
+	@include icon('car-petrol');
+}
+.icon-car {
+	@include icon('car');
+}
+.icon-card-amex {
+	@include icon('card-amex');
+}
+.icon-card-visa {
+	@include icon('card-visa');
+}
+.icon-check-in {
+	@include icon('check-in');
+}
+.icon-check {
+	@include icon('check');
+}
+.icon-chevron-down {
+	@include icon('chevron-down');
+}
+.icon-chevron-left {
+	@include icon('chevron-left');
+}
+.icon-chevron-right {
+	@include icon('chevron-right');
+}
+.icon-chevron-up-thin {
+	@include icon('chevron-up-thin');
+}
+.icon-chevron-up {
+	@include icon('chevron-up');
+}
+.icon-childrens-meal {
+	@include icon('childrens-meal');
+}
+.icon-city {
+	@include icon('city');
+}
+.icon-clock-o {
+	@include icon('clock-o');
+}
+.icon-clock {
+	@include icon('clock');
+}
+.icon-close-all {
+	@include icon('close-all');
+}
+.icon-close-circle-outline {
+	@include icon('close-circle-outline');
+}
+.icon-close-circle {
+	@include icon('close-circle');
+}
+.icon-close {
+	@include icon('close');
+}
+.icon-coffee {
+	@include icon('coffee');
+}
+.icon-cog {
+	@include icon('cog');
+}
+.icon-credit-card {
+	@include icon('credit-card');
+}
+.icon-currency {
+	@include icon('currency');
+}
+.icon-cutlery {
+	@include icon('cutlery');
+}
+.icon-date {
+	@include icon('date');
+}
+.icon-discount {
+	@include icon('discount');
+}
+.icon-email {
+	@include icon('email');
+}
+.icon-envelope {
+	@include icon('envelope');
+}
+.icon-error {
+	@include icon('error');
+}
+.icon-expand-all {
+	@include icon('expand-all');
+}
+.icon-extra-leg-room {
+	@include icon('extra-leg-room');
+}
+.icon-facebook {
+	@include icon('facebook');
+}
+.icon-favorite-on {
+	@include icon('favorite-on');
+}
+.icon-favorite {
+	@include icon('favorite');
+}
+.icon-floors {
+	@include icon('floors');
+}
+.icon-fullscreen {
+	@include icon('fullscreen');
+}
+.icon-golf {
+	@include icon('golf');
+}
+.icon-google-plus {
+	@include icon('google-plus');
+}
+.icon-hamburger {
+	@include icon('hamburger');
+}
+.icon-holidays {
+	@include icon('holidays');
+}
+.icon-home {
+	@include icon('home');
+}
+.icon-hospital-o {
+	@include icon('hospital-o');
+}
+.icon-hotel {
+	@include icon('hotel');
+}
+.icon-infant {
+	@include icon('infant');
+}
+.icon-info-circle {
+	@include icon('info-circle');
+}
+.icon-info {
+	@include icon('info');
+}
+.icon-instagram {
+	@include icon('instagram');
+}
+.icon-insurance {
+	@include icon('insurance');
+}
+.icon-key {
+	@include icon('key');
+}
+.icon-lift {
+	@include icon('lift');
+}
+.icon-link {
+	@include icon('link');
+}
+.icon-list {
+	@include icon('list');
+}
+.icon-live-chat {
+	@include icon('live-chat');
+}
+.icon-live-times {
+	@include icon('live-times');
+}
+.icon-loader {
+	@include icon('loader');
+}
+.icon-location {
+	@include icon('location');
+}
+.icon-lock {
+	@include icon('lock');
+}
+.icon-luggage {
+	@include icon('luggage');
+}
+.icon-map {
+	@include icon('map');
+}
+.icon-mass-transit {
+	@include icon('mass-transit');
+}
+.icon-meals {
+	@include icon('meals');
+}
+.icon-minus-outline {
+	@include icon('minus-outline');
+}
+.icon-minus {
+	@include icon('minus');
+}
+.icon-money {
+	@include icon('money');
+}
+.icon-moon-o {
+	@include icon('moon-o');
+}
+.icon-my-bookings {
+	@include icon('my-bookings');
+}
+.icon-new {
+	@include icon('new');
+}
+.icon-nights {
+	@include icon('nights');
+}
+.icon-passenger {
+	@include icon('passenger');
+}
+.icon-passengers {
+	@include icon('passengers');
+}
+.icon-pencil {
+	@include icon('pencil');
+}
+.icon-phone {
+	@include icon('phone');
+}
+.icon-pin {
+	@include icon('pin');
+}
+.icon-plane-down {
+	@include icon('plane-down');
+}
+.icon-plane-great-flights {
+	@include icon('plane-great-flights');
+}
+.icon-plane-left {
+	@include icon('plane-left');
+}
+.icon-plane-right {
+	@include icon('plane-right');
+}
+.icon-plane-up {
+	@include icon('plane-up');
+}
+.icon-plane {
+	@include icon('plane');
+}
+.icon-play-outline {
+	@include icon('play-outline');
+}
+.icon-play {
+	@include icon('play');
+}
+.icon-plus-outline {
+	@include icon('plus-outline');
+}
+.icon-plus {
+	@include icon('plus');
+}
+.icon-poi-activity {
+	@include icon('poi-activity');
+}
+.icon-poi-excurssion {
+	@include icon('poi-excurssion');
+}
+.icon-poi-food {
+	@include icon('poi-food');
+}
+.icon-poi-nightlife {
+	@include icon('poi-nightlife');
+}
+.icon-poi-shopping {
+	@include icon('poi-shopping');
+}
+.icon-poi-sightseeing {
+	@include icon('poi-sightseeing');
+}
+.icon-pool {
+	@include icon('pool');
+}
+.icon-print {
+	@include icon('print');
+}
+.icon-prohibited {
+	@include icon('prohibited');
+}
+.icon-question {
+	@include icon('question');
+}
+.icon-quote-review {
+	@include icon('quote-review');
+}
+.icon-quote {
+	@include icon('quote');
+}
+.icon-refresh {
+	@include icon('refresh');
+}
+.icon-resort-flight-checkin {
+	@include icon('resort-flight-checkin');
+}
+.icon-review {
+	@include icon('review');
+}
+.icon-room {
+	@include icon('room');
+}
+.icon-search {
+	@include icon('search');
+}
+.icon-seats {
+	@include icon('seats');
+}
+.icon-share {
+	@include icon('share');
+}
+.icon-signpost {
+	@include icon('signpost');
+}
+.icon-ski-mountain {
+	@include icon('ski-mountain');
+}
+.icon-ski {
+	@include icon('ski');
+}
+.icon-smile-boxed {
+	@include icon('smile-boxed');
+}
+.icon-smile-o {
+	@include icon('smile-o');
+}
+.icon-smile {
+	@include icon('smile');
+}
+.icon-success {
+	@include icon('success');
+}
+.icon-suitcase {
+	@include icon('suitcase');
+}
+.icon-sun {
+	@include icon('sun');
+}
+.icon-tick-box {
+	@include icon('tick-box');
+}
+.icon-tick {
+	@include icon('tick');
+}
+.icon-ticket {
+	@include icon('ticket');
+}
+.icon-tripadvisor {
+	@include icon('tripadvisor');
+}
+.icon-twitter {
+	@include icon('twitter');
+}
+.icon-user {
+	@include icon('user');
+}
+.icon-vegetarian {
+	@include icon('vegetarian');
+}
+.icon-warning {
+	@include icon('warning');
+}
+.icon-wc {
+	@include icon('wc');
+}
+.icon-whatsapp {
+	@include icon('whatsapp');
+}
+.icon-wheelchair {
+	@include icon('wheelchair');
+}
+.icon-youtube {
+	@include icon('youtube');
+}

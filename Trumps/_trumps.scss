@@ -1,0 +1,323 @@
+/*------------------------------------*\
+	#UTILTIIES
+\*------------------------------------*/
+.wrapper {
+    @include container();
+    padding:0 gutter();
+
+    &--blue {
+        background-color: $holidays-cold-blue;
+    }
+    &--grey {
+        background-color: $bg-grey;
+    }
+}
+
+.image-wrapper {
+    max-width: 100%;
+    min-height: 400px;
+    padding: 60px 0;
+    display: block;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hidden {
+    display: none;
+}
+
+.display-none {
+    display: none;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.no-bm {
+    margin-bottom: 0;
+}
+
+
+/*------------------------*\
+	SHOULD BE RENAMED TO no-mt - no margin-top;
+\*------------------------*/
+
+.no-tm {
+    margin-top: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.holiday-details-price {
+    color: $holidays-primary;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.holiday-details-total-price {
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.holiday-type {
+    @include font-size(12px);
+    padding: 3px 0;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.no-scroll {
+    overflow: hidden;
+    position: relative;
+}
+
+// scss-lint:disable IdSelector
+#container {
+    .no-scroll & {
+        overflow: hidden;
+    }
+}
+
+// scss-lint:enable IdSelector
+.hide-text {
+    font-size: 0;
+    line-height: 0;
+    color: transparent;
+    overflow: hidden;
+}
+
+
+/* Paddings */
+
+.padding {
+    padding: $half-spacing-unit;
+    &--top {
+        padding-top: $half-spacing-unit;
+    }
+    &--right {
+        padding-right: $half-spacing-unit;
+    }
+    &--bottom {
+        padding-bottom: $half-spacing-unit;
+    }
+    &--left {
+        padding-left: $half-spacing-unit;
+    }
+    &--half {
+        padding: $quarter-spacing-unit;
+    }
+    &--top-half {
+        padding-top: $quarter-spacing-unit;
+    }
+    &--right-half {
+        padding-right: $quarter-spacing-unit;
+    }
+    &--bottom-half {
+        padding-bottom: $quarter-spacing-unit;
+    }
+    &--left-half {
+        padding-left: $quarter-spacing-unit;
+    }
+}
+
+.no-pt {
+    padding-top: 0;
+}
+
+
+/* Margins */
+
+.margin {
+    margin: $margin-size;
+    &--top {
+        margin-top: $margin-size;
+    }
+    &--right {
+        margin-right: $margin-size;
+    }
+    &--bottom {
+        margin-bottom: $margin-size;
+    }
+    &--left {
+        margin-left: $margin-size;
+    }
+    &--half {
+        margin: $margin-size / 2;
+    }
+    &--top-half {
+        margin-top: $margin-size / 2;
+    }
+    &--right-half {
+        margin-right: $margin-size / 2;
+    }
+    &--bottom-half {
+        margin-bottom: $margin-size / 2;
+    }
+    &--left-half {
+        margin-left: $margin-size / 2;
+    }
+}
+
+
+/* Backgrounds */
+
+.background {
+    &--white {
+        background-color: $white;
+    }
+    &--light-grey {
+        background-color: $edinburgh-grey;
+    }
+    &--blue {
+        background-color: $holidays-primary;
+    }
+    &--check-availability,
+    &--light-blue {
+        background-color: $holidays-cold-blue;
+    }
+    &--dark-blue {
+        background-color: $holidays-dark-blue;
+    }
+    &--orange {
+        background-color: $holidays-orange;
+    }
+    &--family-main {
+        background-color: $family-main;
+    }
+    &--family-sub {
+        background-color: $family-sub;
+    }
+    &--family-light {
+        background-color: $family-light;
+    }
+    &--family-alt {
+        background-color: $family-alt;
+    }
+    &--adult-main {
+        background-color: $adult-main;
+    }
+    &--adult-sub {
+        background-color: $adult-sub;
+    }
+    &--adult-light {
+        background-color: $adult-light;
+    }
+    &--luxury-main {
+        background-color: $luxury-main;
+    }
+    &--luxury-sub {
+        background-color: $luxury-sub;
+    }
+    &--luxury-light {
+        background-color: $luxury-light;
+    }
+    &--ontour-green {
+        background-color: $ontour-green;
+    }
+    &--ontour-purple {
+        background-color: $ontour-purple;
+    }
+    &--ontour-orange {
+        background-color: $ontour-orange;
+    }
+    &--ontour-black {
+        background-color: $ontour-black;
+    }
+    &--experience-main {
+        background-color: $experience-main;
+    }
+    &--experience-light {
+        background-color: $experience-light;
+    }
+    &--indulgent {
+        background-color: $indulgent;
+    }
+}
+
+
+/* Brand backgrounds */
+
+.brand {
+    border-color: $holland-orange;
+    background-color: $holland-orange;
+}
+
+.family-favourites {
+    border-color: $holland-orange;
+    background-color: $holland-orange;
+}
+
+.experience-more {
+    border-color: $experience-main;
+    background-color: $experience-main;
+}
+
+.indulgent-escapes {
+    border-color: $indulgent;
+    background-color: $indulgent;
+}
+
+.luxe {
+    border-color: $luxury-sub;
+    background-color: $luxury-sub;
+}
+
+.on-tour {
+    border-color: $ontour-purple;
+    background-color: $ontour-purple;
+}
+
+.adult-holidays {
+    border-color: $adult-main;
+    background-color: $adult-main;
+}
+
+.icon--bg-orange {
+    background-color: $holidays-orange;
+    padding: 2px;
+    border-radius: 2px;
+    color: $white;
+}
+
+
+/* Borders */
+
+.border {
+    border: 1px solid;
+    &--top {
+        border-top: 1px solid;
+    }
+    &--bottom {
+        border-bottom: 1px solid;
+    }
+}
+
+
+/* Responsive utilities */
+
+.desktop-only {
+    display: none;
+    @include screen-bigger-than($bp-small) {
+        display: block;
+    }
+}
+
+.mobile-only {
+    @include screen-bigger-than($bp-small) {
+        display: none;
+    }
+}
+
+/*.fluid-wrapper {
+    @include fluid-wrapper($glasgow-grey);
+}*/

@@ -1,0 +1,27 @@
+.car-hire-big-enough {
+
+	&__title {
+		@include font-size(18px);
+		color: $holidays-primary;
+		font-weight: normal;
+	}
+
+	&__table {
+		@include font-size(14px);
+		width: 100%;
+		max-width: 450px;
+	}
+
+	&__head {
+		text-align: center;
+	}
+
+	&__cell {
+		border-bottom: 1px dashed $holidays-grey;
+		padding: $half-spacing-unit 0;
+		
+		&:not(:first-child) {
+			text-align: center;
+		}
+	}
+}

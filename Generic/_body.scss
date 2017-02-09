@@ -1,0 +1,45 @@
+body {
+	@include font-size($base-font-size);
+	/*overflow-x: hidden;*/
+	width: 100%;
+	font-family: $body-font;
+    
+    /* the size of the mobile header, if the header size changes this should too*/
+    // padding-top:80px;
+
+	&.city-breaks {
+		font-family: $city-body-font;
+	}
+}
+
+html {
+	overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+.body--no-scroll {
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+
+	.site-wrapper {
+		overflow: hidden;
+	}
+}
+
+.body--fixed {
+	position: fixed;
+	width: 100%;
+}
+
+
+@include screen-bigger-than($bp-small) {
+    body {
+        padding-top: 0;
+    }
+}

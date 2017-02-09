@@ -1,0 +1,14 @@
+/*------------------------------------*\
+    #GRID SETTINGS
+\*------------------------------------*/
+
+
+/*-#SUSY-------------------------*/
+
+$susy: (
+    columns: 12,
+    container: $global-site-width,
+    gutters: 1 / 4,
+    global-box-sizing: border-box,
+    debug: (image: hide)
+);

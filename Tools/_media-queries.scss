@@ -1,0 +1,71 @@
+/*------------------------------------*\
+	#MEDIA QUERIES
+\*------------------------------------*/
+
+// =====
+// Screen bigger than
+// =====
+
+@mixin screen-bigger-than($width) {
+	@media screen and (min-width: $width + 1) {
+		@content;
+	}
+}
+
+
+
+
+// =====
+// Screen smaller than
+// =====
+
+@mixin screen-smaller-than($width) {
+	@media screen and (min-width: 1px) and (max-width: $width) {
+		@content;
+	}
+}
+
+
+
+
+// =====
+// Screen between
+// =====
+
+@mixin screen-between($min, $max) {
+	@media screen and (min-width: $min) and (max-width: $max - 1) {
+		@content;
+	}
+}
+
+
+
+// =====
+// Screen bigger than
+// =====
+
+@mixin screen-mobile-landscape {
+	@media screen and (min-width: 0) and (orientation : landscape) {
+		@content;
+	}
+}
+
+
+
+
+// =====
+// HiDPI
+//
+// https://github.com/thoughtbot/bourbon/blob/master/app/assets/stylesheets/css3/_hidpi-media-query.scss
+// Default value set to 1.3 to target Google Nexus 7 (http://bjango.com/articles/min-device-pixel-ratio/)
+// =====
+
+@mixin hidpi($ratio: 1.3) {
+	@media only screen and (-webkit-min-device-pixel-ratio: $ratio),
+		   only screen and (min--moz-device-pixel-ratio: $ratio),
+		   only screen and (-o-min-device-pixel-ratio: #{$ratio}/1),
+		   only screen and (min-resolution: #{round($ratio*96)}dpi),
+		   only screen and (min-resolution: #{$ratio}dppx) {
+		@content;
+	}
+}

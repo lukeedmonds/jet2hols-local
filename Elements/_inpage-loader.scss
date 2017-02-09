@@ -1,0 +1,153 @@
+﻿.inpage-loader {
+    padding: 10px 0
+}
+
+.btn .inpage-loader {
+    padding: 0
+}
+
+.flight-results__box .inpage-loader {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 10%;
+    margin-top: -15px;
+    visibility: visible
+}
+
+.flight-results__box .inpage-loader * {
+    visibility: visible
+}
+
+.flight-results__box .inpage-loader .ballax {
+    opacity: 1
+}
+
+[data-submit-loading] .inpage-loader {
+    margin-top: -10px
+}
+
+[data-submit-loading="0"] .inpage-loader {
+    display: none;
+    opacity: 0
+}
+
+[data-submit-loading="1"] .inpage-loader {
+    opacity: 1;
+    display: inline-block!important
+}
+
+[data-submit-loading="1"] [data-button-text] {
+    opacity: 0
+}
+
+.inpage-loader--centered {
+    text-align: center;
+    padding: 5px
+}
+
+.inpage-loader--no-padding {
+    padding: 0
+}
+
+.inpage-loader--display-block {
+    display: block;
+    padding: 20px
+}
+
+.inpage-loader__parent-relative {
+    position: relative
+}
+
+.inpage-loader--vertical-centre {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -.5em
+}
+
+.inpage-loader__ie-fallback {
+    display: none
+}
+
+.lt-ie10 .inpage-loader__ie-fallback {
+    display: inline-block
+}
+
+.inpage-loader__ie-fallback img {
+    display: block
+}
+
+.inpage-loader__circle {
+    width: 1em;
+    height: 1em;
+    max-height: 14px;
+    max-width: 14px;
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-three-bounce 1.4s ease-in-out 0s infinite both;
+    animation: sk-three-bounce 1.4s ease-in-out 0s infinite both;
+    margin-right: 5px
+}
+
+.lt-ie10 .inpage-loader__circle {
+    display: none
+}
+
+.btn .inpage-loader__circle {
+    background: #fff
+}
+
+.inpage-loader--red .inpage-loader__circle {
+    background-color: #d1020e
+}
+
+.inpage-loader--white .inpage-loader__circle {
+    background-color: #fff
+}
+
+.inpage-loader--blue .inpage-loader__circle {
+    background-color: #4290db
+}
+
+.inpage-loader--black .inpage-loader__circle {
+    background-color: #000
+}
+
+.dialogues-cross-sell__promo-shape .inpage-loader__circle {
+    width: 10px;
+    height: 10px;
+    margin-right: 3px
+}
+
+.lt-ie10 .inpage-loader__circle {
+    display: none
+}
+
+.inpage-loader__circle--1 {
+    -webkit-animation-delay: -.32s;
+    animation-delay: -.32s
+}
+
+.inpage-loader__circle--2 {
+    -webkit-animation-delay: -.16s;
+    animation-delay: -.16s
+}
+
+@keyframes sk-three-bounce {
+    0%,80%,100% {
+        -webkit-transform: scale(0);
+        transform: scale(0)
+    }
+
+    40% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+.lt-ie9 .loader__text--bottom-border.loader__text:after,
+.lt-ie9 .loader {
+    display: none
+}

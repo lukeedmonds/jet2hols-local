@@ -1,0 +1,93 @@
+﻿// @import "../../ScssResources/Settings/settings.scss";
+
+$beach-border-radius: 4px;
+$beach-heading-font: $heading-font;
+
+
+$beach-heading-font--availability: $heading-font--availability;
+$beach-body-font: $body-font;
+
+
+$beach-base-font-size: 14px;
+
+// $theme-h1-font-size: $beach-h1-font-size;
+// $theme-h2-font-size: $beach-h2-font-size;
+// $theme-h3-font-size: $beach-h3-font-size;
+// $theme-h4-font-size: $beach-h4-font-size;
+// $theme-h5-font-size: $beach-h5-font-size;
+// $theme-h6-font-size: $beach-h6-font-size;
+
+$beach-paragraph-font-size: 14px;
+$beach-paragraph-line-height: 1.2;
+$beach-heading-line-height: 1.2;
+
+
+$theme: 'beach';
+$theme-site-width: $global-site-width;
+
+$theme-color-primary: $holidays-primary;
+$theme-primary--dark:  $holidays-dark-blue;
+$theme-color-secondary: $holidays-secondary;
+$theme-color-tertiary: $holidays-tertiary;
+$theme-primary-shadow: $holidays-primary-shadow;
+$theme-active-shadow: $holidays-active-shadow;
+$theme-color-neutral: $holidays-grey;
+$theme-color-highlight: $holidays-orange;
+$theme-color-highlight--alt: $holidays-red;
+$theme-primary--dark:  $holidays-dark-blue;
+$theme-color-lightest: $white;
+$theme-color-highlight--lighter: $valencia-yellow;
+$theme-primary-background: $holidays-primary;
+$theme-secondary-background: $holidays-primary-shadow;
+$theme-light-background: #eef3f9;
+
+$theme-border-radius: $beach-border-radius;
+// $theme-padding-size: $beach-padding-size;
+// $theme-margin-size: $beach-margin-size;
+
+$theme-base-spacing-unit: $base-spacing-unit;
+
+$theme-quarter-spacing-unit: $theme-base-spacing-unit / 4;
+$theme-half-spacing-unit: $theme-base-spacing-unit / 2;
+$theme-third-spacing-unit: $theme-base-spacing-unit / 3;
+$theme-double-spacing-unit: $theme-base-spacing-unit * 2;
+$theme-one-and-half-spacing-unit: $theme-base-spacing-unit * 1.5;
+$theme-triple-spacing-unit: $theme-base-spacing-unit * 3;
+$theme-quad-spacing-unit: $theme-base-spacing-unit * 4;
+
+$theme-form-spacing: 10px;
+
+$theme-heading-font: $beach-heading-font;
+$theme-heading-font--availability: $beach-heading-font--availability;
+$theme-body-font: $beach-body-font;
+
+
+$theme-base-font-size: $beach-base-font-size;
+
+// $theme-h1-font-size: $beach-h1-font-size;
+// $theme-h2-font-size: $beach-h2-font-size;
+// $theme-h3-font-size: $beach-h3-font-size;
+// $theme-h4-font-size: $beach-h4-font-size;
+// $theme-h5-font-size: $beach-h5-font-size;
+// $theme-h6-font-size: $beach-h6-font-size;
+
+$theme-paragraph-font-size: $beach-paragraph-font-size;
+$theme-paragraph-line-height: $beach-paragraph-line-height;
+$theme-heading-line-height: $beach-heading-line-height;
+
+
+
+/* buttons */
+
+$theme-button-primary-bg: $button-orange;
+$theme-button-primary-text: $white;
+$theme-button-primary-border: $theme-button-primary-bg;
+
+$theme-button-secondary-bg: $holidays-primary;
+$theme-button-secondary-text: $white;
+$theme-button-secondary-border: $theme-button-secondary-bg;
+
+$theme-button-tertiary-bg: $white;
+$theme-button-tertiary-text: $holidays-primary;
+$theme-button-tertiary-border: $midlands-grey;
+$theme-button-tertiary-hover: $midlands-grey;

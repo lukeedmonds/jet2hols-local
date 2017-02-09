@@ -1,0 +1,978 @@
+// $orange-btn-shadow: #b05700;
+// $transparent-rgba: rgba(0, 0, 0, 0);
+
+// /* Buttons */
+// .btn {
+// 	@include font-size(19px);
+
+// 	@include heading-font;
+// 	color: $holidays-primary;
+// 	background-color: $white;
+// 	padding: $half-spacing-unit;
+// 	border-radius: 5px;
+// 	display: table;
+// 	text-align: center;
+// 	text-decoration: none;
+// 	font-weight: normal;
+// 	cursor: pointer;
+// 	box-sizing: border-box;
+// 	border: 0;
+// 	width: 100%;
+// 	outline: none;
+
+// 	&--bordered-shadowed {
+// 		@extend %bordered-shadowed;
+// 	}
+
+// 	&--icon-action,
+// 	&--icon-action-down {
+// 		@include font-size(15px);
+// 		position: relative;
+// 		text-align: left;
+// 		padding-left: 50px;
+// 		color: $turin-grey;
+
+// 		&__icon,
+// 		&:after {
+// 			$icon-action-font-size: 18px;
+// 			@include font-size($icon-action-font-size);
+// 			@include color-primary;
+
+// 			border-right: solid 1px $ui-grey;
+// 			line-height: 16px;
+// 			text-align: center;
+// 			position: absolute;
+// 			width: 35px;
+// 			height: 18px;
+// 			top: 50%;
+// 			margin-top: -($icon-action-font-size / 2);
+// 		}
+
+// 		&__icon {
+// 			left: 5px;
+// 		}
+
+// 		&:after {
+// 			@include font-size(13px);
+
+// 			right: 0;
+// 			border: 0;
+// 		}
+
+// 		.shortlist-card__header-buttons & {
+// 			@include span(6);
+
+// 			&:last-child {
+// 				@include last;
+// 			}
+// 		}
+
+// 		&:hover {
+// 			color: $turin-grey;
+// 		}
+// 	}
+
+
+// 	&--icon-action:after {
+// 		@include icon-code(chevron-right);
+// 	}
+
+// 	&--icon-action-down {
+// 		&:after {
+// 			@include icon-code(chevron-down);
+// 		}
+
+// 		&[data-toggle-active="true"]:after {
+// 			@include icon-code(chevron-up);
+// 		}
+// 	}
+
+// 	&--half {
+// 		@include span(6);
+
+// 		&:nth-child(2n) {
+// 			@include last;
+// 		}
+// 	}
+
+// 	&--shortlist-save {
+// 		width: 100px;
+// 		float: right;
+// 		padding: 14px;
+
+// 		@include screen-bigger-than($bp-small) {
+// 			width: 75px;
+// 		}
+// 	}
+
+// 	&--view-more-reviews {
+// 		background: $holidays-tertiary;
+// 		color: $white;
+// 		margin: 20px auto;
+// 		float: none;
+// 		display: block;
+// 		max-width: 320px;
+// 	}
+
+// 	&--shadow {
+// 		box-shadow: 0 3px 0 $bradford-grey;
+// 	}
+
+// 	&__text {
+// 		display: table-cell;
+// 		text-align: left;
+// 		border-left: 1px solid $bradford-grey;
+// 		padding-left: 10px;
+// 		width: 100%;
+// 		height: 32px;
+// 		vertical-align: middle;
+// 	}
+
+// 	&__text-item {
+// 		@include font-size(16px);
+
+// 		display: block;
+// 		color: $paris-grey;
+
+// 		&--secondary {
+// 			@include font-size(12px);
+
+// 			color: $budapest-green;
+// 		}
+// 	}
+
+// 	&[data-submit-loading="1"] {
+// 		[data-login-button-text] {
+// 			opacity: 0;
+// 		}
+// 	}
+
+// 	[class^="icon-"],
+// 	[class^="fa"] {
+// 		@include font-size(26px);
+
+// 		vertical-align: middle;
+// 		display: table-cell;
+// 		padding: 0 10px 0 0;
+// 		min-width: 35px;
+// 	}
+
+// 	[class^="icon-chevron"] {
+// 		@include font-size(18px);
+
+// 		padding: 0;
+// 	}
+
+// 	&--need-more-help {
+// 		@include font-size(14px);
+
+// 		background: $holidays-tertiary;
+// 		color: $white;
+// 		float: none;
+// 		width: auto;
+// 		padding: 14px;
+// 		margin: 20px auto 0;
+// 		border-spacing: 0;
+
+// 		@include screen-bigger-than($bp-small) {
+// 			margin: 20px 0 0;
+// 		}
+// 	}
+
+// 	&--white {
+// 		@include font-size(14px);
+// 		@include color-primary();
+// 		background-color: $white;
+// 		font-family: $open-sans;
+// 		display: inline-block;
+// 		text-align: center;
+// 		text-decoration: none;
+// 		font-weight: normal;
+// 		cursor: pointer;
+// 		border: 0;
+// 		height: 38px;
+// 		line-height: 38px;
+// 		padding: 0 $half-spacing-unit;
+// 		border-radius: 5px;
+// 		width: auto;
+// 		float: right;
+
+// 		&:hover,
+// 		&:active {
+// 			@include color-primary();
+// 		}
+
+// 		[class^="icon-"] {
+// 			@include font-size(14px);
+// 			position: relative;
+// 			display: inline-block;
+// 			width: auto;
+// 			min-width: 1px;
+// 			padding-right: 5px;
+// 		}
+// 	}
+
+// 	&--bordered-arrow {
+// 		@include font-size(19px);
+
+// 		background-color: $white;
+// 		border: 2px solid $holidays-primary;
+// 		color: $holidays-primary;
+// 		position: relative;
+// 		margin-top: 10px;
+// 		width: 100%;
+
+// 		&:hover {
+// 			color: $holidays-primary;
+// 		}
+
+// 		&:after,
+// 		&:before {
+// 			bottom: 100%;
+// 			left: 85%;
+// 			border: solid transparent;
+// 			content: " ";
+// 			height: 0;
+// 			width: 0;
+// 			position: absolute;
+// 			pointer-events: none;
+// 		}
+
+// 		&:after {
+// 			border-color: $transparent-rgba;
+// 			border-bottom-color: $white;
+// 			border-width: 10px;
+// 			margin-left: -10px;
+// 		}
+
+// 		&:before {
+// 			border-color: $transparent-rgba;
+// 			border-bottom-color: $holidays-primary;
+// 			border-width: 13px;
+// 			margin-left: -13px;
+// 		}
+
+// 		.city-breaks & {
+// 			color: $citybreaks-grey;
+// 			border-color: $citybreaks-grey;
+
+// 			&:before {
+// 				border-bottom-color: $citybreaks-grey;
+// 			}
+// 		}
+// 	}
+
+// 	&--add-room,
+// 	&--edit-option {
+// 		@include font-size(14px);
+
+// 		background: $holidays-primary;
+// 		box-shadow: 0 3px 0 $holidays-tertiary;
+// 		padding: 10px 25px 10px 10px;
+// 		position: relative;
+// 		float: right;
+// 		width: auto;
+
+// 		&:hover {
+// 			background: $holidays-tertiary;
+// 		}
+
+// 		&:after {
+// 			@include icon-code(chevron-down);
+
+// 			@include font-size(9px);
+
+// 			width: 12px;
+// 			height: 12px;
+// 			line-height: 12px;
+// 			position: absolute;
+// 			right: 7px;
+// 			top: 12px;
+// 			color: $holidays-primary;
+// 			background: $white;
+// 			border-radius: 50%;
+// 		}
+// 	}
+
+// 	&--add-room {
+// 		float: left;
+// 		padding: 10px 10px 10px 25px;
+
+// 		&:after {
+// 			@include icon-code(plus);
+
+// 			left: 7px;
+// 		}
+// 	}
+
+// 	&--save-changes {
+// 		@include font-size(24px);
+
+// 		background: $holidays-orange-light;
+// 		box-shadow: 0 3px 0 $holidays-orange;
+// 		width: auto;
+// 		padding: 10px 30px;
+// 		float: right;
+// 		margin-left: 15px;
+
+// 		&:hover {
+// 			background: $holidays-orange;
+// 		}
+// 	}
+
+// 	&--cancel-changes {
+// 		@include font-size(24px);
+
+// 		color: $holidays-primary-shadow;
+// 		background: $newcastle-grey;
+// 		box-shadow: 0 3px 0 $status-grey;
+// 		padding: 10px 30px;
+// 		width: auto;
+// 		float: right;
+
+// 		&:hover {
+// 			background: $status-grey;
+// 		}
+// 	}
+
+// 	&--other-durations {
+// 		@include font-size(13px);
+
+// 		font-weight: 700;
+// 		position: relative;
+// 		float: right;
+// 		width: auto;
+// 		padding: 10px 35px 10px 15px;
+// 		color: $holidays-secondary;
+// 		box-shadow: 0 3px 0 $status-grey;
+
+// 		&:after {
+// 			@include icon-code(chevron-down);
+
+// 			@include font-size(9px);
+
+// 			width: 11px;
+// 			height: 11px;
+// 			line-height: 11px;
+// 			position: absolute;
+// 			right: 7px;
+// 			top: 12px;
+// 			color: $white;
+// 			background: $holidays-secondary;
+// 			border-radius: 50%;
+// 		}
+// 	}
+
+// 	&--square {
+// 		border-radius: 4px;
+// 		position: relative;
+// 		background: $white;
+// 		color: $holidays-primary;
+
+// 		&:before {
+// 			content: "";
+// 			display: block;
+// 			padding-top: 100%;
+// 		}
+
+// 		@media screen and (max-width: 449px) {
+// 			@include with-layout(auto 12 0.3) {
+// 				@include span(6);
+
+// 				&:nth-child(2n) {
+// 					@include last;
+// 				}
+// 			}
+// 		}
+
+// 		@media screen and (min-width: 450px) and (max-width: 599px) {
+// 			@include with-layout(auto 12 0.3) {
+// 				@include span(4);
+
+// 				&:nth-child(3n) {
+// 					@include last;
+// 				}
+// 			}
+// 		}
+
+// 		@media screen and (min-width: 600px) {
+// 			@include with-layout(auto 12 0.2) {
+// 				@include span(3);
+
+// 				&:nth-child(4n) {
+// 					@include last;
+// 				}
+// 			}
+// 		}
+
+// 		.btn__text {
+// 			@include font-size(14px);
+
+// 			position: absolute;
+// 			left: 0;
+// 			bottom: 0;
+// 			height: 35px;
+// 			line-height: 35px;
+// 			margin: 0 10px;
+// 			padding: 0;
+// 			width: calc(100% - 20px);
+// 			border-top: 1px solid $bradford-grey;
+// 			border-width: 1px 0 0;
+// 		}
+
+// 		[class^="icon-"] {
+// 			@include font-size(80px);
+
+// 			position: absolute;
+// 			top: 0;
+// 			left: 0;
+// 			width: 100%;
+// 			height: calc(100% - 35px);
+// 			padding: 0;
+// 			text-align: center;
+
+// 			&:before {
+// 				width: 100px;
+// 				height: 100px;
+// 				text-align: center;
+// 				line-height: 100px;
+// 				position: absolute;
+// 				top: 50%;
+// 				left: 50%;
+// 				margin-top: -50px;
+// 				margin-left: -50px;
+// 			}
+// 		}
+
+// 		[class^="icon-chevron"] {
+// 			@include font-size(12px);
+
+// 			position: absolute;
+// 			top: auto;
+// 			left: auto;
+// 			bottom: 0;
+// 			right: 0;
+// 			width: auto;
+// 			height: 35px;
+// 			line-height: 35px;
+// 			padding: 0 10px 0 0;
+// 			margin: 0;
+
+// 			&:before {
+// 				width: auto;
+// 				height: 35px;
+// 				line-height: 35px;
+// 				top: auto;
+// 				left: auto;
+// 				margin: 0;
+// 			}
+// 		}
+// 	}
+
+// 	&--small {
+// 		@include font-size(14px);
+
+// 		display: inline-block;
+// 		font-family: $body-font;
+// 		width: auto;
+// 	}
+
+// 	&--thin-white {
+// 		@include font-size(14px);
+
+// 		font-family: $body-font;
+// 		background-color: $white;
+// 		color: $holidays-tertiary;
+// 		border: 1px solid $bradford-grey;
+// 		padding: 8px 5px;
+// 		max-width: 180px;
+
+// 		[class^="icon-chevron"] {
+// 			@include font-size(12px);
+
+// 			min-width: 0;
+// 		}
+// 	}
+
+// 	&--green-white {
+// 		background-color: $budapest-green;
+// 		color: $white;
+// 	}
+
+// 	&--yellow-white {
+// 		background-color: $valencia-yellow;
+// 		color: $white;
+// 	}
+
+// 	&--transparent-white {
+// 		background-color: transparent;
+// 		color: $white;
+// 		border: 1px solid;
+// 	}
+
+// 	&--text {
+// 		border: 0;
+// 		background: transparent;
+// 		font-size: inherit;
+// 		color: $holidays-primary;
+// 		margin: 0;
+// 		padding: 0;
+// 	}
+
+// 	&--orange-white {
+// 		background: $holland-orange;
+// 		box-shadow: 0 3px 0 $orange-btn-shadow;
+// 		color: $white;
+// 	}
+
+// 	&--panel {
+// 		background: $holidays-primary;
+// 		color: $white;
+// 		position: relative;
+// 		padding: 15px 40px 15px 20px;
+// 		display: table;
+// 		width: 100%;
+
+// 		&__title {
+// 			@include font-size(20px);
+
+// 			display: table-cell;
+// 			vertical-align: middle;
+// 		}
+
+// 		&__icon {
+// 			position: absolute;
+// 			top: 20px;
+// 			right: 20px;
+// 		}
+// 	}
+
+// 	&--check-availability,
+// 	&--white-blue {
+// 		color: $white;
+// 		background-color: $holidays-primary;
+// 		position: relative;
+// 		padding: 15px;
+// 		display: table;
+// 		width: 100%;
+// 		box-shadow: 0 3px 0 $holidays-primary-shadow;
+
+// 		&__icon {
+// 			position: absolute;
+// 			top: 18px;
+// 			right: 18px;
+// 		}
+// 	}
+
+// 	&--check-availability {
+// 		margin-bottom: 20px;
+// 	}
+
+// 	&--close-modal-search {
+// 		background: $holidays-primary-shadow;
+// 		max-width: 320px;
+// 		margin: 0 auto;
+// 		color: $white;
+// 		border-radius: 3px;
+// 		padding: 0;
+// 		line-height: 40px;
+
+// 		&:hover {
+// 			background: darken($holidays-primary-shadow, 10);
+// 		}
+// 	}
+
+// 	&--hotel-video {
+// 		background: $holland-orange;
+// 		box-shadow: 0 3px 0 $orange-btn-shadow;
+// 		color: $white;
+// 		font-size: 0.825rem;
+// 		width: 100px;
+// 		padding: 5px;
+// 		position: relative;
+// 		vertical-align: top;
+// 		margin-top: 6px;
+// 		display: inline-block;
+// 		margin-left: 15px;
+// 		padding-left: 30px;
+// 		text-transform: uppercase;
+
+// 		&:before {
+// 			@include icon-code(play);
+
+// 			@include font-size(23px);
+
+// 			font-family: "icons";
+// 			position: absolute;
+// 			top: calc(50% - 12.5px);
+// 			left: 10px;
+// 			width: 25px;
+// 			height: 25px;
+// 		}
+// 	}
+
+// 	&--tiny {
+// 		// scss-lint:disable ImportantRule
+// 		@include font-size(12px);
+
+// 		font-family: $body-font;
+// 		display: inline-block;
+// 		width: auto;
+// 		padding: 0 10px;
+// 		line-height: 30px;
+// 		height: 30px;
+
+// 		// Box shadow none !important is used to overwrite primary styling where for bigger buttons box shadow is required
+// 		box-shadow: none !important;
+// 	}
+
+// 	&--bordered-arrow {
+// 		@include font-size(19px);
+
+// 		background-color: $white;
+// 		border: 2px solid $holidays-primary;
+// 		position: relative;
+// 		margin-top: 10px;
+
+// 		&:after,
+// 		&:before {
+// 			bottom: 100%;
+// 			left: 85%;
+// 			border: solid transparent;
+// 			content: " ";
+// 			height: 0;
+// 			width: 0;
+// 			position: absolute;
+// 			pointer-events: none;
+// 		}
+
+// 		&:after {
+// 			border-color: $transparent-rgba;
+// 			border-bottom-color: $white;
+// 			border-width: 10px;
+// 			margin-left: -10px;
+// 		}
+
+// 		&:before {
+// 			border-color: $transparent-rgba;
+// 			border-bottom-color: $holidays-primary;
+// 			border-width: 13px;
+// 			margin-left: -13px;
+// 		}
+// 	}
+
+// 	&--sold-out {
+// 		border-color: $holidays-secondary;
+// 		color: $holidays-secondary;
+
+// 		&:before {
+// 			border-bottom-color: $holidays-secondary;
+// 		}
+// 	}
+// }
+
+// .standard-btn {
+// 	background: $holidays-orange-light;
+// 	text-shadow: 0 1px 0 $holland-orange;
+// 	box-shadow: 0 3px 0 $holland-orange;
+// 	color: $white;
+// 	outline: none;
+
+// 	.no-touch &:hover {
+// 		text-shadow: 0 1px 0 darken($holidays-orange-light, 10%);
+// 		background: $holland-orange;
+// 	}
+
+// 	.city-breaks & {
+// 		background: $citybreaks-primary;
+// 		box-shadow: 0 3px 0 $citybreaks-red-shadow;
+// 		text-shadow: 0 1px 0 $citybreaks-red-shadow;
+// 		font-family: $montserrat;
+
+// 		.no-touch &:hover {
+// 			background: $citybreaks-red-shadow;
+// 			box-shadow: 0 3px 0 $citybreaks-red-shadow;
+// 		}
+// 	}
+
+// 	&[data-submit-loading="1"] {
+// 		text-shadow: 0 1px 0 darken($holidays-orange-light, 10%);
+// 		background: $holland-orange;
+// 		box-shadow: 0 3px 0 darken($holidays-orange-light, 10%);
+// 		pointer-events: none;
+// 	}
+// }
+
+// .btn--primary {
+// 	background: $dortmund-yellow;
+// 	box-shadow: 0 3px 0 $holland-orange;
+// 	color: $white;
+// 	display: initial; // because of display: table on the .btn class.
+
+// 	.no-touch &:hover {
+// 		background: $holland-orange;
+// 	}
+
+// 	.city-breaks & {
+// 		background: $citybreaks-primary;
+// 		box-shadow: 0 3px 0 darken($citybreaks-primary, 20%);
+// 		font-family: $city-breaks-font;
+// 	}
+
+// 	.city-breaks .finder--wide & {
+// 		// Overwrite so the button lines up to the input fields, since the input fields dont have a drop shadow on them
+// 		height: 48px !important;
+// 	}
+// }
+
+// .alternate-btn {
+// 	background: $holidays-secondary;
+// 	text-shadow: 0 1px 0 $citybreaks-dark;
+// 	box-shadow: 0 3px 0 $citybreaks-dark;
+
+// 	&:hover,
+// 	&:active {
+// 		background: $citybreaks-dark;
+// 		color: $white;
+// 	}
+// }
+
+// .social-login-btn {
+// 	color: $white;
+// 	padding: 15px;
+// 	border-radius: 4px;
+// 	text-align: center;
+// 	display: block;
+// 	cursor: pointer;
+
+// 	span {
+// 		@include font-size(14px);
+
+// 		display: inline-block;
+// 		position: relative;
+// 		padding: 0 0 0 30px;
+// 		line-height: 20px;
+// 	}
+
+// 	[class^="icon-"] {
+// 		@include font-size(20px);
+
+// 		height: 20px;
+// 		line-height: 20px;
+// 		position: absolute;
+// 		top: 0;
+// 		left: 0;
+// 	}
+
+// 	&--facebook {
+// 		background-color: $facebook-blue;
+// 	}
+// }
+
+// .hotel-availability-button {
+// 	background: $white;
+// 	color: $citybreaks-blue;
+// 	width: auto;
+// 	padding: 0 20px;
+// 	line-height: 30px;
+// 	border-radius: 3px;
+// 	box-shadow: 0 3px 0 $holidays-dark-blue;
+// 	font-size: 12px;
+// 	display: inline-block;
+// 	margin: 0 0 3px;
+// 	transition: color 0.2s;
+// 	font-family: $helvetica;
+// 	border: 0;
+// 	outline: none;
+
+// 	.transitioning & {
+// 		background: $holidays-dark-blue;
+// 		box-shadow: 0 3px 0 $holidays-active-shadow;
+// 		color: $white;
+
+// 		.no-touch &:hover {
+// 			color: $white;
+// 		}
+// 	}
+
+// 	.city-breaks & {
+// 		font-family: $city-breaks-font;
+// 		color: $white;
+// 		background-color: $citybreaks-secondary;
+// 		box-shadow: 0 3px 0 $holidays-dark-blue;
+// 		border: 0;
+// 	}
+
+// 	.city-breaks .transitioning & {
+// 		background: $citybreaks-tertiary;
+// 	}
+
+// 	.icon {
+// 		vertical-align: middle;
+// 		margin-right: 10px;
+// 	}
+
+// 	&--icon-right {
+// 		padding-left: 20px;
+// 		padding-right: 20px;
+
+// 		.icon {
+// 			margin-left: 20px;
+// 		}
+// 	}
+
+// 	.no-touch &:hover {
+// 		color: darken($holidays-background-blue, 20%);
+// 	}
+
+// 	&--icon-with-toggle {
+// 		text-align: left;
+// 		padding: 0 10px;
+// 		border: 1px solid $holidays-primary;
+// 		box-shadow: 0 3px 0 $holidays-primary;
+
+// 		[class^="icon-"] {
+// 			display: inline-block;
+// 			margin: 0 5px 0 0;
+// 			position: relative;
+
+// 			&:last-of-type {
+// 				margin: 0 0 0 5px;
+// 			}
+// 		}
+
+// 		.transitioning & {
+// 			border: 1px solid $holidays-dark-blue;
+
+// 			.city-breaks & {
+// 				background-color: $citybreaks-darkblue;
+// 				box-shadow: 0 3px 0 $holidays-dark-blue;
+// 				border: 0;
+// 			}
+// 		}
+
+// 		.city-breaks & {
+// 			background-color: $citybreaks-blue;
+// 			color: $white;
+// 			border: 0;
+
+// 			//border: 1px solid darken($citybreaks-blue, 10%);
+// 			box-shadow: 0 3px 0 darken($citybreaks-blue, 10%);
+
+// 			.no-touch &:hover {
+// 				color: darken($white, 10%);
+// 			}
+// 		}
+// 	}
+
+// 	&--large {
+// 		@include font-size(21px);
+
+// 		padding: 10px 20px;
+// 		font-family: $heading-font;
+// 		width: 100%;
+// 	}
+
+// 	.no-touch &:hover {
+// 		color: darken($holidays-background-blue, 20%);
+
+// 		.city-breaks & {
+// 			color: darken($white, 10%);
+// 		}
+// 	}
+// }
+
+// @include screen-bigger-than($bp-small) {
+// 	.btn--panel {
+// 		display: none;
+// 	}
+
+// 	.hotel-availability-button {
+// 		.city-breaks & {
+// 			border-radius: 0;
+// 			border: 1px solid $citybreaks-mid-grey;
+// 			box-shadow: 0 3px 0 $citybreaks-mid-grey;
+// 		}
+// 	}
+// }
+
+
+@mixin button-box-shadow($color) {
+	box-shadow: 0 5px 0 0 $color;
+}
+
+@mixin standard-btn( $background, $text, $border, $hover: darken($background, 15%)) {
+	background-color: $background;
+	color: $text;
+	border-color: $border;
+	@include button-box-shadow($hover);
+    
+    .no-touch & {
+	    &:hover {
+		    border-bottom-color: $hover;
+		    background-color: $hover;
+	    }
+    }
+}
+
+.text-btn {
+	border: 0;
+	background: transparent;
+	font-size: inherit;
+	color: $holidays-primary;
+	margin: 0;
+	padding: 0;
+}
+
+.btn {
+	@include font-size(17px);
+	font-family: $body-font;
+	padding: $half-spacing-unit $base-spacing-unit;
+	border-radius: $border-radius;
+	border: 1px solid;
+	outline: none;
+	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	padding-bottom: $half-spacing-unit;
+	min-width: 160px;
+}
+
+.btn--wide {
+	width: 100%;
+}
+
+.btn--primary {
+	@include standard-btn(
+		$theme-button-primary-bg,
+		$theme-button-primary-text,
+		$theme-button-primary-border
+	);
+}
+
+.btn--secondary {
+	@include standard-btn(
+		$theme-button-secondary-bg,
+		$theme-button-secondary-text,
+		$theme-button-secondary-border
+	);
+}
+
+.btn--tertiary {
+	@include standard-btn(
+		$theme-button-tertiary-bg,
+		$theme-button-tertiary-text,
+		$theme-button-tertiary-border,
+		$theme-button-tertiary-hover
+	);
+}
+
+.btn--ghost {
+	background-color: transparent;
+	color: $white;
+	border-color: rgba($white, 0.3);
+
+	&:hover {
+		border-color: $white;
+	}
+}

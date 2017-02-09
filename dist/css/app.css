@@ -1,0 +1,2349 @@
+/*------------------------------------*    #VARIABLES
+\*------------------------------------*/
+/*------------------------------------*    #COLOURS
+\*------------------------------------*/
+/*-#JET2HOLIDAYS BRAND COLOURS---------------------*/
+/* CITY BREAKS THEME COLOURS */
+/*-#REDS-----------------------------*/
+/*-#GREYS----------------------------*/
+/*-#GREENS----------------------------*/
+/*-#OTHER---------------------------*/
+/*-#JET2 BRAND COLOURS---------------------*/
+/*- SHORT LIST COLOURS */
+/*------------------------------------*    #BREAKPOINTS
+\*------------------------------------*/
+/*------------------------------------*    #FONTS
+\*------------------------------------*/
+/*------------------------------------*    #GRID SETTINGS
+\*------------------------------------*/
+/*-#SUSY-------------------------*/
+/* buttons */
+/*------------------------------------*	#MEDIA QUERIES
+\*------------------------------------*/
+/* Utility mixins */
+/* = Weights */
+/*------------------------------------*    #BASE
+\*------------------------------------*/
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+/* Document
+   ========================================================================== */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0; }
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block; }
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none; }
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none; }
+
+body {
+  font-size: 16px;
+  font-size: 1rem;
+  /*overflow-x: hidden;*/
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  /* the size of the mobile header, if the header size changes this should too*/ }
+  body.city-breaks {
+    font-family: Helvetica, Arial, sans-serif; }
+
+html {
+  overflow-x: hidden;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+.body--no-scroll {
+  height: 100%;
+  overflow: hidden;
+  position: relative; }
+  .body--no-scroll .site-wrapper {
+    overflow: hidden; }
+
+.body--fixed {
+  position: fixed;
+  width: 100%; }
+
+@media screen and (min-width: 768px) {
+  body {
+    padding-top: 0; } }
+
+/*------------------------------------*	#CLEARFIX
+\*------------------------------------*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.page-wrapper {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.69492%; }
+  .page-wrapper:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+@font-face {
+  font-family: "icons";
+  src: url("../assets/fonts/icons/icons.eot");
+  src: url("../assets/fonts/icons/icons.eot?#iefix") format("eot"), url("../assets/fonts/icons/icons.woff") format("woff"), url("../assets/fonts/icons/icons.ttf") format("truetype"); }
+
+[class^="icon-"],
+[class*=' icon-'] {
+  font-family: "icons";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none; }
+
+.icon--tiny {
+  font-size: 6px;
+  font-size: 0.375rem; }
+
+.icon--small {
+  font-size: 8px;
+  font-size: 0.5rem; }
+
+.icon--medium {
+  font-size: 12px;
+  font-size: 0.75rem; }
+
+.icon--large {
+  font-size: 16px;
+  font-size: 1rem; }
+
+.icon--x-large {
+  font-size: 20px;
+  font-size: 1.25rem; }
+
+.icon--huge {
+  font-size: 35px;
+  font-size: 2.1875rem; }
+
+.icon--red {
+  color: #ee3123; }
+
+.icon--blue {
+  color: #1E3146; }
+
+.icon--white {
+  color: #FFFFFF; }
+
+.icon-airport-lounge:before {
+  content: "\E001"; }
+
+.icon-airport-tower:before {
+  content: "\E002"; }
+
+.icon-alert:before {
+  content: "\E003"; }
+
+.icon-arrow-back:before {
+  content: "\E004"; }
+
+.icon-arrow-circle-left:before {
+  content: "\E005"; }
+
+.icon-arrow-circle-right:before {
+  content: "\E006"; }
+
+.icon-arrow-down:before {
+  content: "\E007"; }
+
+.icon-arrow-left:before {
+  content: "\E008"; }
+
+.icon-arrow-right:before {
+  content: "\E009"; }
+
+.icon-arrow-small-bottom:before {
+  content: "\E00A"; }
+
+.icon-arrow-small-left:before {
+  content: "\E00B"; }
+
+.icon-arrow-small-right:before {
+  content: "\E00C"; }
+
+.icon-arrow-small-up:before {
+  content: "\E00D"; }
+
+.icon-arrow-up:before {
+  content: "\E00E"; }
+
+.icon-automobile:before {
+  content: "\E00F"; }
+
+.icon-awards:before {
+  content: "\E010"; }
+
+.icon-bags:before {
+  content: "\E011"; }
+
+.icon-beach:before {
+  content: "\E012"; }
+
+.icon-beer:before {
+  content: "\E013"; }
+
+.icon-bike:before {
+  content: "\E014"; }
+
+.icon-briefcase:before {
+  content: "\E015"; }
+
+.icon-bundles:before {
+  content: "\E016"; }
+
+.icon-bus:before {
+  content: "\E017"; }
+
+.icon-calendar:before {
+  content: "\E018"; }
+
+.icon-car-ac:before {
+  content: "\E019"; }
+
+.icon-car-doors:before {
+  content: "\E01A"; }
+
+.icon-car-gears:before {
+  content: "\E01B"; }
+
+.icon-car-parking:before {
+  content: "\E01C"; }
+
+.icon-car-petrol:before {
+  content: "\E01D"; }
+
+.icon-car:before {
+  content: "\E01E"; }
+
+.icon-card-amex:before {
+  content: "\E01F"; }
+
+.icon-card-visa:before {
+  content: "\E020"; }
+
+.icon-check-in:before {
+  content: "\E021"; }
+
+.icon-check:before {
+  content: "\E022"; }
+
+.icon-chevron-down:before {
+  content: "\E023"; }
+
+.icon-chevron-left:before {
+  content: "\E024"; }
+
+.icon-chevron-right:before {
+  content: "\E025"; }
+
+.icon-chevron-up-thin:before {
+  content: "\E026"; }
+
+.icon-chevron-up:before {
+  content: "\E027"; }
+
+.icon-childrens-meal:before {
+  content: "\E028"; }
+
+.icon-city:before {
+  content: "\E029"; }
+
+.icon-clock-o:before {
+  content: "\E02A"; }
+
+.icon-clock:before {
+  content: "\E02B"; }
+
+.icon-close-all:before {
+  content: "\E02C"; }
+
+.icon-close-circle-outline:before {
+  content: "\E02D"; }
+
+.icon-close-circle:before {
+  content: "\E02E"; }
+
+.icon-close:before {
+  content: "\E02F"; }
+
+.icon-coffee:before {
+  content: "\E030"; }
+
+.icon-cog:before {
+  content: "\E031"; }
+
+.icon-credit-card:before {
+  content: "\E032"; }
+
+.icon-currency:before {
+  content: "\E033"; }
+
+.icon-cutlery:before {
+  content: "\E034"; }
+
+.icon-date:before {
+  content: "\E035"; }
+
+.icon-discount:before {
+  content: "\E036"; }
+
+.icon-email:before {
+  content: "\E037"; }
+
+.icon-envelope:before {
+  content: "\E038"; }
+
+.icon-error:before {
+  content: "\E039"; }
+
+.icon-expand-all:before {
+  content: "\E03A"; }
+
+.icon-extra-leg-room:before {
+  content: "\E03B"; }
+
+.icon-facebook:before {
+  content: "\E03C"; }
+
+.icon-favorite-on:before {
+  content: "\E03D"; }
+
+.icon-favorite:before {
+  content: "\E03E"; }
+
+.icon-floors:before {
+  content: "\E03F"; }
+
+.icon-fullscreen:before {
+  content: "\E040"; }
+
+.icon-golf:before {
+  content: "\E041"; }
+
+.icon-google-plus:before {
+  content: "\E042"; }
+
+.icon-hamburger:before {
+  content: "\E043"; }
+
+.icon-holidays:before {
+  content: "\E044"; }
+
+.icon-home:before {
+  content: "\E045"; }
+
+.icon-hospital-o:before {
+  content: "\E046"; }
+
+.icon-hotel:before {
+  content: "\E047"; }
+
+.icon-infant:before {
+  content: "\E048"; }
+
+.icon-info-circle:before {
+  content: "\E049"; }
+
+.icon-info:before {
+  content: "\E04A"; }
+
+.icon-instagram:before {
+  content: "\E04B"; }
+
+.icon-insurance:before {
+  content: "\E04C"; }
+
+.icon-key:before {
+  content: "\E04D"; }
+
+.icon-lift:before {
+  content: "\E04E"; }
+
+.icon-link:before {
+  content: "\E04F"; }
+
+.icon-list:before {
+  content: "\E050"; }
+
+.icon-live-chat:before {
+  content: "\E051"; }
+
+.icon-live-times:before {
+  content: "\E052"; }
+
+.icon-loader:before {
+  content: "\E053"; }
+
+.icon-location:before {
+  content: "\E054"; }
+
+.icon-lock:before {
+  content: "\E055"; }
+
+.icon-luggage:before {
+  content: "\E056"; }
+
+.icon-map:before {
+  content: "\E057"; }
+
+.icon-mass-transit:before {
+  content: "\E058"; }
+
+.icon-meals:before {
+  content: "\E059"; }
+
+.icon-minus-outline:before {
+  content: "\E05A"; }
+
+.icon-minus:before {
+  content: "\E05B"; }
+
+.icon-money:before {
+  content: "\E05C"; }
+
+.icon-moon-o:before {
+  content: "\E05D"; }
+
+.icon-my-bookings:before {
+  content: "\E05E"; }
+
+.icon-new:before {
+  content: "\E05F"; }
+
+.icon-nights:before {
+  content: "\E060"; }
+
+.icon-passenger:before {
+  content: "\E061"; }
+
+.icon-passengers:before {
+  content: "\E062"; }
+
+.icon-pencil:before {
+  content: "\E063"; }
+
+.icon-phone:before {
+  content: "\E064"; }
+
+.icon-pin:before {
+  content: "\E065"; }
+
+.icon-plane-down:before {
+  content: "\E066"; }
+
+.icon-plane-great-flights:before {
+  content: "\E067"; }
+
+.icon-plane-left:before {
+  content: "\E068"; }
+
+.icon-plane-right:before {
+  content: "\E069"; }
+
+.icon-plane-up:before {
+  content: "\E06A"; }
+
+.icon-plane:before {
+  content: "\E06B"; }
+
+.icon-play-outline:before {
+  content: "\E06C"; }
+
+.icon-play:before {
+  content: "\E06D"; }
+
+.icon-plus-outline:before {
+  content: "\E06E"; }
+
+.icon-plus:before {
+  content: "\E06F"; }
+
+.icon-poi-activity:before {
+  content: "\E070"; }
+
+.icon-poi-excurssion:before {
+  content: "\E071"; }
+
+.icon-poi-food:before {
+  content: "\E072"; }
+
+.icon-poi-nightlife:before {
+  content: "\E073"; }
+
+.icon-poi-shopping:before {
+  content: "\E074"; }
+
+.icon-poi-sightseeing:before {
+  content: "\E075"; }
+
+.icon-pool:before {
+  content: "\E076"; }
+
+.icon-print:before {
+  content: "\E077"; }
+
+.icon-prohibited:before {
+  content: "\E078"; }
+
+.icon-question:before {
+  content: "\E079"; }
+
+.icon-quote-review:before {
+  content: "\E07A"; }
+
+.icon-quote:before {
+  content: "\E07B"; }
+
+.icon-refresh:before {
+  content: "\E07C"; }
+
+.icon-resort-flight-checkin:before {
+  content: "\E07D"; }
+
+.icon-review:before {
+  content: "\E07E"; }
+
+.icon-room:before {
+  content: "\E07F"; }
+
+.icon-search:before {
+  content: "\E080"; }
+
+.icon-seats:before {
+  content: "\E081"; }
+
+.icon-share:before {
+  content: "\E082"; }
+
+.icon-signpost:before {
+  content: "\E083"; }
+
+.icon-ski-mountain:before {
+  content: "\E084"; }
+
+.icon-ski:before {
+  content: "\E085"; }
+
+.icon-smile-boxed:before {
+  content: "\E086"; }
+
+.icon-smile-o:before {
+  content: "\E087"; }
+
+.icon-smile:before {
+  content: "\E088"; }
+
+.icon-success:before {
+  content: "\E089"; }
+
+.icon-suitcase:before {
+  content: "\E08A"; }
+
+.icon-sun:before {
+  content: "\E08B"; }
+
+.icon-tick-box:before {
+  content: "\E08C"; }
+
+.icon-tick:before {
+  content: "\E08D"; }
+
+.icon-ticket:before {
+  content: "\E08E"; }
+
+.icon-tripadvisor:before {
+  content: "\E08F"; }
+
+.icon-twitter:before {
+  content: "\E090"; }
+
+.icon-user:before {
+  content: "\E091"; }
+
+.icon-vegetarian:before {
+  content: "\E092"; }
+
+.icon-warning:before {
+  content: "\E093"; }
+
+.icon-wc:before {
+  content: "\E094"; }
+
+.icon-whatsapp:before {
+  content: "\E095"; }
+
+.icon-wheelchair:before {
+  content: "\E096"; }
+
+.icon-youtube:before {
+  content: "\E097"; }
+
+.text-btn {
+  border: 0;
+  background: transparent;
+  font-size: inherit;
+  color: #4290db;
+  margin: 0;
+  padding: 0; }
+
+.btn {
+  font-size: 17px;
+  font-size: 1.0625rem;
+  font-family: "Open Sans", sans-serif;
+  padding: 12px 24px;
+  border-radius: 4px;
+  border: 1px solid;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 12px;
+  min-width: 160px; }
+
+.btn--wide {
+  width: 100%; }
+
+.btn--primary {
+  background-color: #f6af23;
+  color: #fff;
+  border-color: #f6af23;
+  box-shadow: 0 5px 0 0 #c48508; }
+  .no-touch .btn--primary:hover {
+    border-bottom-color: #c48508;
+    background-color: #c48508; }
+
+.btn--secondary {
+  background-color: #4290db;
+  color: #fff;
+  border-color: #4290db;
+  box-shadow: 0 5px 0 0 #216aaf; }
+  .no-touch .btn--secondary:hover {
+    border-bottom-color: #216aaf;
+    background-color: #216aaf; }
+
+.btn--tertiary {
+  background-color: #fff;
+  color: #4290db;
+  border-color: #dddee0;
+  box-shadow: 0 5px 0 0 #dddee0; }
+  .no-touch .btn--tertiary:hover {
+    border-bottom-color: #dddee0;
+    background-color: #dddee0; }
+
+.btn--ghost {
+  background-color: transparent;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.3); }
+  .btn--ghost:hover {
+    border-color: #fff; }
+
+@font-face {
+  font-family: helvetica-med-light;
+  src: url("../assets/fonts/helvetica-med-light.eot");
+  src: url("../assets/fonts/helvetica-med-light.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/helvetica-med-light.woff") format("woff"), url("../assets/fonts/helvetica-med-light.ttf") format("truetype"), url("../assets/fonts/helvetica-med-light.svg#helvetica-med-light") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: helveticaneuelight;
+  src: url("../assets/fonts/helveticaneuelight.eot");
+  src: url("../assets/fonts/helveticaneuelight.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/helveticaneuelight.woff") format("woff"), url("../assets/fonts/helveticaneuelight.ttf") format("truetype"), url("../assets/fonts/helveticaneuelight.svg#helveticaneuelight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url("../assets/fonts/Montserrat-Regular.eot");
+  src: url("../assets/fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Montserrat-Regular.woff") format("woff"), url("../assets/fonts/Montserrat-Regular.ttf") format("truetype"), url("../assets/fonts/Montserrat-Regular.svg#Montserrat-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: PT-Sans;
+  src: url("../assets/fonts/PT-Sans.eot");
+  src: url("../assets/fonts/PT-Sans.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/PT-Sans.woff") format("woff"), url("../assets/fonts/PT-Sans.ttf") format("truetype"), url("../assets/fonts/PT-Sans.svg#PT-Sans") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Lists - _lists.scss */
+.list {
+  color: #626262;
+  padding: 0; }
+  .list__item {
+    font-size: 14px;
+    font-size: 0.875rem;
+    list-style-type: none;
+    display: block;
+    margin-bottom: 5px;
+    padding: 0 0 0 10px;
+    position: relative; }
+    .list__item:before {
+      content: "-";
+      position: absolute;
+      top: 0;
+      left: 0; }
+    .list__item:last-child {
+      margin-bottom: 0; }
+  .list--bullet-point .list__item:before {
+    content: "\2022"; }
+  .list--small-icons .list__item {
+    font-size: 14px;
+    font-size: 0.875rem;
+    padding: 0 0 0 25px;
+    margin-bottom: 10px; }
+    .list--small-icons .list__item:before {
+      display: none; }
+    .list--small-icons .list__item i {
+      font-size: 14px;
+      font-size: 0.875rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #4290db; }
+    .list--small-icons .list__item:last-child {
+      margin-bottom: 0; }
+  .list--large-icons .list__item {
+    font-size: 16px;
+    font-size: 1rem;
+    position: relative;
+    padding: 0 0 0 25px;
+    margin: 0 0 20px;
+    font-family: "helvetica-med-light", sans-serif; }
+    .list--large-icons .list__item:before {
+      display: none; }
+    .list--large-icons .list__item i {
+      font-size: 16px;
+      font-size: 1rem;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    .list--large-icons .list__item span {
+      font-size: 12px;
+      font-size: 0.75rem;
+      font-family: "Open Sans", sans-serif;
+      display: block;
+      line-height: 100%;
+      margin-top: 5px; }
+  .list--2col {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+    float: left; }
+    .list--2col:last-of-type, .list--2col:last-child {
+      float: right;
+      margin-right: 0; }
+
+.inpage-loader {
+  padding: 10px 0; }
+
+.btn .inpage-loader {
+  padding: 0; }
+
+.flight-results__box .inpage-loader {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 10%;
+  margin-top: -15px;
+  visibility: visible; }
+
+.flight-results__box .inpage-loader * {
+  visibility: visible; }
+
+.flight-results__box .inpage-loader .ballax {
+  opacity: 1; }
+
+[data-submit-loading] .inpage-loader {
+  margin-top: -10px; }
+
+[data-submit-loading="0"] .inpage-loader {
+  display: none;
+  opacity: 0; }
+
+[data-submit-loading="1"] .inpage-loader {
+  opacity: 1;
+  display: inline-block !important; }
+
+[data-submit-loading="1"] [data-button-text] {
+  opacity: 0; }
+
+.inpage-loader--centered {
+  text-align: center;
+  padding: 5px; }
+
+.inpage-loader--no-padding {
+  padding: 0; }
+
+.inpage-loader--display-block {
+  display: block;
+  padding: 20px; }
+
+.inpage-loader__parent-relative {
+  position: relative; }
+
+.inpage-loader--vertical-centre {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin-top: -.5em; }
+
+.inpage-loader__ie-fallback {
+  display: none; }
+
+.lt-ie10 .inpage-loader__ie-fallback {
+  display: inline-block; }
+
+.inpage-loader__ie-fallback img {
+  display: block; }
+
+.inpage-loader__circle {
+  width: 1em;
+  height: 1em;
+  max-height: 14px;
+  max-width: 14px;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-three-bounce 1.4s ease-in-out 0s infinite both;
+  animation: sk-three-bounce 1.4s ease-in-out 0s infinite both;
+  margin-right: 5px; }
+
+.lt-ie10 .inpage-loader__circle {
+  display: none; }
+
+.btn .inpage-loader__circle {
+  background: #fff; }
+
+.inpage-loader--red .inpage-loader__circle {
+  background-color: #d1020e; }
+
+.inpage-loader--white .inpage-loader__circle {
+  background-color: #fff; }
+
+.inpage-loader--blue .inpage-loader__circle {
+  background-color: #4290db; }
+
+.inpage-loader--black .inpage-loader__circle {
+  background-color: #000; }
+
+.dialogues-cross-sell__promo-shape .inpage-loader__circle {
+  width: 10px;
+  height: 10px;
+  margin-right: 3px; }
+
+.lt-ie10 .inpage-loader__circle {
+  display: none; }
+
+.inpage-loader__circle--1 {
+  -webkit-animation-delay: -.32s;
+  animation-delay: -.32s; }
+
+.inpage-loader__circle--2 {
+  -webkit-animation-delay: -.16s;
+  animation-delay: -.16s; }
+
+@-webkit-keyframes sk-three-bounce {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes sk-three-bounce {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+.lt-ie9 .loader__text--bottom-border.loader__text:after,
+.lt-ie9 .loader {
+  display: none; }
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "helvetica-med-light", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: normal;
+  margin: 20px 0;
+  letter-spacing: 0; }
+  .city-breaks h1, .city-breaks
+  h2, .city-breaks
+  h3, .city-breaks
+  h4, .city-breaks
+  h5, .city-breaks
+  h6 {
+    font-family: "Montserrat-Regular", sans-serif; }
+
+h1,
+.h1 {
+  font-size: 22px;
+  font-size: 1.375rem; }
+
+h2,
+.h2 {
+  font-size: 18px;
+  font-size: 1.125rem; }
+
+h3,
+.h3 {
+  font-size: 16px;
+  font-size: 1rem; }
+
+h4,
+.h4 {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold; }
+
+h5,
+.h5 {
+  font-size: 12px;
+  font-size: 0.75rem; }
+
+ul {
+  list-style-position: inside;
+  padding: 0; }
+
+p,
+li {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+/* Heading styles */
+.heading-large {
+  font-family: "helveticaneuelight", sans-serif;
+  display: block;
+  margin: 0;
+  font-weight: normal;
+  font-size: 40px;
+  font-size: 2.5rem;
+  line-height: 1.05; }
+
+.heading-alternate {
+  font-family: "helvetica-med-light", sans-serif;
+  font-weight: normal; }
+  .heading-alternate--cb {
+    font-size: 15px;
+    font-size: 0.9375rem;
+    font-family: "Montserrat-Regular", sans-serif; }
+
+.heading--availability {
+  font-family: "helveticaneuelight", sans-serif;
+  font-weight: normal; }
+
+/*-#FONT-WEIGHTS--------------------*/
+.regular {
+  font-weight: 300; }
+
+.bold {
+  font-weight: 900; }
+
+.semibold {
+  font-weight: 600; }
+
+/*-#FONT-COLOURS--------------------*/
+.text-green {
+  color: #098c09; }
+
+.text-blue {
+  color: #4290db; }
+
+.text-yellow {
+  color: #fff100; }
+
+.text-white {
+  color: #fff; }
+
+.text-light-grey {
+  color: #c0c0c0; }
+
+.text-dark-grey {
+  color: #626262; }
+
+.modal-sub-title {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1;
+  letter-spacing: 0.8px;
+  color: #5c5c5c; }
+
+.text-orange {
+  color: #f28c00; }
+
+.line-through {
+  text-decoration: line-through; }
+
+/*-#ALIGNMENT--------------------*/
+.center-align {
+  text-align: center; }
+
+.right-align {
+  text-align: right; }
+
+.left-align {
+  text-align: left; }
+
+/*-#DECORATION--------------------*/
+.underline {
+  text-decoration: underline; }
+
+.caveat,
+.caveat p {
+  font-size: 11px;
+  font-size: 0.6875rem;
+  line-height: 1.2; }
+
+/*------------------------------------*    #CAR HIRE BOX
+\*------------------------------------*/
+/*-------------VARIABLES--------------*/
+/*-------------MARKUP--------------*/
+.car-hire-box {
+  border-top: solid 8px #4290db;
+  position: relative;
+  margin-bottom: 24px; }
+  .car-hire-box__inner {
+    border: solid 1px #bbbbbb; }
+  .car-hire-box__add-btn {
+    margin-bottom: 20px; }
+  .car-hire-box__left-col {
+    padding: 24px 12px;
+    background-color: #eef3f9; }
+  .car-hire-box__car-number > span {
+    font-size: 24px;
+    font-size: 1.5rem;
+    color: #4290db;
+    display: block; }
+  .car-hire-box__car-number {
+    margin-bottom: 24px; }
+  .car-hire-box__terms-conditions {
+    display: inline-block;
+    margin-top: 24px;
+    text-decoration: underline;
+    color: #4290db; }
+  .car-hire-box__content {
+    padding: 24px 12px; }
+  .car-hire-box__content-inner--driver-age-confirm {
+    display: none;
+    opacity: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99; }
+  .car-hire-box__content-inner--hidden {
+    display: none; }
+  .car-hire-box__view-all-btn {
+    display: inline-block;
+    margin: 0 auto; }
+  .car-hire-box .select-option {
+    border: solid 1px #acadb2;
+    background-color: #fff;
+    position: relative; }
+    .car-hire-box .select-option:before {
+      content: "";
+      width: 44px;
+      height: 100%;
+      border-left: 1px solid #acadb2;
+      position: absolute;
+      right: 0;
+      top: 0;
+      background-color: #fff; }
+    .car-hire-box .select-option .fa {
+      font-size: 14px;
+      font-size: 0.875rem;
+      color: #4290db;
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      margin-top: -7px; }
+    .car-hire-box .select-option select {
+      width: 100%;
+      height: 44px;
+      border: none;
+      padding: 0 10px;
+      background: #fff;
+      -webkit-appearance: none; }
+      .car-hire-box .select-option select:disabled {
+        background-color: white; }
+  .car-hire-box__select-car {
+    padding: 12px;
+    border: solid 1px #acadb2;
+    position: relative;
+    background-color: #fff; }
+  .car-hire-box__select-car-link {
+    color: #4290db;
+    font-weight: normal;
+    position: absolute;
+    right: 12px; }
+
+@media screen and (min-width: 768px) {
+  .car-hire-box__left-col, .car-hire-box__content {
+    float: left; }
+  .car-hire-box__left-col {
+    width: 33.33333%;
+    padding: 48px 12px; }
+    .car-hire-box__left-col:after {
+      content: "";
+      width: 33.33333%;
+      background-color: inherit;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      z-index: -1; }
+  .car-hire-box__content {
+    width: 66.66667%;
+    position: relative;
+    padding: 48px 24px; } }
+
+@media screen and (min-width: 1025px) {
+  .car-hire-box__left-col {
+    padding: 48px; } }
+
+/*------------------------------------*    #CAR SELECTION
+\*------------------------------------*/
+.car-selection {
+  position: relative; }
+  .car-selection__car-type {
+    font-size: 18px;
+    font-size: 1.125rem;
+    color: #4290db; }
+  .car-selection__car-model {
+    font-size: 12px;
+    font-size: 0.75rem; }
+  .car-selection__img-container {
+    position: relative;
+    text-align: center; }
+  .car-selection__recommended {
+    position: absolute;
+    top: 0;
+    left: 0; }
+    .car-selection__recommended__img-container:not(.car-selection__img-container--recommended) .car-selection__recommended {
+      display: none; }
+  .car-selection__details {
+    font-size: 14px;
+    font-size: 0.875rem;
+    width: 100%;
+    margin: 12px 0 48px;
+    font-weight: bold;
+    border-collapse: collapse; }
+  .car-selection .svg-icon__details .car-selection .svg-icon {
+    position: relative;
+    top: 4px; }
+  .car-selection__details-row:not(:last-child) {
+    border-bottom: 1px solid #acadb2; }
+  .car-selection__details-row td {
+    padding: 6px 0; }
+  .car-selection__provider {
+    margin-bottom: 12px; }
+  .car-selection__provider-img {
+    margin-right: 12px; }
+  .car-selection__provider-img, .car-selection__provider-rating {
+    float: left; }
+  .car-selection__provider-rating {
+    margin-top: 6px;
+    font-weight: normal;
+    cursor: pointer; }
+  .car-selection__provider-number {
+    font-weight: bold; }
+  .car-selection__provider-rating-based-on {
+    color: #4290db;
+    text-decoration: underline; }
+  .car-selection__link {
+    font-size: 14px;
+    font-size: 0.875rem;
+    color: #4290db;
+    text-decoration: underline;
+    margin-bottom: 6px;
+    display: inline-block; }
+    .car-selection__link:hover {
+      text-decoration: none; }
+  html.flexbox .car-selection__price-section-wrapper {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    width: 100%; }
+  .car-selection__price-section {
+    display: table;
+    width: 100%;
+    margin-bottom: 12px; }
+    .car-selection__price-section:not(:last-child) {
+      border-bottom: solid 1px #acadb2; }
+  .car-selection__price-section[data-driver-age-charge='0'] {
+    display: none; }
+  .car-selection__price-info, .car-selection__price-cost {
+    display: table-cell;
+    vertical-align: middle;
+    padding-bottom: 12px; }
+  .car-selection__price-cost {
+    width: 25%;
+    text-align: right;
+    vertical-align: top; }
+  .car-selection__price-details {
+    font-size: 12px;
+    font-size: 0.75rem;
+    line-height: 1.3; }
+  .car-selection__total {
+    margin-bottom: 0;
+    font-weight: 700; }
+  .car-selection__price-footer {
+    text-align: center;
+    width: 100%; }
+  .car-selection__price-per-day {
+    font-size: 12px;
+    font-size: 0.75rem;
+    line-height: 1.3;
+    margin-top: 0; }
+  .car-selection__total-price {
+    font-size: 26px;
+    font-size: 1.625rem;
+    color: #4290db;
+    display: block; }
+
+@media screen and (min-width: 768px) {
+  .car-selection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .car-selection__col {
+      width: 49.15254%;
+      float: left;
+      margin-right: 1.69492%; }
+      .car-selection__col:last-child {
+        float: right;
+        margin-right: 0; }
+      html.flexbox .car-selection__col {
+        float: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start; }
+    .car-selection__price-footer {
+      text-align: right; }
+    .car-selection__total-price {
+      display: initial;
+      margin-left: 12px; } }
+
+.provider-rating__info {
+  text-align: center; }
+
+.provider-rating__score {
+  font-size: 18px;
+  font-size: 1.125rem;
+  color: #4290db;
+  font-weight: bold; }
+
+.provider-rating__list-item {
+  list-style: none;
+  padding-bottom: 6px;
+  margin-bottom: 6px; }
+  .provider-rating__list-item:not(:last-child) {
+    border-bottom: 1px dashed #E7E7E7; }
+
+.provider-rating__list-score {
+  font-weight: bold; }
+
+@media screen and (min-width: 768px) {
+  .provider-rating {
+    max-width: 600px; }
+    .provider-rating__info {
+      text-align: left;
+      float: left; }
+    .provider-rating__list {
+      float: right; } }
+
+.car-hire-faq__question {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold; }
+
+/*------------------------------------*    #CAR HIRE LOADER
+\*------------------------------------*/
+.car-hire-loader {
+  text-align: center; }
+  .car-hire-loader__title {
+    font-size: 18px;
+    font-size: 1.125rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    color: #4290db;
+    margin-bottom: 24px; }
+  .car-hire-loader__block {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+    position: relative;
+    background-color: #e7e7e7;
+    padding: 12px;
+    text-align: center;
+    height: 70px;
+    margin-bottom: 30px; }
+    .car-hire-loader__block:nth-child(2n) {
+      float: right;
+      margin-right: 0; }
+  .car-hire-loader__img-container {
+    height: 35px;
+    border-radius: 4px;
+    position: relative;
+    background-color: #fff; }
+    .car-hire-loader__block--hertz .car-hire-loader__img-container {
+      background-color: #fdc903; }
+    .car-hire-loader__block--europcar .car-hire-loader__img-container {
+      background-color: #00783f; }
+  .car-hire-loader__img {
+    margin: 7px auto 0 auto;
+    max-width: 100%; }
+  .car-hire-loader__round {
+    display: inline-block;
+    background-color: #fff;
+    border: 2px solid #dddee0;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    border-radius: 50%;
+    text-align: center;
+    color: blue;
+    top: 10px; }
+  .car-hire-loader__spinner {
+    margin-top: 2px;
+    left: 8px;
+    -webkit-animation-name: spin;
+            animation-name: spin;
+    -webkit-animation-duration: 2000ms;
+            animation-duration: 2000ms;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    background-color: transparent;
+    fill: currentColor;
+    width: 24px;
+    height: 24px; }
+  .car-hire-loader__tick.fa {
+    color: #098c09;
+    display: none;
+    left: 50%;
+    top: 50%;
+    font-size: 16px;
+    font-size: 1rem;
+    position: absolute;
+    margin-left: -8px;
+    margin-top: -8px; }
+  .car-hire-loader__info-block {
+    width: 190px;
+    display: inline-block;
+    background-color: #e7e7e7;
+    padding: 15px; }
+    .car-hire-loader__info-block:not(:last-child) {
+      margin-right: 10px; }
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@media screen and (min-width: 768px) {
+  .car-hire-loader__block, .car-hire-loader__block:nth-child(2n) {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%; }
+  .car-hire-loader__block:nth-child(3n) {
+    float: right;
+    margin-right: 0; } }
+
+.transfer-selection__list-block img {
+  max-width: 100%; }
+
+.transfer-selection__list-intro {
+  font-weight: bold; }
+
+.transfer-selection__list {
+  list-style: none; }
+
+.transfer-selection__list-icon {
+  color: #4290db; }
+
+@media screen and (min-width: 768px) {
+  .transfer-selection__sidebar {
+    width: 40.67797%;
+    float: left;
+    margin-right: 1.69492%; }
+  .transfer-selection__body {
+    width: 57.62712%;
+    float: right;
+    margin-right: 0; } }
+
+.recommended-car__title {
+  font-size: 24px;
+  font-size: 1.5rem;
+  color: #4290db;
+  font-weight: normal; }
+
+.recommended-car__details {
+  list-style: none; }
+
+.recommended-car__item {
+  line-height: 1.4; }
+
+@media screen and (min-width: 768px) {
+  .recommended-car__item {
+    float: left; }
+    .recommended-car__item:not(:last-child) {
+      position: relative;
+      padding-right: 24px;
+      margin-right: 24px; }
+      .recommended-car__item:not(:last-child):after {
+        content: "|";
+        position: absolute;
+        top: 0;
+        right: 0; } }
+
+.car-hire-included__table {
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-align: left;
+  margin-bottom: 24px; }
+
+.car-hire-included__list-item {
+  list-style: none;
+  padding-bottom: 6px;
+  margin-bottom: 6px; }
+  .car-hire-included__list-item:not(:last-child) {
+    border-bottom: 1px dashed #E7E7E7; }
+
+.car-hire-extras {
+  border-bottom: 1px solid #E7E7E7;
+  padding: 10px 0 20px 0;
+  margin-bottom: 10px; }
+  .car-hire-extras__title {
+    font-size: 18px;
+    font-size: 1.125rem;
+    color: #4290db;
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal; }
+  .car-hire-extras__info {
+    line-height: 1.4; }
+  .car-hire-extras__details {
+    margin-bottom: 24px; }
+  .car-hire-extras__price-per {
+    float: left;
+    text-align: right;
+    width: calc( 100% - 160px); }
+  .car-hire-extras__price-per-price {
+    font-weight: bold;
+    display: block; }
+  .car-hire-extras__counter {
+    width: 100%;
+    max-width: 145px;
+    float: right;
+    position: relative; }
+  .car-hire-extras__counter-btn {
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: solid 1px #4290db;
+    text-align: center;
+    color: #4290db;
+    cursor: pointer; }
+    .car-hire-extras__counter-btn .fa {
+      line-height: 40px; }
+  .car-hire-extras__counter-btn--plus {
+    right: 0; }
+  .car-hire-extras__counter-btn--minus {
+    left: 0; }
+  .car-hire-extras__counter-number {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 44px;
+    width: 100%;
+    display: inline-block; }
+  .car-hire-extras__terms {
+    font-size: 12px;
+    line-height: 1.4;
+    text-align: left;
+    width: 74.57627%;
+    float: left;
+    margin-right: 1.69492%; }
+  .car-hire-extras__cost {
+    width: 23.72881%;
+    float: right;
+    margin-right: 0; }
+  .car-hire-extras__total {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 0.9; }
+  .car-hire-extras__price {
+    font-size: 26px;
+    color: #098c09; }
+  .car-hire-extras__price-conversion {
+    font-size: 12px; }
+
+@media screen and (min-width: 768px) {
+  .car-hire-extras__details {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%; }
+  .car-hire-extras__price-per {
+    width: 27.9661%;
+    float: left;
+    margin-right: 1.69492%; }
+  .car-hire-extras__counter {
+    width: 19.49153%;
+    float: right;
+    margin-right: 0; } }
+
+.car-hire-big-enough__title {
+  font-size: 18px;
+  font-size: 1.125rem;
+  color: #4290db;
+  font-weight: normal; }
+
+.car-hire-big-enough__table {
+  font-size: 14px;
+  font-size: 0.875rem;
+  width: 100%;
+  max-width: 450px; }
+
+.car-hire-big-enough__head {
+  text-align: center; }
+
+.car-hire-big-enough__cell {
+  border-bottom: 1px dashed #E7E7E7;
+  padding: 12px 0; }
+  .car-hire-big-enough__cell:not(:first-child) {
+    text-align: center; }
+
+.accordion {
+  cursor: pointer;
+  position: relative; }
+  .accordion--standard {
+    font-size: 17px;
+    font-size: 1.0625rem;
+    border: 1px solid #4290db;
+    padding: 12px 48px 12px 24px;
+    color: #4290db;
+    background-color: #eef3f9;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-transition: 0.3s all;
+            transition: 0.3s all; }
+    .accordion--standard.accordion--open {
+      background-color: #4290db;
+      color: #fff; }
+    .accordion--standard .fa-chevron-down {
+      font-size: 15px;
+      font-size: 0.9375rem;
+      right: 12px; }
+  .accordion .fa-chevron-down {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    line-height: 1; }
+  .accordion--open .fa-chevron-down {
+    -webkit-transform: rotate(180deg) translateY(40%);
+            transform: rotate(180deg) translateY(40%); }
+  .accordion--transitioning {
+    pointer-events: none; }
+  .accordion__content {
+    display: none; }
+    .accordion__content--standard {
+      padding: 24px;
+      border: 1px solid #4290db;
+      border-top: 0; }
+    .accordion__content--open {
+      display: block; }
+
+.modal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  height: 100%;
+  background-color: #e7e7e7; }
+  .modal--open {
+    bottom: 0;
+    display: block;
+    opacity: 1;
+    visibility: visible; }
+  .modal__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    border-bottom: 1px solid #4290db; }
+  .modal__header {
+    background-color: #4290db;
+    min-height: 64px;
+    width: 100%;
+    padding: 0 12px;
+    z-index: 20; }
+  .modal__title {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    color: #fff;
+    letter-spacing: 0.8px;
+    padding: 21px 64px 21px 0; }
+  .modal__body {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    overflow-y: auto;
+    background-color: #fff;
+    padding: 24px;
+    min-height: 0;
+    border-bottom: 0; }
+  .modal--back-btn {
+    text-align: center; }
+  .modal__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    padding: 0 20px;
+    height: 100%;
+    line-height: 64px;
+    width: 64px;
+    cursor: pointer;
+    text-align: center;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
+  .modal__footer {
+    border: 1px solid #e7e7e7;
+    border-top-color: #4290db;
+    border-bottom: 0;
+    background-color: #fff;
+    padding: 12px; }
+
+@media screen and (min-width: 768px) {
+  .modal {
+    top: 0;
+    background-color: rgba(30, 49, 70, 0.8); }
+    .modal--open {
+      bottom: auto; }
+    .modal__content {
+      max-width: 768px;
+      position: relative;
+      top: 10%;
+      top: 10vh;
+      max-height: 80vh;
+      margin: 0 auto;
+      height: auto; } }
+
+.insurance-block {
+  border: 1px solid #4290db; }
+  .insurance-block__header {
+    background-color: #4290db;
+    padding: 12px 24px; }
+  .insurance-block__title {
+    font-size: 17px;
+    font-size: 1.0625rem;
+    color: #fff;
+    font-family: "helvetica-med-light", sans-serif;
+    margin: 0; }
+  .insurance-block__body {
+    background-color: #eef3f9;
+    padding: 12px 24px; }
+
+@media screen and (min-width: 768px) {
+  .insurance-block__header, .insurance-block__body {
+    padding: 12px 48px; } }
+
+/*------------------------------------*	#UTILTIIES
+\*------------------------------------*/
+.wrapper {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.69492%; }
+  .wrapper:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .wrapper--blue {
+    background-color: #BEEEFF; }
+  .wrapper--grey {
+    background-color: #e9ebee; }
+
+.image-wrapper {
+  max-width: 100%;
+  min-height: 400px;
+  padding: 60px 0;
+  display: block;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.hidden {
+  display: none; }
+
+.display-none {
+  display: none; }
+
+.invisible {
+  visibility: hidden; }
+
+.no-bm {
+  margin-bottom: 0; }
+
+/*------------------------*	SHOULD BE RENAMED TO no-mt - no margin-top;
+\*------------------------*/
+.no-tm {
+  margin-top: 0; }
+
+.center {
+  text-align: center; }
+
+.align-right {
+  text-align: right; }
+
+.holiday-details-price {
+  color: #4290db;
+  font-size: 2em;
+  font-weight: bold; }
+
+.holiday-details-total-price {
+  font-size: 0.8em;
+  font-weight: bold; }
+
+.holiday-type {
+  font-size: 12px;
+  font-size: 0.75rem;
+  padding: 3px 0; }
+
+.full-width {
+  width: 100%; }
+
+.no-scroll {
+  overflow: hidden;
+  position: relative; }
+
+.no-scroll #container {
+  overflow: hidden; }
+
+.hide-text {
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  overflow: hidden; }
+
+/* Paddings */
+.padding {
+  padding: 12px; }
+  .padding--top {
+    padding-top: 12px; }
+  .padding--right {
+    padding-right: 12px; }
+  .padding--bottom {
+    padding-bottom: 12px; }
+  .padding--left {
+    padding-left: 12px; }
+  .padding--half {
+    padding: 6px; }
+  .padding--top-half {
+    padding-top: 6px; }
+  .padding--right-half {
+    padding-right: 6px; }
+  .padding--bottom-half {
+    padding-bottom: 6px; }
+  .padding--left-half {
+    padding-left: 6px; }
+
+.no-pt {
+  padding-top: 0; }
+
+/* Margins */
+.margin {
+  margin: 20px; }
+  .margin--top {
+    margin-top: 20px; }
+  .margin--right {
+    margin-right: 20px; }
+  .margin--bottom {
+    margin-bottom: 20px; }
+  .margin--left {
+    margin-left: 20px; }
+  .margin--half {
+    margin: 10px; }
+  .margin--top-half {
+    margin-top: 10px; }
+  .margin--right-half {
+    margin-right: 10px; }
+  .margin--bottom-half {
+    margin-bottom: 10px; }
+  .margin--left-half {
+    margin-left: 10px; }
+
+/* Backgrounds */
+.background--white {
+  background-color: #fff; }
+
+.background--light-grey {
+  background-color: #f2f2f2; }
+
+.background--blue {
+  background-color: #4290db; }
+
+.background--check-availability, .background--light-blue {
+  background-color: #BEEEFF; }
+
+.background--dark-blue {
+  background-color: #1E3146; }
+
+.background--orange {
+  background-color: #f28c00; }
+
+.background--family-main {
+  background-color: #f28c00; }
+
+.background--family-sub {
+  background-color: #f7b800; }
+
+.background--family-light {
+  background-color: #fcd47b; }
+
+.background--family-alt {
+  background-color: #5bbbeb; }
+
+.background--adult-main {
+  background-color: #009b9f; }
+
+.background--adult-sub {
+  background-color: #63c1c6; }
+
+.background--adult-light {
+  background-color: #a4d7da; }
+
+.background--luxury-main {
+  background-color: #1f104b; }
+
+.background--luxury-sub {
+  background-color: #8f8b90; }
+
+.background--luxury-light {
+  background-color: #d2ced0; }
+
+.background--ontour-green {
+  background-color: #62c2c9; }
+
+.background--ontour-purple {
+  background-color: #1f104b; }
+
+.background--ontour-orange {
+  background-color: #f28c00; }
+
+.background--ontour-black {
+  background-color: #000; }
+
+.background--experience-main {
+  background-color: #8bbf46; }
+
+.background--experience-light {
+  background-color: #e0edce; }
+
+.background--indulgent {
+  background-color: #1d191a; }
+
+/* Brand backgrounds */
+.brand {
+  border-color: #F38E01;
+  background-color: #F38E01; }
+
+.family-favourites {
+  border-color: #F38E01;
+  background-color: #F38E01; }
+
+.experience-more {
+  border-color: #8bbf46;
+  background-color: #8bbf46; }
+
+.indulgent-escapes {
+  border-color: #1d191a;
+  background-color: #1d191a; }
+
+.luxe {
+  border-color: #8f8b90;
+  background-color: #8f8b90; }
+
+.on-tour {
+  border-color: #1f104b;
+  background-color: #1f104b; }
+
+.adult-holidays {
+  border-color: #009b9f;
+  background-color: #009b9f; }
+
+.icon--bg-orange {
+  background-color: #f28c00;
+  padding: 2px;
+  border-radius: 2px;
+  color: #fff; }
+
+/* Borders */
+.border {
+  border: 1px solid; }
+  .border--top {
+    border-top: 1px solid; }
+  .border--bottom {
+    border-bottom: 1px solid; }
+
+/* Responsive utilities */
+.desktop-only {
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .desktop-only {
+      display: block; } }
+
+@media screen and (min-width: 768px) {
+  .mobile-only {
+    display: none; } }
+
+/*.fluid-wrapper {
+    @include fluid-wrapper($glasgow-grey);
+}*/

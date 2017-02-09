@@ -1,0 +1,140 @@
+/*------------------------------------*\
+    #COLOURS
+\*------------------------------------*/
+
+$white: #fff;
+$black: #000;
+
+/*-#JET2HOLIDAYS BRAND COLOURS---------------------*/
+
+$temp-blue: #403931;
+
+$holidays-primary: #4290db;
+$holidays-secondary: #d1020e;
+
+$holidays-primary-shadow: #2f70af;
+$holidays-active-shadow: #182635;
+// $holidays-pale-blue: #B3D4FC;
+$holidays-cold-blue: #BEEEFF;
+$holidays-tertiary: #3272ad;
+$holidays-light-blue: #4ac7f3;
+$holidays-background-blue: #1f8adc;
+$holidays-dark-blue: #1E3146;
+$holidays-wednesday-blue: #235e98;
+$holidays-nav-blue: $holidays-wednesday-blue;
+$holidays-grey: #E7E7E7;
+$holidays-orange-light: #f9b700;
+$holidays-orange: #f28c00;
+$holidays-red: #d1010e;
+
+$transparent-black: rgba(0, 0, 0, 0.1);
+$transparent-white: rgba(255, 255, 255, 0.1);
+
+/* CITY BREAKS THEME COLOURS */
+
+$citybreaks-primary: #ed1c24;
+$citybreaks-secondary: #272462;
+$citybreaks-tertiary: #203240;
+$citybreaks-red: #ed1b24;
+$citybreaks-red-shadow: #be161d;
+$citybreaks-dark: #ae010b;
+$citybreaks-grey: #6d6f72;
+$citybreaks-light-grey: #eaebef;
+$citybreaks-mid-grey: #bfbfbf;
+$citybreaks-nav: #e5ae1b;
+$citybreaks-nav-shadow: #b78b16;
+$citybreaks-blue: #3373b1;
+$citybreaks-darkblue: #262262;
+$citybreaks-lightbrown: #d8a418;
+
+/*-#REDS-----------------------------*/
+
+$amsterdam-red: #c4312a;
+$rome-red: #b12421;
+$murcia-red: #C44E45;
+$krakow-red: #d42c1f;
+
+/*-#GREYS----------------------------*/
+
+$whitepoint7:		rgba(255, 255, 255, 0.7);
+$white:             #fff;
+$glasgow-grey:      #fcfcfc;
+$leeds-grey:        #f8f8f8;
+$edinburgh-grey:    #f2f2f2;
+$birmingham-grey:   #e7e7e7;
+$newcastle-grey:    #e3e3e3;
+$midlands-grey:     #dddee0;
+$status-grey:       #cccccc;
+$bradford-grey:     #c0c0c0;
+$manchester-grey:   #acadb2;
+$madrid-grey:       #979797;
+$barcelona-grey:    #757575;
+$turin-grey:        #626262;
+$krakow-grey:       #5c5c5c;
+$paris-grey:        #3d3d3d;
+$black:             #000;
+$blackpoint2:       rgba(0, 0, 0, 0.2);
+$keyline-grey: 		#d1d3d6;
+$ui-grey:			#d7d7d7;
+$bg-grey: 			#e9ebee;
+
+/*-#GREENS----------------------------*/
+
+$budapest-green: #098c09;
+$glasgow-green: #3ab878;
+$vienna-green: #dcf0c2;
+$kos-green: #5dc163;
+$berlin-green: #85d385;
+$whatsapp-green: #25D366;
+
+
+
+/*-#OTHER---------------------------*/
+$button-orange:				#f6af23;
+$button-orange-shadow:		#e18f1d;
+
+$dortmund-yellow: #f6aa09;
+$amsterdam-orange: #fa8818;
+$ibiza-orange: #ffecd8;
+$holland-orange: #F38E01;
+$valencia-yellow: #fbb800;
+$leeds-yellow: #ffde00;
+$geneva-gold: #FFCC66;
+$turin-pink: #ffe5e4;
+$validation-pink: #ffefee;
+$validation-red: #ff0000;
+$validation-blue: #dbe7fd;
+$facebook-blue: #3b5998;
+$facebook-dark: darken($facebook-blue, 10%);
+$delete-red: #D30000;
+$delete-dark-grey: #463f36;
+
+/*-#JET2 BRAND COLOURS---------------------*/
+
+$jet2-red: #ee3123;
+$jet2-yellow: #fff100;
+$family-main: #f28c00;
+$family-sub: #f7b800;
+$family-light: #fcd47b;
+$family-alt: #5bbbeb;
+$adult-main: #009b9f;
+$adult-sub: #63c1c6;
+$adult-light: #a4d7da;
+$luxury-main: #1f104b;
+$luxury-sub: #8f8b90;
+$luxury-light: #d2ced0;
+$ontour-green: #62c2c9;
+$ontour-purple: #1f104b;
+$ontour-orange: #f28c00;
+$ontour-black: $black;
+$experience-main: #8bbf46;
+$experience-light: #e0edce;
+$indulgent: #1d191a;
+/*- SHORT LIST COLOURS */
+$shortlist-border:				#1f6ebf;
+$shortlist-title:				#5c5c5c;
+$shortlist-info:				#63717f;
+$shortlist-mobile-line:			#a1d8f8;
+$this-shade:					#d3e6f8;
+$space-wolf-blue:				#a3c4ee; // another shade of blue/grey that am not sure what to name.
+

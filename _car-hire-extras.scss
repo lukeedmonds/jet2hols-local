@@ -1,0 +1,114 @@
+
+.car-hire-extras {
+	border-bottom:1px solid $holidays-grey;
+	padding:10px 0 20px 0;
+	margin-bottom:10px;
+
+
+	&__title {
+		@include font-size(18px);
+		color: $holidays-primary;
+		font-family: $body-font;
+		font-weight: normal;
+	}
+
+	&__info  {
+		line-height:1.4;
+	}
+
+	&__details {
+		margin-bottom: $base-spacing-unit;
+	}
+
+	&__price-per {
+		float: left;
+		text-align: right;
+		width: calc( 100% - 160px );
+	} 
+
+	&__price-per-price {
+		font-weight: bold;
+		display: block;
+	}
+
+	&__counter {
+		width: 100%;
+		max-width: 145px;
+		float: right;
+		position:relative;
+	}
+	
+	&__counter-btn {
+		position:absolute;
+		top:0;
+		display:inline-block;
+		width:40px;
+		height:40px;
+		border:solid 1px $holidays-primary;
+		text-align:center;
+		color:$holidays-primary;
+		cursor:pointer;
+		.fa {
+			line-height:40px;
+		}
+	}
+
+	&__counter-btn--plus {
+		right:0;
+	}
+
+	&__counter-btn--minus {
+		left:0;
+	}
+
+	&__counter-number {
+		font-size: 30px;
+		font-weight: bold;
+		text-align: center;
+		line-height:44px;
+		width:100%;	
+	    display: inline-block;
+	}
+
+	&__terms {
+		font-size:12px;
+		line-height:1.4;
+		text-align:left;
+		@include span(9);
+	}
+
+	&__cost {
+		@include span(3 last);
+	}
+
+	&__total {
+		font-size: 18px;
+		font-weight: bold;
+		line-height: 0.9;
+	}
+
+	&__price {
+		font-size: 26px;
+		color: $budapest-green;
+	}
+
+	&__price-conversion {
+		font-size:12px;
+	}
+}
+
+@include screen-bigger-than($bp-small) {
+	.car-hire-extras {
+		&__details {
+			@include span(6);
+		}
+
+		&__price-per {
+			@include span(3.5);
+		}
+
+		&__counter {
+			@include span(2.5 last);
+		}
+	}
+}

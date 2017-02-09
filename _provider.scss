@@ -1,0 +1,40 @@
+.provider-rating {
+	&__info {
+		text-align: center;	
+	}
+
+	&__score {
+		@include font-size(18px);
+		color: $holidays-primary;
+		font-weight:bold;
+	}
+
+	&__list-item {
+		list-style: none;
+		padding-bottom: $quarter-spacing-unit;
+		margin-bottom: $quarter-spacing-unit;
+		
+		&:not(:last-child) {
+			border-bottom: 1px dashed $holidays-grey;
+		}
+	}
+
+	&__list-score {
+		font-weight: bold;
+	}
+}
+
+@include screen-bigger-than($bp-small) {
+	.provider-rating {
+		max-width: 600px;
+		
+		&__info {
+			text-align: left;
+			float: left;
+		}
+
+		&__list {
+			float: right;
+		}
+	}
+}

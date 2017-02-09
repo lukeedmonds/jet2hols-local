@@ -1,0 +1,101 @@
+/* Lists - _lists.scss */
+
+.list {
+	color: $turin-grey;
+	padding: 0;
+
+	&__item {
+		@include h4-font-size;
+		list-style-type: none;
+		display: block;
+		margin-bottom: 5px;
+		padding: 0 0 0 10px;
+		position: relative;
+
+		&:before {
+			content: "-";
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&--bullet-point {
+
+		.list__item {
+			&:before {
+				content: "\2022";
+			}
+		}
+	}
+
+	&--small-icons {
+		.list__item {
+			@include h4-font-size;
+			padding: 0 0 0 25px;
+			margin-bottom: 10px;
+
+			&:before {
+				display: none;
+			}
+
+			i {
+				@include h4-font-size;
+				position: absolute;
+				top: 0;
+				left: 0;
+				color: $holidays-primary;
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&--large-icons {
+		.list__item {
+			@include h3-font-size;
+
+			position: relative;
+			padding: 0 0 0 25px;
+			margin: 0 0 20px;
+			font-family: $helvetica-med;
+
+			&:before {
+				display: none;
+			}
+
+			i {
+				@include h3-font-size;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+
+			span {
+				@include font-size(12px);
+				font-family: $open-sans;
+				display: block;
+				line-height: 100%;
+				margin-top: 5px;
+			}
+
+		}
+
+	}
+
+	&--2col {
+		@include span(6);
+		float: left;
+
+		&:last-of-type,
+		&:last-child {
+			@include last;
+		}
+	}
+}

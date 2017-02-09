@@ -1,0 +1,15 @@
+@mixin bg-primary {
+	background-color: $holidays-primary;
+
+	.city-breaks & {
+		background-color: $citybreaks-primary;
+	}
+}
+
+@mixin color-primary {
+	color: $holidays-primary;
+
+	.city-breaks & {
+		color: $citybreaks-primary;
+	}
+}

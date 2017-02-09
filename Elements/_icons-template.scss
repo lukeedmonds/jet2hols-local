@@ -1,0 +1,106 @@
+/*@font-face {
+	font-family: "<%= fontName %>";
+	src: url('<%= fontPath %><%= fontName %>.eot');
+	src: url('<%= fontPath %><%= fontName %>.eot?#iefix') format('eot'),
+		url('<%= fontPath %><%= fontName %>.woff') format('woff'),
+		url('<%= fontPath %><%= fontName %>.ttf') format('truetype'),
+		url('<%= fontPath %><%= fontName %>.svg#<%= fontName %>') format('svg');
+}
+
+@mixin icon-styles {
+	font-family: "<%= fontName %>";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	text-decoration: none;
+	text-transform: none;
+}
+
+%icon-styles {
+
+}
+
+%icon {
+	@include icon-styles;
+}
+
+[class^="icon-"],
+[class*=' icon-'] {
+	@include icon-styles;
+}
+
+.icon--tiny {
+	@include font-size(6px);
+}
+
+.icon--small {
+	@include font-size(8px);
+}
+
+.icon--medium {
+	@include font-size(12px);
+}
+
+.icon--large {
+	@include font-size(16px);
+}
+
+.icon--x-large {
+	@include font-size(20px);
+}
+
+.icon--huge {
+	@include font-size(35px);
+}
+
+.icon--red {
+	color: $jet2-red;
+}
+
+.icon--blue {
+	color: $holidays-dark-blue;
+}
+
+.icon--white {
+	color: #FFFFFF;
+}
+
+@function icon-char($filename) {
+	$char: "";
+<% _.each(glyphs, function(glyph) { %>
+	@if $filename == '<%= glyph.fileName %>' {
+		$char: '<%= glyph.codePoint %>';
+	}<% }); %>
+	@return $char;
+}
+
+@mixin variable-icon-font($icon-code) {
+  content: #{"\"\\"}#{$icon-code + "\""};
+}
+
+@mixin icon($filename, $extend: false, $insert: before ) {
+	&:#{$insert} {
+		@if $extend {
+			@extend %icon;
+		}
+
+		$char: icon-char($filename);
+		@include variable-icon-font($char);
+	}
+}
+
+@mixin icon-code($filename, $extend: true) {
+	// @if $extend
+		//@extend %icon;
+		 @include icon-styles;
+
+	$char: icon-char($filename);
+	@include variable-icon-font($char);
+}
+
+<% _.each(glyphs, function(glyph) { %>.icon-<%= glyph.fileName %> {
+	@include icon('<%= glyph.fileName %>');
+}
+<% }); %>*/

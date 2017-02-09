@@ -1,0 +1,168 @@
+﻿/* Typography */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @include heading-font;
+    font-weight: normal;
+    margin: 20px 0;
+    letter-spacing: 0;
+}
+
+h1,
+.h1 {
+    @include h1-font-size;
+}
+
+h2,
+.h2 {
+    @include h2-font-size;
+}
+
+h3,
+.h3 {
+    @include h3-font-size;
+}
+
+h4,
+.h4 {
+    @include h4-font-size;
+    font-weight: bold;
+}
+
+h5,
+.h5 {
+    @include h5-font-size;
+}
+
+ul {
+    list-style-position: inside;
+    padding: 0;
+}
+
+p,
+li {
+    @include paragraph-font-size;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    // .no-touch &:hover {
+    // 	color: #d1020e;
+    // }
+}
+
+
+/* Heading styles */
+
+.heading-large {
+    font-family: $helvetica-neue;
+    display: block;
+    margin: 0;
+    font-weight: normal;
+    @include font-size(40px);
+    line-height: 1.05;
+}
+
+.heading-alternate {
+    font-family: $heading-font;
+    font-weight: normal;
+    &--cb {
+        @include font-size(15px);
+        font-family: $montserrat;
+    }
+}
+
+.heading--availability {
+    font-family: $heading-font--availability;
+    font-weight: normal;
+}
+
+
+/*-#FONT-WEIGHTS--------------------*/
+
+.regular {
+    @include regular-weight;
+}
+
+.bold {
+    @include bold-weight;
+}
+
+.semibold {
+    @include semibold-weight;
+}
+
+
+/*-#FONT-COLOURS--------------------*/
+
+.text-green {
+    color: $budapest-green;
+}
+
+.text-blue {
+    color: $holidays-primary;
+}
+
+.text-yellow {
+    color: $jet2-yellow;
+}
+
+.text-white {
+    color: $white;
+}
+
+.text-light-grey {
+    color: $bradford-grey;
+}
+
+.text-dark-grey {
+    color: $turin-grey;
+}
+
+.modal-sub-title {
+    @include h2-font-size;
+    line-height: 1;
+    letter-spacing: 0.8px;
+    color: $krakow-grey;
+}
+
+.text-orange {
+    color: $holidays-orange;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+
+/*-#ALIGNMENT--------------------*/
+
+.center-align {
+    text-align: center;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.left-align {
+    text-align: left;
+}
+
+
+/*-#DECORATION--------------------*/
+
+.underline {
+    text-decoration: underline;
+}
+
+.caveat,
+.caveat p {
+    @include font-size(11px);
+    line-height: 1.2;
+}

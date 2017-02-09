@@ -1,0 +1,57 @@
+.accordion {
+	cursor: pointer;
+	position: relative;
+
+	&--standard {
+		@include font-size(17px);
+		border: 1px solid $holidays-primary;
+		padding: $half-spacing-unit $double-spacing-unit $half-spacing-unit $base-spacing-unit;
+		color: $holidays-primary;
+		background-color: $car-hire-bg;
+		user-select: none;
+		transition: 0.3s all;
+
+		&.accordion--open {
+			background-color: $holidays-primary;
+			color: $white;
+		}
+
+		.fa-chevron-down {
+			@include font-size(15px);
+			right: $half-spacing-unit;
+		}
+	}
+
+	.fa-chevron-down {
+		position: absolute;
+		top:50%;
+		transform: translateY(-50%);
+		line-height: 1;
+	}
+
+	&--open {
+		.fa-chevron-down {
+			// stays aligned on the tests I did, might need to be modified
+			transform: rotate(180deg) translateY(40%);
+		}	
+	}
+
+	&--transitioning {
+		pointer-events: none;
+	}
+
+	&__content {
+		display: none;
+		
+		&--standard {
+			padding: $base-spacing-unit;
+			border: 1px solid $holidays-primary;
+			border-top: 0;
+		}
+
+		&--open {
+			display: block;
+		}
+	}
+}
+

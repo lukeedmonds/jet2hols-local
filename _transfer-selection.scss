@@ -1,0 +1,30 @@
+.transfer-selection {
+	&__list-block {
+		img {
+			max-width: 100%;
+		}
+	}
+	&__list-intro {
+		font-weight: bold;
+	}
+
+	&__list {
+		list-style: none
+	}
+
+	&__list-icon {
+		color: $holidays-primary;
+	}
+}
+
+@include screen-bigger-than($bp-small) {
+	.transfer-selection {
+		&__sidebar {
+			@include span(5);
+		}
+
+		&__body {
+			@include span(7 last);
+		}
+	}
+}

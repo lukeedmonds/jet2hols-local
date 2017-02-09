@@ -1,0 +1,19 @@
+
+.car-hire-included {
+
+	&__table {
+		@include font-size(14px);
+		text-align: left;
+		margin-bottom: $base-spacing-unit;
+	}
+
+	&__list-item {
+		list-style: none;
+		padding-bottom: $quarter-spacing-unit;
+		margin-bottom: $quarter-spacing-unit;
+		
+		&:not(:last-child) {
+			border-bottom: 1px dashed $holidays-grey;
+		}
+	}
+}

@@ -1,0 +1,27 @@
+/* Utility mixins */
+
+@mixin hide-text {
+	font-size: 0;
+	line-height: 0;
+	color: transparent;
+	overflow: hidden;
+}
+
+@mixin clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin placeholder {
+	// scss-lint:disable VendorPrefix
+	&::-webkit-input-placeholder {@content}
+
+	&:-moz-placeholder           {@content}
+
+	&::-moz-placeholder          {@content}
+
+	&:-ms-input-placeholder      {@content}
+}

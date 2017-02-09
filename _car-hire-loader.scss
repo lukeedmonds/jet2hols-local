@@ -1,0 +1,113 @@
+/*------------------------------------*\
+    #CAR HIRE LOADER
+\*------------------------------------*/
+.car-hire-loader {
+	// padding:50px;
+	text-align:center;
+
+	&__title {
+		@include font-size(18px);
+		font-family: $body-font;
+		font-weight: normal;
+		color: $holidays-primary;
+		margin-bottom:$base-spacing-unit;
+	}
+
+	&__block {
+		@include span(6);
+		position:relative;
+		background-color: $birmingham-grey;
+		padding:$half-spacing-unit;
+		text-align:center;
+		height:70px;
+		margin-bottom: 30px;
+		&:nth-child(2n) {
+	        @include last;
+		}
+	}
+	&__img-container {
+		height: 35px;
+		border-radius: 4px;
+		position:relative;
+		background-color:$white;
+
+		.car-hire-loader__block--hertz & {
+			background-color:#fdc903;
+		}
+		.car-hire-loader__block--europcar & {
+			background-color:#00783f;
+		}
+	}
+
+	&__img {
+		margin:7px auto 0 auto;
+	    max-width: 100%;
+	}
+
+	&__round {
+		display:inline-block;
+		background-color:$white;
+		border:2px solid $midlands-grey;
+		width:32px;
+		height:32px;
+		position:relative;
+		border-radius:50%;
+		text-align:center;
+		color:blue;
+		top:10px;
+	} 
+	 
+	&__spinner {
+		margin-top:2px;
+		left:8px;
+	    animation-name: spin;
+	    animation-duration: 2000ms;
+	    animation-iteration-count: infinite;
+	    animation-timing-function: linear;
+	    background-color: transparent;
+	    fill: currentColor;
+	    width: 24px;
+	    height: 24px;
+	}
+
+	&__tick.fa {
+		$loader-tick-size: 16px;
+		color:$budapest-green;
+		display:none;
+		left:50%;
+		top:50%;
+		@include font-size( $loader-tick-size );
+		position:absolute;
+		margin-left: -($loader-tick-size / 2);
+	    margin-top: -($loader-tick-size / 2);
+	}
+	&__info-block {
+		width:190px;
+		display:inline-block;
+		background-color: $birmingham-grey;
+		padding:15px;
+		
+		&:not(:last-child) {
+			margin-right:10px;
+		}
+	}
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+@include screen-bigger-than($bp-small) {
+	.car-hire-loader {
+		&__block {
+			&, 
+			&:nth-child(2n) {
+				@include span(4);	
+			}
+			&:nth-child(3n) {
+				@include last;
+			}
+		}	
+	}
+}
