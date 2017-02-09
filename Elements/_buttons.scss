@@ -901,7 +901,7 @@
 	box-shadow: 0 5px 0 0 $color;
 }
 
-@mixin standard-btn( $background, $text, $border, $hover: darken($background, 15%)) {
+@mixin standard-btn( $background, $text: $white, $border: $background, $hover: darken($background, 15%)) {
 	background-color: $background;
 	color: $text;
 	border-color: $border;
@@ -926,15 +926,16 @@
 
 .btn {
 	@include font-size(17px);
+	@include border-radius($theme-border-radius);
 	font-family: $body-font;
 	padding: $half-spacing-unit $base-spacing-unit;
-	border-radius: $border-radius;
+	
 	border: 1px solid;
 	outline: none;
 	cursor: pointer;
 	display: inline-block;
 	text-align: center;
-	padding-bottom: $half-spacing-unit;
+	margin-bottom: $half-spacing-unit;
 	min-width: 160px;
 }
 
@@ -944,17 +945,13 @@
 
 .btn--primary {
 	@include standard-btn(
-		$theme-button-primary-bg,
-		$theme-button-primary-text,
-		$theme-button-primary-border
+		$theme-button-primary-bg
 	);
 }
 
 .btn--secondary {
 	@include standard-btn(
-		$theme-button-secondary-bg,
-		$theme-button-secondary-text,
-		$theme-button-secondary-border
+		$theme-button-secondary-bg
 	);
 }
 

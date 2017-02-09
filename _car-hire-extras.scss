@@ -1,14 +1,14 @@
 
 .car-hire-extras {
-	border-bottom:1px solid $holidays-grey;
-	padding:10px 0 20px 0;
+	border-bottom:1px solid $theme-color-neutral;
+	padding: 10px 0 20px 0;
 	margin-bottom:10px;
 
 
 	&__title {
 		@include font-size(18px);
-		color: $holidays-primary;
-		font-family: $body-font;
+		color: $theme-title-color;
+		font-family: $theme-body-font;
 		font-weight: normal;
 	}
 
@@ -17,7 +17,7 @@
 	}
 
 	&__details {
-		margin-bottom: $base-spacing-unit;
+		margin-bottom: $theme-base-spacing-unit;
 	}
 
 	&__price-per {
@@ -44,9 +44,9 @@
 		display:inline-block;
 		width:40px;
 		height:40px;
-		border:solid 1px $holidays-primary;
+		border:solid 1px $theme-color-primary;
 		text-align:center;
-		color:$holidays-primary;
+		color:$theme-color-primary;
 		cursor:pointer;
 		.fa {
 			line-height:40px;

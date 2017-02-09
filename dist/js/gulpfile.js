@@ -108,7 +108,7 @@ gulp.task("build-css", function () {
 gulp.task("js-watch", ["build-js"], browserSync.reload);
 gulp.task("serve", ["build-css", "build-js"], function () {
 	browserSync.init({
-		proxy: process.env.PROXY_URL || "localhost/jet2hols-modals"
+		proxy: process.env.PROXY_URL || "localhost/jet2hols-local"
 	});
 
 	gulp.watch([input.jsComponents], ['js-watch']);

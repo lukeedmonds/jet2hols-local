@@ -19,14 +19,14 @@ $modal-header-height: 64px;
 		display: flex;
 		flex-direction: column;
 		height: 100%;
-		border-bottom: 1px solid $holidays-primary;
+		border-bottom: 1px solid $theme-color-primary;
 	}
 
 	&__header {
-		background-color: $holidays-primary;
+		background-color: $theme-color-primary;
 		min-height: $modal-header-height;
 		width: 100%;
-		padding: 0 $half-spacing-unit;
+		padding: 0 $theme-half-spacing-unit;
 		z-index: 20;
 	}
 
@@ -43,7 +43,7 @@ $modal-header-height: 64px;
 		flex: 1 1 auto;
 		overflow-y: auto;
 		background-color: $white;
-		padding: $base-spacing-unit;
+		padding: $theme-base-spacing-unit;
 		min-height: 0;
 		border-bottom: 0;
 	}
@@ -68,10 +68,10 @@ $modal-header-height: 64px;
 
 	&__footer {
 		border: 1px solid $birmingham-grey;
-		border-top-color: $holidays-primary;
+		border-top-color: $theme-color-primary;
 		border-bottom: 0;
 		background-color: $white;
-		padding: $half-spacing-unit;
+		padding: $theme-half-spacing-unit;
 	}
 }
 
@@ -79,7 +79,7 @@ $modal-header-height: 64px;
 
 	.modal {
 		top: 0;
-		background-color: rgba($holidays-dark-blue, 0.8);
+		background-color: rgba($theme-primary--dark, 0.8);
 
 		&--open {
 			bottom: auto;

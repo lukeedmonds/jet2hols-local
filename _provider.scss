@@ -5,17 +5,17 @@
 
 	&__score {
 		@include font-size(18px);
-		color: $holidays-primary;
+		color: $theme-title-color;
 		font-weight:bold;
 	}
 
 	&__list-item {
 		list-style: none;
-		padding-bottom: $quarter-spacing-unit;
-		margin-bottom: $quarter-spacing-unit;
+		padding-bottom: $theme-quarter-spacing-unit;
+		margin-bottom: $theme-quarter-spacing-unit;
 		
 		&:not(:last-child) {
-			border-bottom: 1px dashed $holidays-grey;
+			border-bottom: 1px dashed $theme-color-neutral;
 		}
 	}
 

@@ -1,0 +1,92 @@
+$beach-border-radius: 4px;
+$beach-heading-font: $city-breaks-font;
+
+
+$beach-heading-font--availability: $city-breaks-font;
+$beach-body-font: $city-body-font;
+
+$beach-base-font-size: 14px;
+
+$beach-paragraph-font-size: 14px;
+$beach-paragraph-line-height: 1.2;
+$beach-heading-line-height: 1.2;
+
+$city-border-radius: 0;
+
+$city-base-spacing-unit: 24px;
+
+
+$theme: 'city';
+$theme-site-width: $global-site-width;
+$theme-color-primary: $citybreaks-primary;  
+$theme-primary--dark:  $citybreaks-dark;
+$theme-color-secondary: $citybreaks-secondary;
+$theme-color-tertiary: $citybreaks-tertiary;
+$theme-primary-shadow: $citybreaks-red-shadow;
+$theme-active-shadow: $holidays-active-shadow;
+$theme-color-neutral: $holidays-grey;
+$theme-color-highlight: $holidays-orange;
+$theme-color-highlight--alt: $holidays-red;
+$theme-primary--dark:  $holidays-dark-blue;
+$theme-color-lightest: $white;
+$theme-color-highlight--lighter: $valencia-yellow;
+$theme-primary-background: $holidays-grey;
+$theme-secondary-background: $citybreaks-secondary;
+
+$theme-title-color: $theme-color-secondary;
+$theme-text-color: #000;
+$theme-light-background: #e9eef5;
+$theme-link-color: $holidays-primary;
+
+$theme-border-radius: $city-border-radius;
+// $theme-padding-size: $beach-padding-size;
+// $theme-margin-size: $beach-margin-size;
+
+$theme-base-spacing-unit: $city-base-spacing-unit;
+
+$theme-quarter-spacing-unit: $theme-base-spacing-unit / 4;
+$theme-half-spacing-unit: $theme-base-spacing-unit / 2;
+$theme-third-spacing-unit: $theme-base-spacing-unit / 3;
+$theme-double-spacing-unit: $theme-base-spacing-unit * 2;
+$theme-one-and-half-spacing-unit: $theme-base-spacing-unit * 1.5;
+$theme-triple-spacing-unit: $theme-base-spacing-unit * 3;
+$theme-quad-spacing-unit: $theme-base-spacing-unit * 4;
+
+$theme-form-spacing: 10px;
+
+$theme-heading-font: $city-breaks-font;
+$theme-heading-font--availability: $city-breaks-font;
+$theme-body-font: $city-body-font;
+
+
+$theme-base-font-size: $beach-base-font-size;
+
+// $theme-h1-font-size: $beach-h1-font-size;
+// $theme-h2-font-size: $beach-h2-font-size;
+// $theme-h3-font-size: $beach-h3-font-size;
+// $theme-h4-font-size: $beach-h4-font-size;
+// $theme-h5-font-size: $beach-h5-font-size;
+// $theme-h6-font-size: $beach-h6-font-size;
+
+$theme-paragraph-font-size: $beach-paragraph-font-size;
+$theme-paragraph-line-height: $beach-paragraph-line-height;
+$theme-heading-line-height: $beach-heading-line-height;
+
+
+
+/* buttons */
+
+$theme-button-primary-bg: $theme-color-secondary;
+
+$theme-button-secondary-bg: $theme-color-primary;
+
+$theme-button-tertiary-bg: $white;
+$theme-button-tertiary-text: $theme-color-secondary;
+$theme-button-tertiary-border: $midlands-grey;
+$theme-button-tertiary-hover: $midlands-grey;
+
+
+// Accordion
+
+$accordion-border-color: $status-grey;
+

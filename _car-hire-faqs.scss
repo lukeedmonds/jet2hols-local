@@ -1,7 +1,7 @@
 .car-hire-faq {
 	&__question {
-		@include font-size(14px);
-		font-family: $body-font;
+		@include font-size($theme-base-font-size);
+		font-family: $theme-body-font;
 		font-weight: bold;
 	}
 }

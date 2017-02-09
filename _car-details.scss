@@ -1,7 +1,7 @@
 .recommended-car {
 	&__title {
 		@include font-size(24px);
-		color: $holidays-primary;
+		color: $theme-title-color;
 		font-weight: normal;
 	}
 	
@@ -22,8 +22,8 @@
 			
 			&:not(:last-child) {
 				position: relative;
-				padding-right: $base-spacing-unit;
-				margin-right: $base-spacing-unit;
+				padding-right: $theme-base-spacing-unit;
+				margin-right: $theme-base-spacing-unit;
 
 				&:after {
 					content:"|";

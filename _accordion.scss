@@ -4,21 +4,21 @@
 
 	&--standard {
 		@include font-size(17px);
-		border: 1px solid $holidays-primary;
-		padding: $half-spacing-unit $double-spacing-unit $half-spacing-unit $base-spacing-unit;
-		color: $holidays-primary;
-		background-color: $car-hire-bg;
+		border: 1px solid $accordion-border-color;
+		padding: $theme-half-spacing-unit $theme-double-spacing-unit $theme-half-spacing-unit $theme-base-spacing-unit;
+		color: $theme-title-color;
+		background-color: $theme-light-background;
 		user-select: none;
 		transition: 0.3s all;
 
 		&.accordion--open {
-			background-color: $holidays-primary;
+			background-color: $theme-color-primary;
 			color: $white;
 		}
 
 		.fa-chevron-down {
 			@include font-size(15px);
-			right: $half-spacing-unit;
+			right: $theme-half-spacing-unit;
 		}
 	}
 
@@ -44,8 +44,8 @@
 		display: none;
 		
 		&--standard {
-			padding: $base-spacing-unit;
-			border: 1px solid $holidays-primary;
+			padding: $theme-base-spacing-unit;
+			border: 1px solid $accordion-border-color;
 			border-top: 0;
 		}
 

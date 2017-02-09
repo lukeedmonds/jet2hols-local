@@ -10,13 +10,6 @@ $beach-body-font: $body-font;
 
 $beach-base-font-size: 14px;
 
-// $theme-h1-font-size: $beach-h1-font-size;
-// $theme-h2-font-size: $beach-h2-font-size;
-// $theme-h3-font-size: $beach-h3-font-size;
-// $theme-h4-font-size: $beach-h4-font-size;
-// $theme-h5-font-size: $beach-h5-font-size;
-// $theme-h6-font-size: $beach-h6-font-size;
-
 $beach-paragraph-font-size: 14px;
 $beach-paragraph-line-height: 1.2;
 $beach-heading-line-height: 1.2;
@@ -39,7 +32,11 @@ $theme-color-lightest: $white;
 $theme-color-highlight--lighter: $valencia-yellow;
 $theme-primary-background: $holidays-primary;
 $theme-secondary-background: $holidays-primary-shadow;
+
+$theme-title-color: $holidays-primary;
+$theme-text-color: #000;
 $theme-light-background: #eef3f9;
+$theme-link-color: $theme-color-primary;
 
 $theme-border-radius: $beach-border-radius;
 // $theme-padding-size: $beach-padding-size;
@@ -80,14 +77,15 @@ $theme-heading-line-height: $beach-heading-line-height;
 /* buttons */
 
 $theme-button-primary-bg: $button-orange;
-$theme-button-primary-text: $white;
-$theme-button-primary-border: $theme-button-primary-bg;
 
 $theme-button-secondary-bg: $holidays-primary;
-$theme-button-secondary-text: $white;
-$theme-button-secondary-border: $theme-button-secondary-bg;
 
 $theme-button-tertiary-bg: $white;
-$theme-button-tertiary-text: $holidays-primary;
+$theme-button-tertiary-text: $theme-color-primary;
 $theme-button-tertiary-border: $midlands-grey;
 $theme-button-tertiary-hover: $midlands-grey;
+
+
+// Accordion
+
+$accordion-border-color: $holidays-primary;

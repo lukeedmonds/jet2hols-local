@@ -7,6 +7,12 @@
 	overflow: hidden;
 }
 
+@mixin border-radius($br) {
+	@if ( $br > 0 ) {
+		border-radius: $br;
+	}
+}
+
 @mixin clearfix {
 	&:after {
 		content: "";

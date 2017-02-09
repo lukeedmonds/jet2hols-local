@@ -2,58 +2,47 @@
     #CAR HIRE BOX
 \*------------------------------------*/
 
-/*-------------VARIABLES--------------*/
-$car-hire-bg: #eef3f9;
-
 /*-------------MARKUP--------------*/
 
 .car-hire-box {
-	border-top: solid 8px $holidays-primary;
+	border-top: solid 8px $theme-color-primary;
 	position: relative;
-	margin-bottom: $base-spacing-unit;
+	margin-bottom: $theme-base-spacing-unit;
 
 	&__inner {
 		border: solid 1px #bbbbbb;
 	}
-
-	// &__footer {
-	// 	text-align: center;
-
-	// 	.btn--medium {
-	// 		display: inline-block;
-	// 		width: 160px;
-	// 	}
 
 	&__add-btn {
 		margin-bottom: 20px;
 	}
 
 	&__left-col {
-		padding: $base-spacing-unit $half-spacing-unit;
-		background-color: $car-hire-bg;
+		padding: $theme-base-spacing-unit $theme-half-spacing-unit;
+		background-color: $theme-light-background;
 	}
 
 	&__car-number {
 		> span {
 			@include font-size(24px);
-			color: $holidays-primary;
+			color: $theme-link-color;
 			display: block;
 		}
 	}
 	
 	&__car-number {
-		margin-bottom: $base-spacing-unit;
+		margin-bottom: $theme-base-spacing-unit;
 	}
 
 	&__terms-conditions {
 		display: inline-block;
-		margin-top: $base-spacing-unit;
+		margin-top: $theme-base-spacing-unit;
 		text-decoration: underline;
-		color: $holidays-primary;
+		color: $theme-link-color;
 	}
 
 	&__content {
-		padding: $base-spacing-unit $half-spacing-unit;
+		padding: $theme-base-spacing-unit $theme-half-spacing-unit;
 	}
 
 	&__content-inner--driver-age-confirm {
@@ -86,7 +75,7 @@ $car-hire-bg: #eef3f9;
 			content: "";
 			width: 44px;
 			height: 100%;
-			border-left: 1px solid #acadb2;
+			border-left: 1px solid $manchester-grey;
 			position: absolute;
 			right: 0;
 			top: 0;
@@ -96,7 +85,7 @@ $car-hire-bg: #eef3f9;
 		.fa {
 			$select-icon-size: 14px;
 			@include font-size($select-icon-size);
-			color: $holidays-primary;
+			color: $theme-text-color;
 			position: absolute;
 			right: 15px;
 			top: 50%;
@@ -108,27 +97,27 @@ $car-hire-bg: #eef3f9;
 		    height: 44px;
 		    border: none;
 		    padding: 0 10px;
-		    background: #fff;
+		    background: $white;
 		    -webkit-appearance: none;
 
 			&:disabled {
-				background-color: white;
+				background-color: $white;
 			}
 		}
 	}
 
 	&__select-car {
-		padding: $half-spacing-unit;
+		padding: $theme-half-spacing-unit;
 		border: solid 1px $manchester-grey;
 		position: relative;
 		background-color: $white;
 	}
 
 	&__select-car-link {
-		color: $holidays-primary;
+		color: $theme-link-color;
 		font-weight: normal;
 		position: absolute;
-		right: $half-spacing-unit;
+		right: $theme-half-spacing-unit;
 	}
 }
 
@@ -142,7 +131,7 @@ $car-hire-bg: #eef3f9;
 
 		&__left-col {
 			width: (100% / 3);
-			padding: $double-spacing-unit $half-spacing-unit;
+			padding: $theme-double-spacing-unit $theme-half-spacing-unit;
 			
 			&:after {
 				content:"";
@@ -159,7 +148,7 @@ $car-hire-bg: #eef3f9;
 		&__content {
 			width: 100% / 3 * 2;
 			position: relative;
-			padding: $double-spacing-unit $base-spacing-unit;
+			padding: $theme-double-spacing-unit $theme-base-spacing-unit;
 		}
 	}
 }
@@ -168,7 +157,7 @@ $car-hire-bg: #eef3f9;
 	.car-hire-box {
 
 		&__left-col {
-			padding: $double-spacing-unit;
+			padding: $theme-double-spacing-unit;
 		}
 	}
 }
@@ -190,7 +179,7 @@ $car-hire-bg: #eef3f9;
 
 	&__car-type {
 		@include font-size(18px);
-		color: $holidays-primary;
+		color: $theme-title-color;
 	}
 
 	&__car-model {
@@ -219,7 +208,7 @@ $car-hire-bg: #eef3f9;
 	&__details {
 		@include font-size(14px);
 		width: 100%;
-		margin: $half-spacing-unit 0 $double-spacing-unit;
+		margin: $theme-half-spacing-unit 0 $theme-double-spacing-unit;
 		font-weight: bold;
 		border-collapse: collapse;
 	}
@@ -238,17 +227,17 @@ $car-hire-bg: #eef3f9;
 		}
 
 		td {
-			padding: $quarter-spacing-unit 0;
+			padding: $theme-quarter-spacing-unit 0;
 		}
 	}
 	// PROVIDER RATING
 
 	&__provider {
-		margin-bottom: $half-spacing-unit;
+		margin-bottom: $theme-half-spacing-unit;
 	}
 
 	&__provider-img {
-		margin-right: $half-spacing-unit;
+		margin-right: $theme-half-spacing-unit;
 	}
 
 	&__provider-img,
@@ -257,7 +246,7 @@ $car-hire-bg: #eef3f9;
 	}
 
 	&__provider-rating {
-		margin-top: $quarter-spacing-unit;
+		margin-top: $theme-quarter-spacing-unit;
 		font-weight: normal;
 		cursor: pointer;
 	}
@@ -267,15 +256,15 @@ $car-hire-bg: #eef3f9;
 	}
 
 	&__provider-rating-based-on {
-		color: $holidays-primary;
+		color: $theme-link-color;
 		text-decoration: underline;
 	}
 
 	&__link {
 		@include font-size(14px);
-		color: $holidays-primary;
+		color: $theme-link-color;
 		text-decoration: underline;
-		margin-bottom: $quarter-spacing-unit;
+		margin-bottom: $theme-quarter-spacing-unit;
 		display:inline-block;
 
 		&:hover {
@@ -294,7 +283,7 @@ $car-hire-bg: #eef3f9;
 	&__price-section {
 		display: table;
 		width: 100%;
-		margin-bottom: $half-spacing-unit;
+		margin-bottom: $theme-half-spacing-unit;
 
 		&:not(:last-child) {
 			border-bottom: solid 1px $manchester-grey;
@@ -309,7 +298,7 @@ $car-hire-bg: #eef3f9;
 	&__price-cost {
 		display: table-cell;
 		vertical-align: middle;
-		padding-bottom: $half-spacing-unit;
+		padding-bottom: $theme-half-spacing-unit;
 	}
 
 	&__price-cost {
@@ -341,7 +330,7 @@ $car-hire-bg: #eef3f9;
 
 	&__total-price {
 		@include font-size(26px);
-		color: $holidays-primary;
+		color: $theme-title-color;
 		display: block;
 	}
 }
@@ -370,7 +359,7 @@ $car-hire-bg: #eef3f9;
 		}
 		&__total-price {
 			display: initial;
-			margin-left: $half-spacing-unit;
+			margin-left: $theme-half-spacing-unit;
 		}
 	}
 }

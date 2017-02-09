@@ -992,39 +992,38 @@ html {
   font-size: 1.0625rem;
   font-family: "Open Sans", sans-serif;
   padding: 12px 24px;
-  border-radius: 4px;
   border: 1px solid;
   outline: none;
   cursor: pointer;
   display: inline-block;
   text-align: center;
-  padding-bottom: 12px;
+  margin-bottom: 12px;
   min-width: 160px; }
 
 .btn--wide {
   width: 100%; }
 
 .btn--primary {
-  background-color: #f6af23;
+  background-color: #ed1c24;
   color: #fff;
-  border-color: #f6af23;
-  box-shadow: 0 5px 0 0 #c48508; }
+  border-color: #ed1c24;
+  box-shadow: 0 5px 0 0 #af0e14; }
   .no-touch .btn--primary:hover {
-    border-bottom-color: #c48508;
-    background-color: #c48508; }
+    border-bottom-color: #af0e14;
+    background-color: #af0e14; }
 
 .btn--secondary {
-  background-color: #4290db;
+  background-color: #191050;
   color: #fff;
-  border-color: #4290db;
-  box-shadow: 0 5px 0 0 #216aaf; }
+  border-color: #191050;
+  box-shadow: 0 5px 0 0 #050310; }
   .no-touch .btn--secondary:hover {
-    border-bottom-color: #216aaf;
-    background-color: #216aaf; }
+    border-bottom-color: #050310;
+    background-color: #050310; }
 
 .btn--tertiary {
   background-color: #fff;
-  color: #4290db;
+  color: #ed1c24;
   border-color: #dddee0;
   box-shadow: 0 5px 0 0 #dddee0; }
   .no-touch .btn--tertiary:hover {
@@ -1410,10 +1409,9 @@ a {
 
 /*------------------------------------*    #CAR HIRE BOX
 \*------------------------------------*/
-/*-------------VARIABLES--------------*/
 /*-------------MARKUP--------------*/
 .car-hire-box {
-  border-top: solid 8px #4290db;
+  border-top: solid 8px #191050;
   position: relative;
   margin-bottom: 24px; }
   .car-hire-box__inner {
@@ -1422,7 +1420,7 @@ a {
     margin-bottom: 20px; }
   .car-hire-box__left-col {
     padding: 24px 12px;
-    background-color: #eef3f9; }
+    background-color: #e9eef5; }
   .car-hire-box__car-number > span {
     font-size: 24px;
     font-size: 1.5rem;
@@ -1468,7 +1466,7 @@ a {
     .car-hire-box .select-option .fa {
       font-size: 14px;
       font-size: 0.875rem;
-      color: #4290db;
+      color: #000;
       position: absolute;
       right: 15px;
       top: 50%;
@@ -1481,7 +1479,7 @@ a {
       background: #fff;
       -webkit-appearance: none; }
       .car-hire-box .select-option select:disabled {
-        background-color: white; }
+        background-color: #fff; }
   .car-hire-box__select-car {
     padding: 12px;
     border: solid 1px #acadb2;
@@ -1524,7 +1522,7 @@ a {
   .car-selection__car-type {
     font-size: 18px;
     font-size: 1.125rem;
-    color: #4290db; }
+    color: #ed1c24; }
   .car-selection__car-model {
     font-size: 12px;
     font-size: 0.75rem; }
@@ -1614,7 +1612,7 @@ a {
   .car-selection__total-price {
     font-size: 26px;
     font-size: 1.625rem;
-    color: #4290db;
+    color: #ed1c24;
     display: block; }
 
 @media screen and (min-width: 768px) {
@@ -1653,7 +1651,7 @@ a {
 .provider-rating__score {
   font-size: 18px;
   font-size: 1.125rem;
-  color: #4290db;
+  color: #ed1c24;
   font-weight: bold; }
 
 .provider-rating__list-item {
@@ -1678,7 +1676,7 @@ a {
 .car-hire-faq__question {
   font-size: 14px;
   font-size: 0.875rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: bold; }
 
 /*------------------------------------*    #CAR HIRE LOADER
@@ -1690,7 +1688,7 @@ a {
     font-size: 1.125rem;
     font-family: "Open Sans", sans-serif;
     font-weight: normal;
-    color: #4290db;
+    color: #ed1c24;
     margin-bottom: 24px; }
   .car-hire-loader__block {
     width: 49.15254%;
@@ -1796,7 +1794,7 @@ a {
   list-style: none; }
 
 .transfer-selection__list-icon {
-  color: #4290db; }
+  color: #191050; }
 
 @media screen and (min-width: 768px) {
   .transfer-selection__sidebar {
@@ -1811,7 +1809,7 @@ a {
 .recommended-car__title {
   font-size: 24px;
   font-size: 1.5rem;
-  color: #4290db;
+  color: #ed1c24;
   font-weight: normal; }
 
 .recommended-car__details {
@@ -1853,8 +1851,8 @@ a {
   .car-hire-extras__title {
     font-size: 18px;
     font-size: 1.125rem;
-    color: #4290db;
-    font-family: "Open Sans", sans-serif;
+    color: #ed1c24;
+    font-family: Helvetica, Arial, sans-serif;
     font-weight: normal; }
   .car-hire-extras__info {
     line-height: 1.4; }
@@ -1878,9 +1876,9 @@ a {
     display: inline-block;
     width: 40px;
     height: 40px;
-    border: solid 1px #4290db;
+    border: solid 1px #191050;
     text-align: center;
-    color: #4290db;
+    color: #191050;
     cursor: pointer; }
     .car-hire-extras__counter-btn .fa {
       line-height: 40px; }
@@ -1933,7 +1931,7 @@ a {
 .car-hire-big-enough__title {
   font-size: 18px;
   font-size: 1.125rem;
-  color: #4290db;
+  color: #ed1c24;
   font-weight: normal; }
 
 .car-hire-big-enough__table {
@@ -1957,10 +1955,10 @@ a {
   .accordion--standard {
     font-size: 17px;
     font-size: 1.0625rem;
-    border: 1px solid #4290db;
+    border: 1px solid #cccccc;
     padding: 12px 48px 12px 24px;
-    color: #4290db;
-    background-color: #eef3f9;
+    color: #ed1c24;
+    background-color: #e9eef5;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
@@ -1968,7 +1966,7 @@ a {
     -webkit-transition: 0.3s all;
             transition: 0.3s all; }
     .accordion--standard.accordion--open {
-      background-color: #4290db;
+      background-color: #191050;
       color: #fff; }
     .accordion--standard .fa-chevron-down {
       font-size: 15px;
@@ -1989,7 +1987,7 @@ a {
     display: none; }
     .accordion__content--standard {
       padding: 24px;
-      border: 1px solid #4290db;
+      border: 1px solid #cccccc;
       border-top: 0; }
     .accordion__content--open {
       display: block; }
@@ -2015,9 +2013,9 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     height: 100%;
-    border-bottom: 1px solid #4290db; }
+    border-bottom: 1px solid #191050; }
   .modal__header {
-    background-color: #4290db;
+    background-color: #191050;
     min-height: 64px;
     width: 100%;
     padding: 0 12px;
@@ -2056,7 +2054,7 @@ a {
             user-select: none; }
   .modal__footer {
     border: 1px solid #e7e7e7;
-    border-top-color: #4290db;
+    border-top-color: #191050;
     border-bottom: 0;
     background-color: #fff;
     padding: 12px; }
@@ -2077,18 +2075,18 @@ a {
       height: auto; } }
 
 .insurance-block {
-  border: 1px solid #4290db; }
+  border: 1px solid #191050; }
   .insurance-block__header {
-    background-color: #4290db;
+    background-color: #191050;
     padding: 12px 24px; }
   .insurance-block__title {
     font-size: 17px;
     font-size: 1.0625rem;
     color: #fff;
-    font-family: "helvetica-med-light", sans-serif;
+    font-family: "Montserrat-Regular", sans-serif;
     margin: 0; }
   .insurance-block__body {
-    background-color: #eef3f9;
+    background-color: #e9eef5;
     padding: 12px 24px; }
 
 @media screen and (min-width: 768px) {

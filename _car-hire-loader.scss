@@ -9,15 +9,15 @@
 		@include font-size(18px);
 		font-family: $body-font;
 		font-weight: normal;
-		color: $holidays-primary;
-		margin-bottom:$base-spacing-unit;
+		color: $theme-title-color;
+		margin-bottom:$theme-base-spacing-unit;
 	}
 
 	&__block {
 		@include span(6);
 		position:relative;
 		background-color: $birmingham-grey;
-		padding:$half-spacing-unit;
+		padding:$theme-half-spacing-unit;
 		text-align:center;
 		height:70px;
 		margin-bottom: 30px;
